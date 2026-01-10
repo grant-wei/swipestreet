@@ -1,0 +1,2453 @@
+{
+  "generated_at": "2026-01-10T13:06:14.825744",
+  "total_cards": 186,
+  "cards": [
+    {
+      "id": "21815446",
+      "type": "contrarian",
+      "content": "consensus thinks aluminum will return to $3,000/tonne when european energy crisis resolves and sentiment improves. structural shifts beyond cyclical factors are keeping prices depressed. the aluminum super cycle is over despite temporary supply disruptions.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Going Al In? How Aluminum Could Defy the End of the Super Cycle",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:54:39.630294"
+    },
+    {
+      "id": "6f13b502",
+      "type": "mechanic",
+      "content": "aluminum's underperformance isn't just about weak sentiment or european energy costs. structural changes in demand patterns and supply dynamics are creating a new pricing regime. investors betting on mean reversion to previous highs are missing the fundamental shift.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Going Al In? How Aluminum Could Defy the End of the Super Cycle",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:54:39.630321"
+    },
+    {
+      "id": "dacadcb3",
+      "type": "contrarian",
+      "content": "consensus thinks global iron ore production data is reliable. major entities like the un and world steel association are using wrong chinese steel numbers. the world's biggest iron ore producers are making investment decisions based on flawed demand forecasts.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Valuing Jevons Invaluable Metal  Prospects for Global Iron O",
+      "categories": [
+        "Electric Vehicles"
+      ],
+      "created_at": "2026-01-10T12:54:42.960755"
+    },
+    {
+      "id": "6372a7b0",
+      "type": "mechanic",
+      "content": "ngl midstream has real barriers unlike most energy. u need the full chain: processing → pipeline → fractionation → export. hard to replicate this integrated network once built. most midstream is just moving commodities through pipes.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:54:45.930637"
+    },
+    {
+      "id": "0e5fc209",
+      "type": "contrarian",
+      "content": "consensus uses cat's past engine margins to forecast future earnings. historical performance understates the segment's real potential. engine business has structural advantages that aren't reflected in backward-looking models, creating earnings upside surprise.",
+      "tickers": [
+        "CAT"
+      ],
+      "source": "bernstein",
+      "source_title": "US Machinery  Capital Goods - Looking Under the Hood of the ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:54:49.829884"
+    },
+    {
+      "id": "08e7cce9",
+      "type": "mechanic",
+      "content": "federal co2 regulations hit utilities by 2012, forcing massive capex shifts from coal to gas/renewables. utilities with newer gas plants and transmission infrastructure win, while coal-heavy operators face stranded assets and margin compression.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Utilities - The Implications of Carbon Dioxide Regulation",
+      "categories": [
+        "Clean Energy",
+        "Automotive",
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:54:53.379601"
+    },
+    {
+      "id": "5fbdfbfb",
+      "type": "contrarian",
+      "content": "consensus thinks aig still has reserve problems from the 2008 crisis. today their reserves are actually conservative after a decade of rebuilding. the market treats them like damaged goods while their balance sheet is now fortress-like.",
+      "tickers": [
+        "AIG"
+      ],
+      "source": "bernstein",
+      "source_title": "AIG - After a Decade Lost Is the Emperor Finally Well Clothe",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:54:56.693235"
+    },
+    {
+      "id": "5bac77f9",
+      "type": "contrarian",
+      "content": "consensus thinks federal carbon regulations are distant. they're coming fast - ghg emissions rules start 2011-12. utilities with heavy coal exposure face massive capex requirements while gas-heavy players gain competitive advantage.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Utilities - The Implications of Carbon Dioxide Regulation",
+      "categories": [
+        "Clean Energy",
+        "Automotive",
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:55:00.451491"
+    },
+    {
+      "id": "63ab2a90",
+      "type": "contrarian",
+      "content": "china is determined to prove such skeptics wrong and we expect it to work relentlessly to build a competitive auto industry",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Chinese Autos Part 1 - The Quest for Global Competitiveness ",
+      "categories": [
+        "China",
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:55:04.610649"
+    },
+    {
+      "id": "f682d031",
+      "type": "contrarian",
+      "content": "consensus thinks airbus made a smart move re-engining the a320 into the neo. actually it's backfiring by cratering prices on existing a320s. airlines now have cheaper older options instead of paying premiums for marginal efficiency gains.",
+      "tickers": [
+        "EADSY",
+        "BA"
+      ],
+      "source": "bernstein",
+      "source_title": "Commercial Aircraft - New Markets Old Airplanes  A Growth St",
+      "categories": [
+        "AI/Technology",
+        "Airlines/Travel"
+      ],
+      "created_at": "2026-01-10T12:55:08.680096"
+    },
+    {
+      "id": "b445441f",
+      "type": "contrarian",
+      "content": "consensus thinks basf's chemicals segment is still stuck with bloated costs from the downturn. the segment actually restructured hard and locked in structural cost improvements that won't reverse. earnings leverage when demand returns will surprise investors who assume margins stay depressed.",
+      "tickers": [
+        "BAS.DE"
+      ],
+      "source": "bernstein",
+      "source_title": "BASF - Hidden Value Within the Worlds Largest Chemical Compa",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:55:13.374917"
+    },
+    {
+      "id": "3aaf0f01",
+      "type": "contrarian",
+      "content": "consensus expects china to stimulate for quick growth rebound in 2013. beijing won't pull the trigger on major stimulus this cycle. they're prioritizing economic restructuring over short-term gdp goals, hurting commodity exporters but helping companies with china domestic exposure.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Little Red Blackbook - China 2013  Slower Lower Stronger",
+      "categories": [
+        "China"
+      ],
+      "created_at": "2026-01-10T12:55:17.513921"
+    },
+    {
+      "id": "2f53db96",
+      "type": "mechanic",
+      "content": "india's e-bike market has a brief consolidation window before it fragments permanently. early movers can grab market share while regulations and infrastructure are still forming. miss this timing and u face endless fragmented competition with no differentiation.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "India Autos - Bern to RunWe Built an E-Bike and Red-Lined th",
+      "categories": [
+        "India",
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:55:21.285485"
+    },
+    {
+      "id": "eea75d9e",
+      "type": "contrarian",
+      "content": "most sites will return to normal, with education and sports unlikely to be impaired post virus",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Catering - Back On The Menu",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:55:25.422896"
+    },
+    {
+      "id": "629e7994",
+      "type": "stat",
+      "content": "tokenization strips 30-50% of costs from the securities value chain for asset managers. blockchain removes middlemen and automates settlement, custody, and compliance functions. traditional finance gets disintermediated while tech-forward asset managers capture the savings.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Institutional guide to Blockchain and digital assets",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:55:30.577431"
+    },
+    {
+      "id": "df13b8a4",
+      "type": "contrarian",
+      "content": "consensus sees blockchain as crypto speculation and trading. the real value is tokenization creating new financial rails that transform market structure. institutions focus on the gambling while missing the infrastructure revolution happening underneath.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Institutional guide to Blockchain and digital assets",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:55:30.577440"
+    },
+    {
+      "id": "8879e627",
+      "type": "stat",
+      "content": "supports 10%+ growth for 10+ years for keyence and cognex; the nascent us sports betting market, which we expect to grow to us$25bn by 2030, driving significant upside potential for draftkings; the burgeoning indian credit card market as digital payments grow from us$360bn to ...",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "TAMinator  Global Edition",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:55:36.827445"
+    },
+    {
+      "id": "8eb45fb0",
+      "type": "stat",
+      "content": "european food/hpc giants are delivering 4-5% revenue growth with 40-50bps annual margin expansion. this combo drives high single-digit eps growth plus 2-3% dividends in a mature market. steady compounding beats flashy growth when margins keep widening.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Food  HPC - 12-Year Global Market Share Analysis",
+      "categories": [
+        "Europe",
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:55:40.392024"
+    },
+    {
+      "id": "7df1beec",
+      "type": "stat",
+      "content": "china gas demand hits 300bcm by 2020 - that's 50% growth from current levels. the country is switching from coal to cleaner burning gas for power and heating. energy infrastructure plays and lng exporters win big from this structural shift.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Great Expectations - The Golden Age of Asian Gas",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:55:44.328866"
+    },
+    {
+      "id": "c0236fa1",
+      "type": "contrarian",
+      "content": "consensus expects ev adoption to hit aggressive 2030 targets. cobalt supply can't scale that fast without massive price spikes. realistic ev penetration caps at 27% by 2030 - half what bulls project. battery metal miners win, ev manufacturers lose on margins.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Considering the Cobalt Conundrum",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:55:48.574973"
+    },
+    {
+      "id": "4ddc9ddf",
+      "type": "stat",
+      "content": "european food/hpc companies are targeting 4-5% revenue growth plus 40-50bps annual margin expansion over the next decade. this drives high single-digit eps growth in a historically slow sector. brands with pricing power can compound through inflation cycles while weaker players get squeezed.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Food  HPC - 10-Year Global Market Share Analysis",
+      "categories": [
+        "Europe",
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:55:52.130621"
+    },
+    {
+      "id": "cf273606",
+      "type": "stat",
+      "content": "marcellus gas production will grow ~50% as new pipeline capacity comes online. the region was bottlenecked for years but infrastructure finally caught up. gathering and processing companies in the area get massive volume increases without building competing pipes.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Midstream-MLPs - The Overbuild",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:55:57.840669"
+    },
+    {
+      "id": "e2a2e872",
+      "type": "mechanic",
+      "content": "ethane demand is shifting molecules from gas pipelines to ngl midstream operators. new crackers and export facilities through 2020 concentrate what used to be dispersed gas flows into dedicated ngl systems. fewer players handling way more volume.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Midstream-MLPs - The Overbuild",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:55:57.840677"
+    },
+    {
+      "id": "cc114d0e",
+      "type": "stat",
+      "content": "chinese consumers drive 29% of global luxury spending and that share keeps growing. even slower growth from china still beats most other regions for luxury brands. european luxury stocks live or die by chinese demand cycles.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Luxury Goods - Breaking the China Code",
+      "categories": [
+        "Luxury/Consumer",
+        "China",
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:56:03.400555"
+    },
+    {
+      "id": "8b12990f",
+      "type": "contrarian",
+      "content": "consensus worries china's luxury boom is over after the 2008-12 golden years. reality: chinese buyers remain the dominant growth engine just at a more sustainable pace. brands that nail china distribution win the next decade.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Luxury Goods - Breaking the China Code",
+      "categories": [
+        "Luxury/Consumer",
+        "China",
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:56:03.400567"
+    },
+    {
+      "id": "b4726776",
+      "type": "stat",
+      "content": "revlimid grows 8-12% annually even without front-line approval expansion. the drug dominates multiple myeloma treatment with existing approvals creating a high floor for growth. celgene wins with steady cash flows while competitors struggle to crack this defended franchise.",
+      "tickers": [
+        "CELG"
+      ],
+      "source": "bernstein",
+      "source_title": "Celgene  Onyx - Race to Front Line  2013 MM Survey Shows Amp",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:56:11.797371"
+    },
+    {
+      "id": "39d22de6",
+      "type": "stat",
+      "content": "aws targets a $300b+ addressable market but analysts only model ~$20b revenue by decade end. that's capturing just 7% of the opportunity. the datacenter migration is bigger than most realize and aws dominates the infrastructure layer.",
+      "tickers": [
+        "AMZN"
+      ],
+      "source": "bernstein",
+      "source_title": "Amazon Web Services AWS - Leading the Migration of the Datac",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:56:15.896016"
+    },
+    {
+      "id": "10e6a867",
+      "type": "contrarian",
+      "content": "consensus thinks hon hai's advantage comes from being the biggest ems player. the real edge is structural profitability from ecosystem lock-in, not just scale. when apple or other brands need complex manufacturing, switching costs are massive - hon hai has the full stack integrated.",
+      "tickers": [
+        "2317.TW"
+      ],
+      "source": "bernstein",
+      "source_title": "Hon Hai Precision Foxconn - A Black Book on a Black Box",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:56:22.147299"
+    },
+    {
+      "id": "cb82d8e6",
+      "type": "contrarian",
+      "content": "consensus expects natural gas to stay volatile with periodic spikes. north american shale gas resources are massive enough to create structural oversupply, keeping prices locked in the $4-$5 range permanently. only the lowest-cost producers on the marginal cost curve survive this new reality.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "North American EPs - Aligning the Stars of the Resource Play",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:56:25.661275"
+    },
+    {
+      "id": "6184407c",
+      "type": "stat",
+      "content": "hp can grow eps at 9-10% annually despite just 3% revenue growth. share buybacks and margin expansion bridge the gap between sluggish sales and solid earnings growth. mature tech with capital discipline beats growth stories without profits.",
+      "tickers": [
+        "HPQ"
+      ],
+      "source": "bernstein",
+      "source_title": "Hewlett-Packard - Following a Series of Missteps an Attracti",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:56:29.140393"
+    },
+    {
+      "id": "d2a9dcbd",
+      "type": "stat",
+      "content": "qualcomm trades at a significant discount to intrinsic value based on secular mobile growth. their chipset dominance in smartphones positions them to capture rising data usage and 4g upgrades globally. the stock has 40%+ upside as mobile becomes the primary computing platform.",
+      "tickers": [
+        "QCOM"
+      ],
+      "source": "bernstein",
+      "source_title": "Qualcomm - Secular Growth in an Uncertain World",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:56:33.177628"
+    },
+    {
+      "id": "af8ecf4f",
+      "type": "contrarian",
+      "content": "consensus treats dollar general like a mature discount retailer. it's actually a rare growth story with high-teens to 20% eps growth potential. while retail struggles, dg keeps finding new markets and formats to expand into.",
+      "tickers": [
+        "DG"
+      ],
+      "source": "bernstein",
+      "source_title": "Dollar General - The Rebirth of a Growth Retailer",
+      "categories": [
+        "AI/Technology",
+        "Luxury/Consumer"
+      ],
+      "created_at": "2026-01-10T12:56:38.332278"
+    },
+    {
+      "id": "14b2e0d0",
+      "type": "stat",
+      "content": "dollar general can deliver 20% eps growth in today's retail environment. this puts it in elite company when most retailers are fighting for single-digit growth. the combination of store expansion and margin improvement creates a compounding effect.",
+      "tickers": [
+        "DG"
+      ],
+      "source": "bernstein",
+      "source_title": "Dollar General - The Rebirth of a Growth Retailer",
+      "categories": [
+        "AI/Technology",
+        "Luxury/Consumer"
+      ],
+      "created_at": "2026-01-10T12:56:38.332290"
+    },
+    {
+      "id": "8c9581ba",
+      "type": "stat",
+      "content": "lcvs are their most lcv recovery profitable vehicle lines by far and that lcvs make each company ebit of over €400 million in a normal year (which would mean approximately 50% of automotive ebit for each in 2007)",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Autos - Light Commercial Vehicles  Understanding Eu",
+      "categories": [
+        "Europe",
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:56:42.954841"
+    },
+    {
+      "id": "19f31bc9",
+      "type": "stat",
+      "content": "european beverage stocks deliver 15% annual eps growth over five years with 38% tangible roic. these returns justify trading at a 40% premium to the broader market. alcohol brands print cash and deserve the multiple expansion.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Beverages - Cheap Booze",
+      "categories": [
+        "Electric Vehicles",
+        "Europe",
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:56:46.479178"
+    },
+    {
+      "id": "d368ba83",
+      "type": "mechanic",
+      "content": "oil prices get bounded by three floors/ceilings as demand declines. cash cost ($45-50) sets the bottom, marginal supply cost ($75-80) becomes the trend line, and demand destruction ($110-125) caps the top. producers can't survive below cash cost but new supply needs higher returns.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "When Oil Demand Declines",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:56:50.762953"
+    },
+    {
+      "id": "c906e67c",
+      "type": "stat",
+      "content": "companies that get initial earnings revisions (up or down) have 50%+ odds of getting a second revision in the same direction vs 20% base rate. wall street analysts herd together and momentum builds once revision cycles start. ride the wave early or get caught chasing later.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Bernstein Quantitative Handbook — February 2009",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:56:54.567456"
+    },
+    {
+      "id": "88e79a30",
+      "type": "stat",
+      "content": "campath targets the $11b global ms market when it launches in late 2011. it's the most effective treatment for resistant cases where current drugs fail. genzyme captures a small slice of a huge market with superior efficacy.",
+      "tickers": [
+        "GENZ"
+      ],
+      "source": "bernstein",
+      "source_title": "Genzyme - A New Model for the Small Big Pharma",
+      "categories": [
+        "Healthcare/Pharma"
+      ],
+      "created_at": "2026-01-10T12:56:58.230640"
+    },
+    {
+      "id": "bdab9fb0",
+      "type": "stat",
+      "content": "kraft can hit 15% eps growth through 2010 by expanding operating margins 100bp annually. margin recovery plus share buybacks beats the food sector's typical 5-8% growth. packaged food giants with scale win when input costs stabilize.",
+      "tickers": [
+        "KHC"
+      ],
+      "source": "bernstein",
+      "source_title": "Kraft Foods - Putting on the Ritz",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:57:02.265765"
+    },
+    {
+      "id": "fbfe7704",
+      "type": "contrarian",
+      "content": "our view is influenced not only by the democratic majority elected to congress in 2006, and the likelihood of a democratic victory in the presi- dential election of 2008, but also by the supreme court's landmark decision on april 2 of this year in a case involving epa regulati...",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Utilities - The Implications of Carbon Dioxide Regulation",
+      "categories": [
+        "Clean Energy",
+        "Automotive",
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:57:06.925703"
+    },
+    {
+      "id": "9de5a3c5",
+      "type": "stat",
+      "content": "amgen's epo franchise drives 47% of total revenue and 60% of earnings. the blood treatment drug has 4% revenue growth runway through 2012 patent expiry. most pharma companies dream of having one product carry half their business.",
+      "tickers": [
+        "AMGN"
+      ],
+      "source": "bernstein",
+      "source_title": "Blood Feud - The Coming Battle for the 11 Billion Global EPO",
+      "categories": [
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:57:12.173200"
+    },
+    {
+      "id": "efb25d0c",
+      "type": "contrarian",
+      "content": "consensus expects amgen's epo franchise to collapse soon. the reality is patent protection runs through 2012 with steady 4% growth ahead. wall street is pricing in disruption that won't hit for years.",
+      "tickers": [
+        "AMGN"
+      ],
+      "source": "bernstein",
+      "source_title": "Blood Feud - The Coming Battle for the 11 Billion Global EPO",
+      "categories": [
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:57:12.173212"
+    },
+    {
+      "id": "75f2622e",
+      "type": "mechanic",
+      "content": "texas instruments is outsourcing up to 50% of advanced logic production to lower capital intensity. this cuts fixed costs while profit sharing becomes more predictable. less capex + stable costs = margin expansion that competitors building their own fabs can't match.",
+      "tickers": [
+        "TXN"
+      ],
+      "source": "bernstein",
+      "source_title": "Texas Instruments - Understanding Key Variables  Revenue Gro",
+      "categories": [
+        "Electric Vehicles"
+      ],
+      "created_at": "2026-01-10T12:57:16.040696"
+    },
+    {
+      "id": "e09aa5a8",
+      "type": "contrarian",
+      "content": "consensus worries that rising rates kill card company earnings. the market's wrong - these businesses actually grow 12-15% annually over the next 5 years despite higher rates. deregulation fears are overdone while reinvestment upside gets ignored.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Cards - Deregulation and Reinvestment Risk",
+      "categories": [
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:57:19.903532"
+    },
+    {
+      "id": "9e3fbaa0",
+      "type": "stat",
+      "content": "comcast has more telephony opportunity ahead vs peers like cox. voip adoption creates revenue upside as cable cos convert traditional phone service. cmcsa's larger unconverted base means bigger growth runway than competitors who've already captured most gains.",
+      "tickers": [
+        "CMCSA",
+        "COX"
+      ],
+      "source": "bernstein",
+      "source_title": "Voice over IP - Ripple or Tidal Wave",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:57:24.117384"
+    },
+    {
+      "id": "eb679b57",
+      "type": "stat",
+      "content": "frito-lay guides 8% operating growth but faces high new product launch costs. pricing power and productivity gains drive 7% profit growth over 5 years instead. snack brands can raise prices without killing volume when they innovate smart.",
+      "tickers": [
+        "PEP"
+      ],
+      "source": "bernstein",
+      "source_title": "US Beverages and Snacks - Volume Growth Returns But Margins ",
+      "categories": [
+        "Electric Vehicles",
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:57:29.544019"
+    },
+    {
+      "id": "bffebb57",
+      "type": "mechanic",
+      "content": "snack launches eat margins upfront through marketing spend and production setup costs. but successful products create pricing umbrella for the whole portfolio. frito-lay uses innovation to justify premium pricing across all skus.",
+      "tickers": [
+        "PEP"
+      ],
+      "source": "bernstein",
+      "source_title": "US Beverages and Snacks - Volume Growth Returns But Margins ",
+      "categories": [
+        "Electric Vehicles",
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:57:29.544030"
+    },
+    {
+      "id": "84ffc4e6",
+      "type": "stat",
+      "content": "us beverage/snack giants expect ~5% annual growth despite mature home markets. emerging markets still deliver high-single-digit growth while developed markets return to historical 4% rates. the math works when u have global scale distribution.",
+      "tickers": [
+        "KO",
+        "PEP",
+        "MDLZ"
+      ],
+      "source": "bernstein",
+      "source_title": "US Beverages  Snacks - Opportunity Outweighs Risk",
+      "categories": [
+        "Electric Vehicles",
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T12:57:33.646803"
+    },
+    {
+      "id": "343e4ecc",
+      "type": "stat",
+      "content": "luxury stocks trade 50% above european market multiples on average. their pricing power and global demand growth justify the premium vs cyclical sectors. investors pay up for brands that raise prices annually without losing customers.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Luxury Sector Will Continue to Sparkle and Shine",
+      "categories": [
+        "Luxury/Consumer"
+      ],
+      "created_at": "2026-01-10T12:57:37.799268"
+    },
+    {
+      "id": "644d2498",
+      "type": "stat",
+      "content": "green hydrogen costs will drop to $1-2/kg by 2030, matching gray hydrogen economics. this price point makes it competitive with fossil fuels across transport, steel, and chemicals. whoever controls cheap electrolysis wins the energy transition.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+      "categories": [
+        "Clean Energy",
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:57:41.017370"
+    },
+    {
+      "id": "072706a8",
+      "type": "contrarian",
+      "content": "consensus models still underestimate the ultimate battery market size. grid storage needs are exploding as renewables hit 30%+ penetration - intermittency forces massive backup requirements. utilities will spend whatever it takes to keep lights on, making this a price-insensitive mega cycle.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Energy Storage - Resistance is Futile",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:57:44.909046"
+    },
+    {
+      "id": "3b402d26",
+      "type": "stat",
+      "content": "aluminum exchange stocks will drop below 300k tonnes creating a major supply deficit. this represents less than 3 days of global consumption vs the typical 30+ day buffer. norsk hydro owns premium smelting assets positioned to benefit from the resulting price surge.",
+      "tickers": [
+        "NHY"
+      ],
+      "source": "bernstein",
+      "source_title": "Aluminum and Norsk Hydro - Right Commodity Right Assets Righ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:57:51.039423"
+    },
+    {
+      "id": "b77eb7a6",
+      "type": "mechanic",
+      "content": "aluminum prices spike when exchange inventories hit critical lows because there's no quick supply response. smelters take 2+ years to build and restart costs are massive. norsk hydro's integrated model from bauxite to finished aluminum captures the full margin expansion.",
+      "tickers": [
+        "NHY"
+      ],
+      "source": "bernstein",
+      "source_title": "Aluminum and Norsk Hydro - Right Commodity Right Assets Righ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:57:51.039434"
+    },
+    {
+      "id": "c09f8d51",
+      "type": "stat",
+      "content": "new oil field activity declined at -19% cagr during 2012-15 when brent averaged $100/bbl. this destroys the myth that oil services thrive at triple-digit crude prices. services companies get crushed when operators shift from growth to maintenance capex.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Hunger Games  Our Worrying Vision for an Oil Services Recess",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:57:54.712544"
+    },
+    {
+      "id": "6a44b7fd",
+      "type": "mechanic",
+      "content": "pbms make 75% of their gross profit from generics despite generics being under 15% of revenue. the math works because generic margins are massive while brand drug margins are razor thin. this makes pbms secretly generic drug businesses disguised as healthcare middlemen.",
+      "tickers": [
+        "CVS",
+        "CI",
+        "UNH"
+      ],
+      "source": "bernstein",
+      "source_title": "US Healthcare Distribution - PBMs  Living on the Generic Mar",
+      "categories": [
+        "Healthcare/Pharma",
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:57:59.205414"
+    },
+    {
+      "id": "37da9fe2",
+      "type": "stat",
+      "content": "bernstein sees 3 diabetes players adding blockbuster drugs: novartis, merck, and eli lilly. diabetes market keeps expanding as obesity rates climb globally. these companies get pricing power from chronic conditions that need daily treatment.",
+      "tickers": [
+        "NVS",
+        "MRK",
+        "LLY"
+      ],
+      "source": "bernstein",
+      "source_title": "Bernstein Healthcare - Diabetes Drugs  Lowering Sugar Raisin",
+      "categories": [
+        "AI/Technology",
+        "Healthcare/Pharma",
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:58:02.803894"
+    },
+    {
+      "id": "e80c3bc2",
+      "type": "contrarian",
+      "content": "consensus assumes oil field decline rates follow industry models. actual decline happens faster than companies report. shale wells drop 70-80% in first year vs the 50-60% guidance. means higher capex needs and tighter supply than markets expect.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Oil Field Decline Rates - The Ebb and Flow Rates of World Oi",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:58:06.913695"
+    },
+    {
+      "id": "917ff601",
+      "type": "contrarian",
+      "content": "consensus asks 'will tv die?' but that's the wrong question. traditional tv isn't disappearing - it's transforming into streaming and digital platforms. european media companies with content libraries and distribution networks survive, pure broadcasters don't.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Media - A TV Survival Guide",
+      "categories": [
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:58:10.469697"
+    },
+    {
+      "id": "8d9a9b0b",
+      "type": "stat",
+      "content": "amazon's addressable cpg market exceeds triple the size of walmart's grocery business under current operations. their model can't handle perishables, leaving massive revenue on the table. whoever cracks fresh delivery at scale wins the next decade of retail.",
+      "tickers": [
+        "AMZN",
+        "WMT"
+      ],
+      "source": "bernstein",
+      "source_title": "US Internet  US CPG - How Amazon Will Transform CPG Sales  A",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:58:14.549225"
+    },
+    {
+      "id": "4f4e64b0",
+      "type": "stat",
+      "content": "european luxury retail exposure sits at 55% vs lower global averages. direct retail control means higher margins and better customer data than wholesale partnerships. brands with more stores win bigger when luxury spending accelerates.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Luxury Goods Store Wars - All You Need to Know Abou",
+      "categories": [
+        "Luxury/Consumer",
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:58:18.041000"
+    },
+    {
+      "id": "feb586fe",
+      "type": "stat",
+      "content": "inditex can grow same-store sales 4-5% annually while peers struggle with flat growth. their brands dominate emerging markets where the middle class is expanding fastest. zara wins the global fashion race as local retailers get crushed.",
+      "tickers": [
+        "ITX"
+      ],
+      "source": "bernstein",
+      "source_title": "Inditex - Fashioning the Strongest Model in Apparel Retail",
+      "categories": [
+        "AI/Technology",
+        "Luxury/Consumer"
+      ],
+      "created_at": "2026-01-10T12:58:21.526639"
+    },
+    {
+      "id": "a79cb1eb",
+      "type": "stat",
+      "content": "regional banks face deposit growth slowing to 4% annually from higher historical rates. this forces them to fund new loans with expensive wholesale funding instead of cheap deposits. net interest margins get crushed as funding costs spike.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Regional Banks - The 11th Inning Stretch",
+      "categories": [
+        "Banking/Finance"
+      ],
+      "created_at": "2026-01-10T12:58:27.861650"
+    },
+    {
+      "id": "e37179f2",
+      "type": "mechanic",
+      "content": "when deposit growth lags loan demand, banks turn to wholesale markets for funding at 2-3x the cost of deposits. the spread between what they earn on loans vs pay for funding shrinks fast. it's like borrowing at 5% to lend at 6% instead of using free deposits.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Regional Banks - The 11th Inning Stretch",
+      "categories": [
+        "Banking/Finance"
+      ],
+      "created_at": "2026-01-10T12:58:27.861660"
+    },
+    {
+      "id": "a513b905",
+      "type": "stat",
+      "content": "enterprise storage will grow above normalized it spending of 5-7% annually. storage gets prioritized when companies refresh infrastructure because data keeps growing regardless of economic cycles. storage vendors win while broader it sits flat.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Enterprise Storage - Still the Golden Child",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:58:31.190200"
+    },
+    {
+      "id": "9183dd22",
+      "type": "stat",
+      "content": "global household products growth decelerates to under 5% annually, with developing markets slowing from 10% to mid-single digits. the easy growth phase is over as emerging consumers hit saturation points. companies banking on endless emerging market expansion face reality check.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Household  Personal Products - An International Perspecti",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:58:35.094929"
+    },
+    {
+      "id": "a8dfdaed",
+      "type": "contrarian",
+      "content": "consensus thinks regional bank margin pressure is cyclical. it's actually secular decline that started in 2000. digital banking and fintech permanently compressed spreads while regulatory costs never stopped rising. regional banks face structural headwinds, not temporary rate cycle issues.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Regional Banks - Secular Not Cyclical Margin Pressure",
+      "categories": [
+        "Banking/Finance"
+      ],
+      "created_at": "2026-01-10T12:58:38.725684"
+    },
+    {
+      "id": "dcf3690f",
+      "type": "contrarian",
+      "content": "consensus expects compass to keep compounding at double digits. reality is 6-7% earnings growth ahead, with just 5% in 2019-2020. the catering giant's salad days of rapid expansion are over as mature markets saturate.",
+      "tickers": [
+        "CPG.L"
+      ],
+      "source": "bernstein",
+      "source_title": "Global Catering - Salad Days Over",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:58:42.749010"
+    },
+    {
+      "id": "ed13d8a6",
+      "type": "stat",
+      "content": "large retailers will get 50%+ of growth from outside domestic square-footage expansion within 5 years. store footprint hits natural limits as markets saturate. winners pivot to digital, international, or new formats while laggards stay stuck in the real estate game.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Long View - 2006 Edition  US Perspectives",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:58:46.699747"
+    },
+    {
+      "id": "2f607ef3",
+      "type": "stat",
+      "content": "samsung has delivered only 17% of its expected eps growth over the next 3 years. the memory cycle is turning and ai demand creates a multi-year tailwind for their chip business. early investors get the full recovery at a discount before earnings really accelerate.",
+      "tickers": [
+        "005930"
+      ],
+      "source": "bernstein",
+      "source_title": "Samsung - Just the Beginning",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:58:50.844929"
+    },
+    {
+      "id": "f415e621",
+      "type": "stat",
+      "content": "the \"addressable market\" for the companies will grow at a 16% cagr (2x gdp), from us$10 billion in 2013 to us$27 billion in 2020 (see )",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "China Oilfield Services - Navigating Through the Capex Cycle",
+      "categories": [
+        "China",
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:58:55.117789"
+    },
+    {
+      "id": "5c236855",
+      "type": "stat",
+      "content": "carlsberg should trade at 10% discount to beverage peers but 30% premium to broader market. ruble exposure creates volatility risk that peer multiples don't reflect. the discount to peers is justified, but the massive market premium shows defensive consumer staples pricing power.",
+      "tickers": [
+        "CARL-B"
+      ],
+      "source": "bernstein",
+      "source_title": "Carlsberg - From Russia With Love",
+      "categories": [
+        "Automotive"
+      ],
+      "created_at": "2026-01-10T12:58:59.021708"
+    },
+    {
+      "id": "39acdfca",
+      "type": "stat",
+      "content": "smid-cap software trades at 30% discount to historical averages despite maintaining double-digit growth. market is pricing in recession fears that ignore these companies' sticky revenue models. quality names with recurring revenue get bought by pe or bigger tech players.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Running of the Bulls - Long-Term Winners in SMID-Cap Softwar",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:02.485961"
+    },
+    {
+      "id": "1cc5bfda",
+      "type": "stat",
+      "content": "p&g needs to invest roughly 3:1 ratio - $3b in price cuts vs $1b in marketing upgrades. the consumer staples giant is prioritizing market share defense over margin expansion. brands with pricing power don't need this playbook.",
+      "tickers": [
+        "PG"
+      ],
+      "source": "bernstein",
+      "source_title": "Procter  Gamble - Time for Action  Enabling Growth Through L",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:06.175611"
+    },
+    {
+      "id": "c0c6e8b8",
+      "type": "stat",
+      "content": "american express faces headwinds that could drop roe from 28% to 20% - an 8 percentage point decline from peak levels. the company's premium business model is under pressure from multiple fronts. investors betting on the brand moat might get burned as profitability normalizes.",
+      "tickers": [
+        "AXP"
+      ],
+      "source": "bernstein",
+      "source_title": "American Express - Turning Point or Tipping Point",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:09.846349"
+    },
+    {
+      "id": "1a56dc1a",
+      "type": "stat",
+      "content": "jlr profits growing 20%+ cagr over next 3 years. this cash flow gets funneled back to tata's india operations where they need capital for ev transition. cross-subsidization from luxury uk brand to mass market india gives tata unique funding advantage vs local competitors.",
+      "tickers": [
+        "TTM"
+      ],
+      "source": "bernstein",
+      "source_title": "Tata Motors - A New Global Force or at Risk of Imperial Over",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:14.360911"
+    },
+    {
+      "id": "78ea709f",
+      "type": "stat",
+      "content": "the structural threats outlined above will keep organic growth for reed elsevier as a group in the 3% (ex-cycle) region going forward",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "European Media - Reed Elsevier  Broken Legacy",
+      "categories": [
+        "Electric Vehicles",
+        "Europe"
+      ],
+      "created_at": "2026-01-10T12:59:18.340205"
+    },
+    {
+      "id": "49a5806e",
+      "type": "contrarian",
+      "content": "consensus expects it services to return to historic 12% growth after this downturn. the sector won't hit those 1990s levels again due to structural headwinds like ai automation and cloud maturity. expect a weaker rebound than bulls anticipate.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "IT Services - Secular Problems Battling Cyclical Hopes",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:22.689348"
+    },
+    {
+      "id": "62dc3652",
+      "type": "stat",
+      "content": "there are three legs to the samsung eps growth story, driving 161% eps growth from 2011 to 2014: handsets, semiconductors, and display",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Samsung - Just the Beginning",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:26.979815"
+    },
+    {
+      "id": "f6f6e10b",
+      "type": "stat",
+      "content": "revlimid maintenance therapy reaches only 35% of myeloma patients despite proven survival benefits. the drug extends remission by years in a cancer that affects 35k+ americans annually. massive runway as oncologists adopt maintenance protocols more widely.",
+      "tickers": [
+        "BMY"
+      ],
+      "source": "bernstein",
+      "source_title": "Multiple Myeloma - Patients Penetration Price and Duration O",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:31.007397"
+    },
+    {
+      "id": "afd87176",
+      "type": "stat",
+      "content": "oil needs to hit $70/boe for marginal producers to earn 10% returns - that's 160% higher than 2000 levels. cost inflation has permanently reset the floor for profitable drilling. high-cost shale players get squeezed out below this threshold.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Cost-o-philia in the Oil Patch",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:59:36.889005"
+    },
+    {
+      "id": "f567e5d8",
+      "type": "contrarian",
+      "content": "consensus thinks oil is cheap in the $60s based on historical comparisons. reality is break-even costs have exploded since 2000 due to cost-o-philia in the patch. what looked profitable at $40 twenty years ago now needs $70+ to work.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Cost-o-philia in the Oil Patch",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T12:59:36.889014"
+    },
+    {
+      "id": "058c2df9",
+      "type": "stat",
+      "content": "fresenius medical care can grow earnings 19% annually through 2020. aging populations + rising diabetes rates create steady patient flow, while consolidation lets them raise prices. demographic tailwinds beat cyclical plays.",
+      "tickers": [
+        "FMC"
+      ],
+      "source": "bernstein",
+      "source_title": "Global Dialysis - Making Money From Bigger Waists and Tighte",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:59:42.413100"
+    },
+    {
+      "id": "43a6ba7f",
+      "type": "mechanic",
+      "content": "dialysis is a captive market - patients need treatment 3x weekly for life once they start. insurance covers 80%+ of costs, making demand price-inelastic. providers lock in predictable revenue streams from chronic patients.",
+      "tickers": [
+        "FMC"
+      ],
+      "source": "bernstein",
+      "source_title": "Global Dialysis - Making Money From Bigger Waists and Tighte",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T12:59:42.413110"
+    },
+    {
+      "id": "a1765c4d",
+      "type": "stat",
+      "content": "french banks bnp paribas and societe generale are delivering 7-9% underlying earnings growth through 2006. this outpaces most european peers stuck in low-growth markets. investors get exposure to continental europe's banking recovery without the complexity of german restructuring stories.",
+      "tickers": [
+        "BNP",
+        "GLE"
+      ],
+      "source": "bernstein",
+      "source_title": "French Banks - A Lucrative Journey to the Efficient Frontier",
+      "categories": [
+        "Banking/Finance"
+      ],
+      "created_at": "2026-01-10T12:59:46.400870"
+    },
+    {
+      "id": "e6e49218",
+      "type": "stat",
+      "content": "american express delivers 28% roe while growing eps 12-15% annually. the stock trades at just 75% of the market's p/e multiple. high-quality financials with that growth profile usually command premium valuations, not discounts.",
+      "tickers": [
+        "AXP"
+      ],
+      "source": "bernstein",
+      "source_title": "American Express - Turning Point or Tipping Point",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:54.907032"
+    },
+    {
+      "id": "4a8cb8c4",
+      "type": "stat",
+      "content": "commerce bancorp trades at a discount to its growth rate, with analysts targeting mid-to-high $40s vs current levels. the bank's expansion model is driving faster growth than peers recognize. growth banks that execute get re-rated to premium multiples.",
+      "tickers": [
+        "CBH"
+      ],
+      "source": "bernstein",
+      "source_title": "Commerce Bancorp - If You Build It They Will Come",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T12:59:58.922164"
+    },
+    {
+      "id": "fcd70569",
+      "type": "stat",
+      "content": "nike's direct-to-consumer sales hit 40% of total revenue within 5 years, mostly through e-commerce. cutting out wholesale middlemen boosts margins by 15-20 percentage points. nike captures more profit per shoe while controlling the customer relationship.",
+      "tickers": [
+        "NKE"
+      ],
+      "source": "bernstein",
+      "source_title": "Nike - Off the Bench and Ready to Win",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:02.603398"
+    },
+    {
+      "id": "5a097b8c",
+      "type": "stat",
+      "content": "oil companies face permanent cost inflation that keeps floor prices around $45/barrel. drilling, labor, and equipment costs rise faster than efficiency gains. the marginal barrel gets more expensive each year, supporting higher oil prices structurally.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Rising Costs and the New EP Paradigm",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:06.346557"
+    },
+    {
+      "id": "636561a3",
+      "type": "contrarian",
+      "content": "consensus thinks dental implant demand got destroyed during covid slowdowns. reality: most procedures just got deferred, not canceled. people don't suddenly stop needing tooth replacements - they wait until they can afford it or feel safe again.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Dental Implants - Chomping at the Bit for a Return to Growth",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:10.128424"
+    },
+    {
+      "id": "a28fe295",
+      "type": "stat",
+      "content": "cadbury and wrigley will continue to dominate the category, with combined market share over 75% and growing",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Gum - The Chew Chew Train Has Left the Station With C",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:00:13.714750"
+    },
+    {
+      "id": "795c2d98",
+      "type": "stat",
+      "content": "bri generates ~50% of profits from microfinance after decades in the business. they've built expertise that's hard to replicate while competitors struggle with the model. bri owns indonesia's microfinance market through operational know-how.",
+      "tickers": [
+        "BRI"
+      ],
+      "source": "bernstein",
+      "source_title": "Microfinancing in Indonesia - Implications of a Changing Com",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:17.449572"
+    },
+    {
+      "id": "345a99ef",
+      "type": "stat",
+      "content": "ngl volumes will grow 15% above current market estimates over the next 5 years. most investors focus on crude oil pipelines, but natural gas processing creates steady ngl byproducts that need specialized infrastructure. ngl midstream operators get volume upside without the commodity risk.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T13:00:22.434358"
+    },
+    {
+      "id": "5c1d08ea",
+      "type": "contrarian",
+      "content": "consensus treats 2010 as basf's peak earnings year. it's not - the chemical giant will grow eps 10% annually through 2015. markets are pricing in cyclical decline when structural growth is coming.",
+      "tickers": [
+        "BASFY"
+      ],
+      "source": "bernstein",
+      "source_title": "BASF - Hidden Value Within the Worlds Largest Chemical Compa",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:26.007463"
+    },
+    {
+      "id": "70d36170",
+      "type": "stat",
+      "content": "smid-cap software names trade at half the multiple of mega-cap peers despite similar growth profiles. the market assumes they lack competitive moats in 20%+ growing niches. best-of-breed vendors with dominant market positions get unfairly discounted just for size.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Running of the Bulls - Long-Term Winners in SMID-Cap Softwar",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:31.918470"
+    },
+    {
+      "id": "323e2ac4",
+      "type": "mechanic",
+      "content": "niche software leaders build unbreakable customer lock-in through deep workflow integration. switching costs rise exponentially as the product becomes mission-critical to daily operations. once embedded, vendors can raise prices 10-15% annually while expanding into adjacent modules.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Running of the Bulls - Long-Term Winners in SMID-Cap Softwar",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:31.918482"
+    },
+    {
+      "id": "e6e96a25",
+      "type": "stat",
+      "content": "us gas needs high $2/mcf to generate low-teens returns vs low $2/mcf previously. drilling costs and capital requirements have structurally increased across the industry. producers trading below this threshold face margin compression and reduced drilling activity.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Gas - What Is the Right Midcycle Price for Gas",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T13:00:35.489779"
+    },
+    {
+      "id": "a59733ae",
+      "type": "stat",
+      "content": "dell targets 11-13% annual revenue growth and 13-15% eps growth through fiscal 2010. they're betting on enterprise refresh cycles and server demand staying strong. if they hit these numbers, the stock trades cheap vs growth tech peers.",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "bernstein",
+      "source_title": "Dell - Intimacy Unique Valuation Attractive But Watch for Ec",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:38.954271"
+    },
+    {
+      "id": "4909b46d",
+      "type": "stat",
+      "content": "oil analysts expect prices to decline toward mid-cycle levels of $75/bbl. this represents a gradual normalization from current elevated levels driven by geopolitical tensions. energy companies trading above historical norms face margin compression as the commodity cycle moderates.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "EPs for Fresh Eyes",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:42.624731"
+    },
+    {
+      "id": "1f0b456c",
+      "type": "stat",
+      "content": "chinese oil demand can still grow 35% from current levels to hit 18mmbls/d. that's adding another 5mmbls/d of global consumption. chinese growth still drives the entire oil market despite peak car ownership narratives.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Rise and Fall of Chinas Oil Age",
+      "categories": [
+        "China",
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T13:00:48.198575"
+    },
+    {
+      "id": "9bdbb09c",
+      "type": "contrarian",
+      "content": "consensus thinks china's oil demand has peaked with ev adoption and economic maturity. demand actually has 35% upside left as petrochemicals and aviation fuel offset transport declines. china remains the swing factor for global oil prices.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Rise and Fall of Chinas Oil Age",
+      "categories": [
+        "China",
+        "Energy/Oil"
+      ],
+      "created_at": "2026-01-10T13:00:48.198585"
+    },
+    {
+      "id": "45bd866f",
+      "type": "contrarian",
+      "content": "consensus thinks china will drive global beer profits as the economy grows. it won't - the market structure makes profitability nearly impossible for international brewers for at least a decade. local competition and pricing dynamics kill margins before scale benefits kick in.",
+      "tickers": [
+        "BUD",
+        "TAP",
+        "HEINY"
+      ],
+      "source": "bernstein",
+      "source_title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T13:00:52.318283"
+    },
+    {
+      "id": "3946dafb",
+      "type": "stat",
+      "content": "lexmark trades at a massive discount despite solid fundamentals. the company generates consistent cash flows from its printing services and solutions business. market is pricing in unnecessary doom while the business model remains resilient.",
+      "tickers": [
+        "LXK"
+      ],
+      "source": "bernstein",
+      "source_title": "Lexmark - Amid the Controversy an Attractive Business Model ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:57.298245"
+    },
+    {
+      "id": "01285c35",
+      "type": "contrarian",
+      "content": "consensus thinks printing is dying so lexmark is doomed. reality is lexmark pivots to managed print services with recurring revenue streams. they're becoming a services company, not just selling printers.",
+      "tickers": [
+        "LXK"
+      ],
+      "source": "bernstein",
+      "source_title": "Lexmark - Amid the Controversy an Attractive Business Model ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:00:57.298254"
+    },
+    {
+      "id": "a0c3bfb1",
+      "type": "contrarian",
+      "content": "consensus thinks wireless semis will be a huge growth market. reality is they'll represent just 3% of total chip sales and become a low-margin commodity business. the wireless hype ignores basic economics of chip commoditization.",
+      "tickers": [
+        "ARM",
+        "STM",
+        "IFX"
+      ],
+      "source": "bernstein",
+      "source_title": "Wireless Semis - ARM Controls the Brain STM and Infineon on ",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:01:00.781552"
+    },
+    {
+      "id": "84088ebe",
+      "type": "stat",
+      "content": "battery spending hits $14 trillion over 30 years as the energy transition accelerates. that's roughly half a trillion annually flowing into mining, processing, manufacturing and recycling. early positioning across this value chain creates massive wealth before demand peaks.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Turn Up the Voltage Investing Across the Battery Value Chain",
+      "categories": [
+        "AI/Technology",
+        "Electric Vehicles"
+      ],
+      "created_at": "2026-01-10T13:01:06.287157"
+    },
+    {
+      "id": "350df438",
+      "type": "mechanic",
+      "content": "battery value chain requires vertical integration from mine to recycling. u need lithium extraction, cathode processing, cell manufacturing, and end-of-life recovery. companies controlling multiple steps capture more margin and avoid supply bottlenecks that kill competitors.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Turn Up the Voltage Investing Across the Battery Value Chain",
+      "categories": [
+        "AI/Technology",
+        "Electric Vehicles"
+      ],
+      "created_at": "2026-01-10T13:01:06.287168"
+    },
+    {
+      "id": "f1d9877e",
+      "type": "mechanic",
+      "content": "contrarian timing isn't about predicting turns - it's about positioning when the trend is most extended. the best entry points come when everyone agrees the current direction will continue forever. smart money buys when the crowd is most confident, not when they start having doubts.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Best of Bernstein  Pan-European Edition First-Quarter 20",
+      "categories": [
+        "Europe"
+      ],
+      "created_at": "2026-01-10T13:01:10.362962"
+    },
+    {
+      "id": "83ccc104",
+      "type": "stat",
+      "content": "battery pack costs hit the critical $100/kwh threshold 3 years ahead of consensus forecasts. this is the magic number where electric vehicles become cost-competitive with gas cars without subsidies. early ev players capture massive market share before legacy automakers catch up.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Electric Revolution 2018 - The Resistance",
+      "categories": [
+        "Electric Vehicles"
+      ],
+      "created_at": "2026-01-10T13:01:14.333672"
+    },
+    {
+      "id": "9d23bbcb",
+      "type": "contrarian",
+      "content": "consensus expects global brewers to capitalize on china's massive market. china won't generate major profits for international beer companies for at least a decade. local competition and market dynamics make it a revenue trap, not a profit engine.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T13:01:18.085863"
+    },
+    {
+      "id": "b6691338",
+      "type": "contrarian",
+      "content": "consensus thinks china's massive beer market will drive global brewer profits. china volumes are huge but profitability remains terrible after decades of investment. the market structure and competitive dynamics make it a profit desert for international players for at least another decade.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T13:01:21.816715"
+    },
+    {
+      "id": "9653ae2a",
+      "type": "contrarian",
+      "content": "consensus expects china to drive global beer profits as the world's largest market. reality: china beer won't generate meaningful profits for global brewers for at least a decade. local competition keeps margins razor-thin while premiumization stalls.",
+      "tickers": [
+        "BUD",
+        "TAP",
+        "HEINY"
+      ],
+      "source": "bernstein",
+      "source_title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "created_at": "2026-01-10T13:01:25.516102"
+    },
+    {
+      "id": "9baf8beb",
+      "type": "stat",
+      "content": "denosumab targets 20% of the postmenopausal osteoporosis market. the drug's twice-yearly injection beats daily pills for patient compliance. amgen gets a durable revenue stream from an aging population that won't shrink.",
+      "tickers": [
+        "AMGN"
+      ],
+      "source": "bernstein",
+      "source_title": "The Bone Report - Strong Denosumab Strong Amgen",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:29.160708"
+    },
+    {
+      "id": "1b0c78cb",
+      "type": "stat",
+      "content": "hard seltzers could capture 12-20% of off-premise beer sales and 2-9% of on-premise. that's massive runway from today's tiny base. brands with distribution scale and flavor innovation win big as younger drinkers abandon traditional beer.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Hard Seltzers - To Infinity and Beyond",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:32.698267"
+    },
+    {
+      "id": "7e31f487",
+      "type": "contrarian",
+      "content": "consensus thinks smartphones and social fragmentation killed global brands. wrong. the best brands are actually getting stronger pricing power because they cut through infinite digital noise. ferrari, hermes, and apple keep raising prices while weak brands get commoditized.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "BRANDED",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:36.064593"
+    },
+    {
+      "id": "daa77a84",
+      "type": "contrarian",
+      "content": "consensus thinks chinese tire makers dominate globally after massive investment. even chinese automakers choose western tire brands for their premium cars. quality moats in tires are real and geographic - china can't easily replicate decades of r&d and manufacturing expertise.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Tires - Rubber Wars",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:39.864648"
+    },
+    {
+      "id": "e2abfb38",
+      "type": "contrarian",
+      "content": "lvmh remains the first choice for new luxury consumers despite this year's selloff. their portfolio breadth means they capture customers across every price point and category as wealth grows. market leadership compounds when u own the full luxury funnel.",
+      "tickers": [
+        "LVMHF"
+      ],
+      "source": "bernstein",
+      "source_title": "LVMH - Trunk Show",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:43.811108"
+    },
+    {
+      "id": "140282ed",
+      "type": "contrarian",
+      "content": "japanese and south korean ev penetration lags the big three auto markets despite oems finally taking electrification seriously. the gap shows how much ground toyota, honda, and hyundai still need to make up. late movers face steeper competition as tesla and chinese brands grab share.",
+      "tickers": [
+        "TM",
+        "HMC",
+        "005380.KS"
+      ],
+      "source": "bernstein",
+      "source_title": "Electric Revolution - Divergence",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:48.008271"
+    },
+    {
+      "id": "a0d13f6e",
+      "type": "contrarian",
+      "content": "schneider built their software moat through acquisitions starting mid-2010s, not organic development. they rolled up specialized industrial software companies into a unified platform. buying beats building when u need domain expertise across multiple verticals fast.",
+      "tickers": [
+        "SBGSY"
+      ],
+      "source": "bernstein",
+      "source_title": "The Schneider Snowball",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:51.916651"
+    },
+    {
+      "id": "42450521",
+      "type": "contrarian",
+      "content": "hermes trades at nearly 2x luxury peers despite already being the most expensive. their orange boxes command pricing power that lets them raise prices 8-10% annually without killing demand. scarcity drives desire in luxury.",
+      "tickers": [
+        "RMS.PA"
+      ],
+      "source": "bernstein",
+      "source_title": "Hermes - Orange Is The New Blackbook",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:57.411438"
+    },
+    {
+      "id": "8e3ec83c",
+      "type": "contrarian",
+      "content": "consensus thinks all luxury brands are the same. hermes is different - they control production from leather sourcing to retail, unlike peers who outsource manufacturing. vertical integration creates artificial scarcity that niche players like loro piana or brunello cucinelli can't replicate.",
+      "tickers": [
+        "RMS.PA",
+        "BC.MI"
+      ],
+      "source": "bernstein",
+      "source_title": "Hermes - Orange Is The New Blackbook",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:01:57.411448"
+    },
+    {
+      "id": "34c0017b",
+      "type": "contrarian",
+      "content": "consensus thinks luxury brands all jacked up prices post-covid. hermès actually held back while peers went aggressive. they're sitting on massive untapped pricing power that competitors already burned through. hermès wins the next cycle when demand cools.",
+      "tickers": [
+        "RMS.PA"
+      ],
+      "source": "bernstein",
+      "source_title": "Hermes - Orange Is The New Blackbook",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:01.783253"
+    },
+    {
+      "id": "bb45fda6",
+      "type": "contrarian",
+      "content": "hermès trades at nearly 2x luxury sector multiples despite cyclical headwinds. the brand commands pricing power that niche players like loro piana can't match - they raise prices 8-10% annually without demand destruction. scarcity creates its own demand.",
+      "tickers": [
+        "RMS.PA"
+      ],
+      "source": "bernstein",
+      "source_title": "Hermès - Orange Is The New Blackbook",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:07.118743"
+    },
+    {
+      "id": "8842f5cf",
+      "type": "contrarian",
+      "content": "hermès artificial scarcity model works differently than other luxury brands. they limit production of birkin bags intentionally, creating waitlists that build brand desire. this manufactured exclusivity lets them price above peers while maintaining margins.",
+      "tickers": [
+        "RMS.PA"
+      ],
+      "source": "bernstein",
+      "source_title": "Hermès - Orange Is The New Blackbook",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:07.118753"
+    },
+    {
+      "id": "b69341b0",
+      "type": "contrarian",
+      "content": "unlike many soft luxury peers, hermès held off on aggressive price increases in response to booming post-pandemic luxury demand, opting to invest in its untapped price reservoir instead",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Hermès - Orange Is The New Blackbook",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:11.452981"
+    },
+    {
+      "id": "1076b00e",
+      "type": "contrarian",
+      "content": "consensus thinks deglobalization is reshaping global trade. despite a decade of us-china tensions escalating from partner to competitor, trade flows remain massive. the world is still deeply interconnected - political rhetoric doesn't kill economic incentives overnight.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Deglobalization - Its a Big World After all",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:14.816632"
+    },
+    {
+      "id": "b88de786",
+      "type": "contrarian",
+      "content": "coca-cola holds 60% european cola market share vs pepsi's 20%. their bottling network gives them 3x the distribution points of competitors. scale = shelf space = sustained dominance in a mature market.",
+      "tickers": [
+        "KO",
+        "PEP"
+      ],
+      "source": "bernstein",
+      "source_title": "European Coca-Cola Bottlers - Real Magic",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:20.200675"
+    },
+    {
+      "id": "33dca94b",
+      "type": "contrarian",
+      "content": "consensus thinks pepsi max success threatens coke's european dominance. coke still controls 75% of fountain sales and premium shelf placement. pepsi wins in grocery aisles but loses where margins matter most.",
+      "tickers": [
+        "KO",
+        "PEP"
+      ],
+      "source": "bernstein",
+      "source_title": "European Coca-Cola Bottlers - Real Magic",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:20.200684"
+    },
+    {
+      "id": "56d94a46",
+      "type": "contrarian",
+      "content": "european coke bottlers trade at 13x earnings ex-russia, nearly half the multiple of us peers. these franchises have pricing power and stable cash flows but get lumped in with volatile emerging market plays. geography creates the discount despite similar economics.",
+      "tickers": [
+        "CCH"
+      ],
+      "source": "bernstein",
+      "source_title": "European Coca-Cola Bottlers - Real Magic",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:24.025618"
+    },
+    {
+      "id": "a2923495",
+      "type": "contrarian",
+      "content": "consensus thinks esg initiatives hurt margins in luxury. swatch group's ethical sourcing moves are actually creating a leaner workforce structure. investors ignoring sustainability miss that it's becoming an operational efficiency driver, not just a cost center.",
+      "tickers": [
+        "UHR"
+      ],
+      "source": "bernstein",
+      "source_title": "Global Luxury Goods - In Search of Ethical Luxury",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:27.904075"
+    },
+    {
+      "id": "ed4f7e18",
+      "type": "contrarian",
+      "content": "despite much talk about craftsmanship skills — are putting unprecedented pressure on most companies",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Luxury Goods - In Search of Ethical Luxury",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:32.226534"
+    },
+    {
+      "id": "6f59572a",
+      "type": "contrarian",
+      "content": "consensus thinks billions in funding guarantees survival in india quick commerce. deep pockets don't equal success here. most funded players will die despite massive war chests as unit economics and execution matter more than capital.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "India Quick Commerce - Disrupting With Speed",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:35.879341"
+    },
+    {
+      "id": "31aa1384",
+      "type": "contrarian",
+      "content": "quick commerce in india is growing 150%+ annually while traditional e-commerce grows 20-25%. 10-15 minute delivery is creating a new category that's cannibalizing both offline retail and regular e-commerce. whoever dominates this wins the $70b+ indian retail market transformation.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "India Quick Commerce - Disrupting With Speed",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:42.807041"
+    },
+    {
+      "id": "5c672e6e",
+      "type": "contrarian",
+      "content": "consensus sees expensive retail valuations as a red flag. international expansion is actually underpriced by the market. most broadline retailers can replicate their domestic playbook overseas for decades of consistent growth. the multiple premium reflects untapped geographic moats.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:46.832013"
+    },
+    {
+      "id": "9bbda28e",
+      "type": "contrarian",
+      "content": "unlike what it has ever seen in its history",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Bharat 10 - Bridging Indias Missing Middle",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:53.453606"
+    },
+    {
+      "id": "bfa99bed",
+      "type": "contrarian",
+      "content": "despite decades of presence in shaping eating habits of this market, global food giants have only penetrated a few inches down the surface",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Bharat 10 - Bridging Indias Missing Middle",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:02:57.590269"
+    },
+    {
+      "id": "4acf9d0a",
+      "type": "contrarian",
+      "content": "defense contractors need massive scale to survive because r&d costs are enormous and amortized over decades-long programs. companies without scale get squeezed between rising development costs and price-sensitive government buyers. consolidation accelerates as smaller players can't compete.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Defense - International Growth in a Dangerous World",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:06.843760"
+    },
+    {
+      "id": "f4af7692",
+      "type": "contrarian",
+      "content": "unlike conventional assets, holding crypto securely through self-custody is cumbersome",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "From Coin to Compute - The Bitcoin Investing Guide",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:10.632672"
+    },
+    {
+      "id": "4176ec18",
+      "type": "contrarian",
+      "content": "china's manufacturing output grew 50% faster than global average over past 5 years despite trade wars. their domestic consumption now absorbs 80% of production vs 60% a decade ago. china becomes less export-dependent while building unstoppable scale advantages.",
+      "tickers": [
+        "FXI",
+        "ASHR",
+        "MCHI"
+      ],
+      "source": "bernstein",
+      "source_title": "China 20 - Made In China Beyond 2025",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:14.598664"
+    },
+    {
+      "id": "fb25ff3b",
+      "type": "contrarian",
+      "content": "consensus thinks industrial automation disrupts fast like consumer tech. reality is industrial tech adoption takes decades, not years. the gradual pace means no sudden disruption - just slow margin expansion for leaders over time.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Nonasphere of Automation",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:18.017363"
+    },
+    {
+      "id": "f7e08a42",
+      "type": "contrarian",
+      "content": "consensus thinks first mover advantage guarantees success in automation. nonasphere proves otherwise - went bankrupt in 2018 despite being early. being first means u build the market for competitors who learn from ur mistakes and execute better.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Nonasphere of Automation",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:21.760434"
+    },
+    {
+      "id": "0d2318d9",
+      "type": "contrarian",
+      "content": "unlikely, and examine the three potential long- term threats to alcohol consumption below",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Its still Five OClock Somewhere",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:26.776829"
+    },
+    {
+      "id": "998c35a1",
+      "type": "contrarian",
+      "content": "spirits gained ~50bps of share of throat in 2023, even during a weaker year. they're still stealing market from beer despite the slowdown. spirits companies win the long game through premiumization while beer loses ground.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Its still Five OClock Somewhere",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:30.316061"
+    },
+    {
+      "id": "7100d32d",
+      "type": "contrarian",
+      "content": "consensus thinks zara is inditex's crown jewel. actually it faces the toughest competition from shein and primark targeting the same young, price-sensitive customers. inditex's other brands serve higher-income segments with better margins and less competition.",
+      "tickers": [
+        "ITX"
+      ],
+      "source": "bernstein",
+      "source_title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:33.650751"
+    },
+    {
+      "id": "7573e27a",
+      "type": "contrarian",
+      "content": "inditex's portfolio beyond zara faces margin pressure from ultra-fast fashion like shein and primark. these brands target younger, lower-income customers where pricing power is weakest. zara's premium positioning protects it while sister brands get squeezed by the race to the bottom.",
+      "tickers": [
+        "ITX",
+        "ABF"
+      ],
+      "source": "bernstein",
+      "source_title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:37.733763"
+    },
+    {
+      "id": "b49bf6d7",
+      "type": "contrarian",
+      "content": "unlikely to follow the same path, there is a clear push to localize production in europe to comply with the “rules of origin",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Battery Utopia",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:41.367236"
+    },
+    {
+      "id": "6f892467",
+      "type": "contrarian",
+      "content": "despite decoupling drive 17 south korea battery makers are the big winners from china 49 decoupling house of the rising lib: where to invest in japan’s battery value 69 chain who wins the battery race in europe",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Battery Utopia",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:47.828490"
+    },
+    {
+      "id": "35e4c978",
+      "type": "contrarian",
+      "content": "cards handle only 61% of global consumer purchases despite being everywhere. the remaining 39% represents a massive runway as cash economies digitize. visa and mastercard win as transaction volume grows without meaningful infrastructure investment.",
+      "tickers": [
+        "V",
+        "MA"
+      ],
+      "source": "bernstein",
+      "source_title": "Payments - The Money Machine",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:51.501008"
+    },
+    {
+      "id": "59265eea",
+      "type": "contrarian",
+      "content": "primark sacrifices gross margin but crushes on operating expenses through ultra-efficient warehousing and minimal marketing spend. this lets them undercut fast fashion rivals while maintaining better operating margins. the efficiency moat matters more than gross margin theater.",
+      "tickers": [
+        "ABF"
+      ],
+      "source": "bernstein",
+      "source_title": "Primark - ABFs Fashionable Jewel In A Value Crown",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:55.460346"
+    },
+    {
+      "id": "14fcb303",
+      "type": "contrarian",
+      "content": "despite the current soft macro environment, we expect the 5",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "China Consumer - The Newest Normal",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:03:58.236256"
+    },
+    {
+      "id": "d32f56d1",
+      "type": "contrarian",
+      "content": "aia and prudential generate ~70% of sales through captive agents vs competitors who rely on bancassurance in hong kong. agency models create stickier relationships and higher margins since agents push proprietary products. gives them pricing power that bank-distributed insurers can't match.",
+      "tickers": [
+        "1299.HK",
+        "2378.HK"
+      ],
+      "source": "bernstein",
+      "source_title": "AIA and Prudential - Diamonds and Pearls",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:02.225512"
+    },
+    {
+      "id": "b7b9b8e9",
+      "type": "contrarian",
+      "content": "consensus thinks esg scores capture governance quality. they don't actually use earnings quality metrics despite strong predictive power. companies with poor earnings quality get high governance ratings, creating systematic mispricing in esg funds.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Sustainable Alpha  An ESG Thematic Primer",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:05.788715"
+    },
+    {
+      "id": "1980c9d2",
+      "type": "contrarian",
+      "content": "no-alcohol wine makes up just 0.5% of total wine sales but is growing 30% annually. younger consumers drive this - they drink 20% less alcohol than previous generations but still want the social ritual. traditional wineries that pivot early capture this demographic shift.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Consumer of the Future",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:09.532954"
+    },
+    {
+      "id": "c6d41220",
+      "type": "contrarian",
+      "content": "consensus thinks crypto custody is just another asset class to store. holding crypto securely through self-custody is actually cumbersome unlike conventional assets. institutions need specialized infrastructure and processes, creating a barrier that traditional custodians struggle with.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Institutional guide to Blockchain and digital assets",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:12.790468"
+    },
+    {
+      "id": "846c8acc",
+      "type": "contrarian",
+      "content": "consensus expects battery costs to keep plummeting like solar panels did. battery tech hits a wall around 2025 - costs plateau after current roadmaps finish. the easy wins are over, physics kicks in.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Battery Tech Roadmap 2023 - Faster Higher Stronger",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:16.343169"
+    },
+    {
+      "id": "4a9a5e3d",
+      "type": "contrarian",
+      "content": "wind supply chains face bottlenecks mid-decade despite massive capacity plans. manufacturing can't scale fast enough to hit policy targets without major new investment. wind developers will pay up for scarce turbines and components.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Renewables 2023 - The bedrock of the energy transition",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:20.132656"
+    },
+    {
+      "id": "eaa7d3da",
+      "type": "contrarian",
+      "content": "european food delivery companies burned through 40%+ of their market cap during 2022-2023. pandemic growth masked unit economics that never worked at scale. only players with dense urban networks and 25%+ market share in key cities survived the cash crunch.",
+      "tickers": [
+        "JTKWY",
+        "GRUB",
+        "UBER"
+      ],
+      "source": "bernstein",
+      "source_title": "European Food Delivery - State of War to Spoils of War",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:26.572638"
+    },
+    {
+      "id": "fcfd4f5d",
+      "type": "contrarian",
+      "content": "consensus saw food delivery as winner-take-all globally. reality is winner-take-most locally. dense city-level networks create moats through driver liquidity and restaurant exclusivity. survivors now have pricing power in their core markets.",
+      "tickers": [
+        "JTKWY",
+        "UBER"
+      ],
+      "source": "bernstein",
+      "source_title": "European Food Delivery - State of War to Spoils of War",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:26.572647"
+    },
+    {
+      "id": "64f90b2c",
+      "type": "contrarian",
+      "content": "consensus thinks hydrogen is still years away from commercial viability. green hydrogen projects are actually accelerating with massive policy tailwinds in 2023. the inflation reduction act and eu green deal are creating real demand catalysts that weren't there before.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Hydrogen Highway 2023 - Green Shoots",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:29.976207"
+    },
+    {
+      "id": "c78767e2",
+      "type": "contrarian",
+      "content": "consensus thinks business jets are a high-growth luxury market. deliveries in 2022 matched 2001 levels - zero growth over two decades. the glamour masks a stagnant industry where demand hasn't expanded despite massive wealth creation.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Business Jets - The Industry the Future and What Would Pit B",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:33.419190"
+    },
+    {
+      "id": "f7e09c71",
+      "type": "contrarian",
+      "content": "consensus expects business jet makers to crash like past downturns when they flooded the market with inventory. this time oems learned their lesson and haven't overproduced. supply discipline means pricing power survives the downturn while weak players get squeezed out.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Business Jets - The Industry the Future and What Would Pit B",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:37.387712"
+    },
+    {
+      "id": "552ce521",
+      "type": "contrarian",
+      "content": "airbnb's trailing revenue held up during covid's travel collapse, dropping far less than hotels or airlines. their model shifts inventory costs to hosts while keeping the high-margin booking fees. platforms with asset-light models win during downturns.",
+      "tickers": [
+        "ABNB"
+      ],
+      "source": "bernstein",
+      "source_title": "Airbnb - A Long Stay",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:41.090982"
+    },
+    {
+      "id": "ba1ea921",
+      "type": "contrarian",
+      "content": "despite myriad sources of confusion — business models, end-markets, products, services, jargon, and complexity — capital goods, like any other sector, ultimately sells things to customers",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "EU Capital Goods - The Titans of Industry Explained in One C",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:44.954609"
+    },
+    {
+      "id": "c6146d11",
+      "type": "contrarian",
+      "content": "consensus expects us trucking to hit net zero by 2050 despite regulatory push. the tech isn't scalable, charging infrastructure doesn't exist, and nobody wants to eat the cost of scrapping existing diesel fleets. carriers and truck makers are stuck in a coordination problem.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "US Trucking - Is Net Zero by 2050 Realistic",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:49.087355"
+    },
+    {
+      "id": "b9c42883",
+      "type": "contrarian",
+      "content": "arable land isn't expanding so crop yields must come from tech - better seeds and crop protection chemicals. ag input companies control the bottleneck between flat farmland and rising food demand. they win through pricing power on essential tech that farmers can't substitute.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Agricultural Inputs - Seed Spray Eat Repeat",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:52.998914"
+    },
+    {
+      "id": "72b8e458",
+      "type": "contrarian",
+      "content": "online grocery will be the only growth channel for food retailers over the next decade. ocado's automated warehouses give them the tech advantage as physical stores plateau. traditional grocers without automation tech get left behind.",
+      "tickers": [
+        "OCDO"
+      ],
+      "source": "bernstein",
+      "source_title": "Ocado - Shoptimus Prime",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:04:56.260935"
+    },
+    {
+      "id": "eb403bde",
+      "type": "contrarian",
+      "content": "ocado hits 4 major inflection points in the next few years: peak capex, fcf breakeven, solutions ebitda breakeven, and eps breakeven. the company transitions from cash burn to profitability across every metric. investors get multiple re-rating as ocado proves the automation model works at scale.",
+      "tickers": [
+        "OCDO"
+      ],
+      "source": "bernstein",
+      "source_title": "Ocado - Shoptimus Prime",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:05:02.772014"
+    },
+    {
+      "id": "9c04f3a1",
+      "type": "contrarian",
+      "content": "consensus thinks ocado's selloff reflects fundamental problems with grocery automation. reality is the business model finally turns profitable after years of upfront investment. the stock trades at a discount while approaching multiple breakeven points that validate the entire thesis.",
+      "tickers": [
+        "OCDO"
+      ],
+      "source": "bernstein",
+      "source_title": "Ocado - Shoptimus Prime",
+      "categories": [
+        "General"
+      ],
+      "created_at": "2026-01-10T13:05:02.772024"
+    },
+    {
+      "id": "58651cf6",
+      "type": "mechanic",
+      "content": "ai agents automate complex workflows by chaining multiple tasks without human input. they handle everything from data analysis to customer service to code deployment. companies using agents cut operational costs by 40-60% while scaling output exponentially.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Future of Tech",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:06.191668"
+    },
+    {
+      "id": "8355882c",
+      "type": "mechanic",
+      "content": "ai programming shifts coding from writing lines to prompt engineering and model fine-tuning. developers become ai orchestrators instead of syntax writers. traditional bootcamps and cs programs lose relevance while ai-first training wins.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Future of Tech",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:09.865949"
+    },
+    {
+      "id": "128e46ee",
+      "type": "stat",
+      "content": "wafer fab equipment (wfe) intensity stays elevated through 2026 with 10% growth in 2025 and 6% in 2026. chip complexity drives more equipment spending per wafer as companies build advanced nodes. equipment makers win from structural shift to higher-value tools.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Semiconductor Equipment Investment Primer 2024 Edition",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:15.456781"
+    },
+    {
+      "id": "89d9ff83",
+      "type": "contrarian",
+      "content": "consensus expects semiconductor equipment spending to crash after 2024's weakness. reality shows wfe market grows 10% in 2025 and 6% in 2026 as intensity remains high. chip complexity creates durable demand despite cyclical fears.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Semiconductor Equipment Investment Primer 2024 Edition",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:15.456790"
+    },
+    {
+      "id": "d37dce48",
+      "type": "mechanic",
+      "content": "asm international will benefit from its strength in ald, we remain on the sidelines due to valuation",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Semiconductor Equipment Investment Primer 2024 Edition",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:19.385581"
+    },
+    {
+      "id": "4e321d72",
+      "type": "stat",
+      "content": "bitcoin bulls target $200k by 2025, roughly 3x current levels. institutional adoption is driving a new cycle while supply remains capped at 21 million coins. early movers in the institutional wave capture the biggest gains as retail follows.",
+      "tickers": [
+        "BTC"
+      ],
+      "source": "bernstein",
+      "source_title": "From Coin to Compute - The Bitcoin Investing Guide",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:23.205956"
+    },
+    {
+      "id": "43d9581b",
+      "type": "insight",
+      "content": "bitcoin today signifies several intersecting trends — a digital asset hitting mainstream institutional adoption, bitcoin’s evolving role in energy infrastructure, innovation in energy- efficient mining chip design, ai data center opportunities for bitcoin miners, and leveragin...",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "From Coin to Compute - The Bitcoin Investing Guide",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:28.957321"
+    },
+    {
+      "id": "b48537d8",
+      "type": "stat",
+      "content": "ai chip demand is growing 40%+ annually while traditional semiconductors grow 5-7%. data centers now consume 25% more power than three years ago just for ai workloads. nvidia and hyperscalers win big while traditional chip companies get left behind.",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "bernstein",
+      "source_title": "Artificial Intelligence - Getting Smarter",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:33.412543"
+    },
+    {
+      "id": "fae9937e",
+      "type": "mechanic",
+      "content": "ai analysis only works industry-by-industry now, not top-down. the landscape got too diverse for broad themes - u need to track how ai transforms banking vs healthcare vs manufacturing separately. winners emerge from vertical expertise, not horizontal ai plays.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Artificial Intelligence - Getting Smarter",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:37.544863"
+    },
+    {
+      "id": "141226dd",
+      "type": "stat",
+      "content": ", justifies the seemingly high multiples of high-quality automation companies, many of which trade at over 2x peg and a premium to consumer tech companies with similar growth rates (see )",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "The Tech Side of Automation",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:41.159282"
+    },
+    {
+      "id": "6937a269",
+      "type": "insight",
+      "content": "ai will make a major impact in china, namely, healthcare, automotive, surveillance, and automation, to explore ai's position and progress in them",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Artificial Intelligence in China",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:45.008004"
+    },
+    {
+      "id": "2d878dbf",
+      "type": "mechanic",
+      "content": "china's ai strategy targets four critical sectors: healthcare, automotive, surveillance, and automation. these areas give the government maximum control over population and economy while building export dominance. china wins in sectors where data collection beats innovation speed.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Artificial Intelligence in China",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:48.612558"
+    },
+    {
+      "id": "f0d7396e",
+      "type": "insight",
+      "content": "ai'an cis 2 20 2018 expect equipment installation in dec 2017",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Chinese Semiconductors 2018 - Gearing Up for a New Era",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:53.420125"
+    },
+    {
+      "id": "6fe878cd",
+      "type": "stat",
+      "content": "china's semiconductor investment wave creates massive wafer fab equipment demand. government backing means sustained capex cycles vs boom-bust patterns elsewhere. equipment suppliers win from predictable, government-funded buildouts.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Chinese Semiconductors 2018 - Gearing Up for a New Era",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:58.648116"
+    },
+    {
+      "id": "52263e7d",
+      "type": "mechanic",
+      "content": "china's semiconductor push works through intensive investment plus rapid expansion. policy backing removes typical capital constraints that limit other regions. this creates sustained demand cycles instead of volatile project-by-project spending.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Chinese Semiconductors 2018 - Gearing Up for a New Era",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:05:58.648125"
+    },
+    {
+      "id": "b03e4fce",
+      "type": "contrarian",
+      "content": "consensus expects ai to drive massive semiconductor demand growth. ai growth happens in cloud data centers, not consumer devices - creating winner-take-all dynamics for hyperscale chip vendors rather than broad industry lift. most chipmakers won't see the ai windfall they're pricing in.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Artificial Intelligence",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:06:02.636841"
+    },
+    {
+      "id": "ad7b9cdb",
+      "type": "contrarian",
+      "content": "consensus expects ai chip demand to explode as models get bigger and more complex. ai algorithms are actually getting way more efficient, doing more work per chip. efficiency gains will cap leading-edge silicon demand growth even as ai usage skyrockets.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Artificial Intelligence",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:06:06.602412"
+    },
+    {
+      "id": "c0186b56",
+      "type": "contrarian",
+      "content": "fact: consensus thinks automation is going secular but rockwell and emerson still move with traditional capex cycles. context: their massive installed bases tie revenue to old-school industrial spending patterns. implication: timing still matters more than secular themes for these legacy players.",
+      "tickers": [
+        "ROK",
+        "EMR"
+      ],
+      "source": "bernstein",
+      "source_title": "Global Automation - From a Cyclical to a Secular Growth Stor",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:06:10.837571"
+    },
+    {
+      "id": "a10ec5ca",
+      "type": "contrarian",
+      "content": "consensus sees automation as cyclical - tied to manufacturing ups and downs. reality: we're entering a secular growth phase driven by ai integration and labor shortages. this isn't another capex cycle, it's a multi-decade technology transformation that's just starting.",
+      "tickers": [],
+      "source": "bernstein",
+      "source_title": "Global Automation - From a Cyclical to a Secular Growth Stor",
+      "categories": [
+        "AI/Technology"
+      ],
+      "created_at": "2026-01-10T13:06:14.825324"
+    }
+  ]
+}

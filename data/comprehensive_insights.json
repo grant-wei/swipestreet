@@ -1,0 +1,2697 @@
+{
+  "summary": {
+    "total_reports": 1027,
+    "total_insights": 1314,
+    "total_predictions": 183,
+    "total_contrarian_views": 509,
+    "themes_covered": [
+      "Europe",
+      "AI/Technology",
+      "Automotive",
+      "Luxury/Consumer",
+      "General",
+      "Electric Vehicles",
+      "Japan",
+      "Healthcare/Pharma",
+      "China",
+      "Airlines/Travel",
+      "ESG/Sustainability",
+      "India",
+      "Food/Beverage",
+      "Energy/Oil",
+      "Clean Energy",
+      "Banking/Finance",
+      "Defense"
+    ],
+    "years_covered": [
+      "2004",
+      "2009",
+      "2010",
+      "2011",
+      "2014",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ]
+  },
+  "top_100_insights": [
+    {
+      "insight": "We Believe This Is So what has gone wrong? Can we expect to see the LME back at US$3,000 again Structural when Europe resolves its issues and the weak market sentiment lifts? In answering those questions, we believe that sentiment is not the only reason that the aluminum commodity is underperforming.",
+      "title": "Going Al In? How Aluminum Could Defy the End of the Super Cycle",
+      "date": "17-Jun-2013",
+      "categories": [
+        "General"
+      ],
+      "score": 6
+    },
+    {
+      "insight": "WE THINK CURRENT ESTIMATES We believe that the current understanding of the world's iron ore and steel production by OF CHINESE PRODUCTION entities such as the UN, the World Steel Association (WSA), the major industrial VOLUMES ARE WRONG consultancies, as well as the world's leading iron ore producers is incorrect.",
+      "title": "Valuing Jevons Invaluable Metal  Prospects for Global Iron O",
+      "date": null,
+      "categories": [
+        "Electric Vehicles"
+      ],
+      "score": 5
+    },
+    {
+      "insight": "we believe the NGL midstream chain (defined as processing => NGL pipeline => fractionation => NGL exports) has actual barriers to entry, unlike most other subsectors of midstream.",
+      "title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 4.79
+    },
+    {
+      "insight": "We believe that investors who use past margin performance to project future performance likely will significantly underestimate the earnings potential from CAT's engine segment.",
+      "title": "US Machinery  Capital Goods - Looking Under the Hood of the ",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4.77
+    },
+    {
+      "insight": "We believe it is highly likely that, by the end of 2 2010, the federal government will enact CO emissions regulations, with an 2 expected effective date of 2011-12.",
+      "title": "US Utilities - The Implications of Carbon Dioxide Regulation",
+      "date": null,
+      "categories": [
+        "Clean Energy",
+        "Automotive",
+        "Energy/Oil"
+      ],
+      "score": 4.64
+    },
+    {
+      "insight": "we believe conventional wisdom on AIG is wrong, for our work shows that AIG's reserves may be as conservative today, as they were deficient, way back then.",
+      "title": "AIG - After a Decade Lost Is the Emperor Finally Well Clothe",
+      "date": null,
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 4.55
+    },
+    {
+      "insight": "we believe it is highly likely that the federal government will enact GHG emissions regulations, with an expected effective date of 2011-12.",
+      "title": "US Utilities - The Implications of Carbon Dioxide Regulation",
+      "date": null,
+      "categories": [
+        "Clean Energy",
+        "Automotive",
+        "Energy/Oil"
+      ],
+      "score": 4.4
+    },
+    {
+      "insight": "we believe China is determined to prove such skeptics wrong and we expect it to work relentlessly to build a competitive auto industry.",
+      "title": "Chinese Autos Part 1 - The Quest for Global Competitiveness ",
+      "date": null,
+      "categories": [
+        "China",
+        "Automotive"
+      ],
+      "score": 4.35
+    },
+    {
+      "insight": "We believe the Airbus move to re-engine the A320 was the wrong decision, as we expect the A320neo to lower prices on current A320s.",
+      "title": "Commercial Aircraft - New Markets Old Airplanes  A Growth St",
+      "date": null,
+      "categories": [
+        "AI/Technology",
+        "Airlines/Travel"
+      ],
+      "score": 4.3100000000000005
+    },
+    {
+      "insight": "We believe the Chemicals segment has structurally improved costs, and prospects for growth and margins in 2011 are underestimated.",
+      "title": "BASF - Hidden Value Within the Worlds Largest Chemical Compa",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4.3
+    },
+    {
+      "insight": "we think it is unlikely that China will stimulate the economy to engineer a rapid rebound in growth in 2013.",
+      "title": "The Little Red Blackbook - China 2013  Slower Lower Stronger",
+      "date": null,
+      "categories": [
+        "China"
+      ],
+      "score": 4.08
+    },
+    {
+      "insight": "We believe this small window of opportunity, if missed, could fragment the market and increase competition.",
+      "title": "India Autos - Bern to RunWe Built an E-Bike and Red-Lined th",
+      "date": null,
+      "categories": [
+        "India",
+        "Automotive"
+      ],
+      "score": 4.07
+    },
+    {
+      "insight": "We believe most sites will return to normal, with Education and Sports unlikely to be impaired post virus.",
+      "title": "Global Catering - Back On The Menu",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4.0600000000000005
+    },
+    {
+      "insight": "We believe tokenization will unleash the promise of blockchain (as opposed to crypto speculation) to deliver new financial rails and market structure with a transformed securities value chain, stripping product costs by ~30-50% for asset managers (Exhibit 4 to Exhibit 6).",
+      "title": "The Institutional guide to Blockchain and digital assets",
+      "date": "1-Nov-2023",
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe supports 10%+ growth for 10+ years for Keyence and Cognex; the nascent US sports betting market, which we expect to grow to US$25Bn by 2030, driving significant upside potential for DraftKings; the burgeoning Indian credit card market as digital payments grow from US$360Bn to US$1.",
+      "title": "TAMinator  Global Edition",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "importantly, we believe the Group can continue to deliver strong operating and stock performance over the next five to 10 years, as we expect 4-5% top-line growth, 40- 50bps margin growth and high single-digit EPS growth, plus a 2-3% dividend yield.",
+      "title": "European Food  HPC - 12-Year Global Market Share Analysis",
+      "date": null,
+      "categories": [
+        "Europe",
+        "Food/Beverage"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe that China will deliver at the lower end of this forecast based on our bottoms-up analysis of the market, which implies that demand will reach around 300bcm by 2020 – approximately 50% higher than it is today.",
+      "title": "Great Expectations - The Golden Age of Asian Gas",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe could only conceivably be attained through rapid and dramatic increases in investment, incentivized by vastly higher cobalt (and probably nickel and copper) prices — we can only see a 2030 EV penetration rate of 27%.",
+      "title": "Considering the Cobalt Conundrum",
+      "date": "4-Sep-2017",
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "importantly, we believe the sector can continue to deliver strong operating and stock performance over the next five to 10 years, as we expect 4-5% top-line growth, 40-50bps margin growth and high single-digit EPS growth, plus a 2-3% dividend yield.",
+      "title": "European Food  HPC - 10-Year Global Market Share Analysis",
+      "date": null,
+      "categories": [
+        "Europe",
+        "Food/Beverage"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe will require new pipelines, 2) the Marcellus, which will finally have enough gas pipeline capacity to grow by ~50% in coming years, generating opportunities for gathering and processing buildout, and 3) ethane demand, which will move molecules traveling as gas now to a concentrated set of NGL midstream operators as new crackers and exports come online through 2020.",
+      "title": "US Midstream-MLPs - The Overbuild",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe Chinese Consumers will continue to be one of the most important growth drivers for the luxury goods sector even if at a slower pace than in the boom years of 2008-12, and we expect their relative share will continue to expand further from the current 29% of global consumption.",
+      "title": "European Luxury Goods - Breaking the China Code",
+      "date": null,
+      "categories": [
+        "Luxury/Consumer",
+        "China",
+        "Europe"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe Chinese consumers will continue to be one of the most important growth drivers for the luxury goods sector even if at a slower pace than in the boom years of 2008-12; we expect their relative share to continue to expand further from the current 29% of global consumption We expect total Chinese consumption (onshore and offshore) to grow 13-14% p.",
+      "title": "European Luxury Goods - Breaking the China Code",
+      "date": null,
+      "categories": [
+        "Luxury/Consumer",
+        "China",
+        "Europe"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe further penetration and duration gains for Revlimid in the United States hinge on the drug's approval in front-line and maintenance settings — but structurally see the product still capable of growth in the 8-12% range annually even without such a label expansion.",
+      "title": "Celgene  Onyx - Race to Front Line  2013 MM Survey Shows Amp",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe our estimate of end-of-decade revenues in the vicinity of $20 billion is conservative in view of AWS's massive addressable market being in excess of $300 billion, according to our estimates.",
+      "title": "Amazon Web Services AWS - Leading the Migration of the Datac",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe that over the medium term the company has a structural advantage in profitability relative to its peers — and not just because of its size and scale, which we think is overrated (Hon Hai is the world's largest EMS company, with an estimated 48% share of EMS revenues).",
+      "title": "Hon Hai Precision Foxconn - A Black Book on a Black Box",
+      "date": null,
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe the shale gas resource is sufficient, when combined with associated gas and wet gas, to force markets into a world of $4-$5 gas for the long haul (and winners will therefore be those positioned attractively on the marginal cost curve).",
+      "title": "North American EPs - Aligning the Stars of the Resource Play",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe that HP — if run with a disciplined approach toward operations and capital allocation — can generate 3% revenue growth and 9-10% EPS annually, with modest margin expansion and sustained share repurchases accounting for the difference.",
+      "title": "Hewlett-Packard - Following a Series of Missteps an Attracti",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe fair value for the stock should be around at least $70 under our current model, which does not include several potential sources of longer-term upside, including traction in Nokia's Windows Phone 7, significant tablet chipset sales or possible penetration into ARM-based PCs.",
+      "title": "Qualcomm - Secular Growth in an Uncertain World",
+      "date": null,
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We think there are many innings yet to play out in the Dollar General story, and we believe the company is a rarity in today's retail landscape: a growth retailer with the potential for high-teens to 20% EPS growth.",
+      "title": "Dollar General - The Rebirth of a Growth Retailer",
+      "date": null,
+      "categories": [
+        "AI/Technology",
+        "Luxury/Consumer"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe that LCVs are their most LCV Recovery profitable vehicle lines by far and that LCVs make each company EBIT of over €400 million in a normal year (which would mean approximately 50% of automotive EBIT for each in 2007).",
+      "title": "European Autos - Light Commercial Vehicles  Understanding Eu",
+      "date": null,
+      "categories": [
+        "Europe",
+        "Automotive"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe the sector should trade at a 40% premium to the MSCI, higher than food's long-term average but below HPC, based on strong EPS growth (averaging almost 15% over the next five years) and high tangible ROIC (averaging 38% on a run rate basis).",
+      "title": "European Beverages - Cheap Booze",
+      "date": null,
+      "categories": [
+        "Electric Vehicles",
+        "Europe",
+        "Food/Beverage"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe that oil prices will trend up in line with the marginal cost of supply ($75-$80/bbl), vacillating between the cash cost ($45- $50/bbl) at the bottom and the price of demand destruction ($110-$125/bbl) at the top.",
+      "title": "When Oil Demand Declines",
+      "date": "8-Dec-2008",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe the autocorrelation of revisions is an important consideration: The odds of a company receiving an initial upward (or downward) earn- ings revisions are about one in five, but once that has occurred, the odds of a second one in the same direction are more than 50%.",
+      "title": "Bernstein Quantitative Handbook — February 2009",
+      "date": "18-Feb-2009",
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe Campath is likely to be the most effective treatment available for treatment-resistant relapsing- remitting multiple sclerosis when it becomes available around late 2011 and should capture small but significant share in a global market of approxi- mately $11 billion in 2012.",
+      "title": "Genzyme - A New Model for the Small Big Pharma",
+      "date": null,
+      "categories": [
+        "Healthcare/Pharma"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe that Kraft can generate 15% EPS growth from 2008 and 2010 based on a recovery in its operating margins of around 100 bp per year, combined with sustained top-line momentum, a better-than-expected tax rate in the low 30%s or below, and ongoing share repurchases.",
+      "title": "Kraft Foods - Putting on the Ritz",
+      "date": null,
+      "categories": [
+        "Food/Beverage"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "Our view is influenced not only by the Democratic majority elected to Congress in 2006, and the likelihood of a Democratic victory in the Presi- dential election of 2008, but also by the Supreme Court's landmark decision on April 2 of this year in a case involving EPA regulation of CO emissions 2 (Massachusetts v.",
+      "title": "US Utilities - The Implications of Carbon Dioxide Regulation",
+      "date": null,
+      "categories": [
+        "Clean Energy",
+        "Automotive",
+        "Energy/Oil"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe fears of the demise of Amgen’s EPO franchise, which con- tributes 47% of Amgen’s total revenue and as much as 60% of earnings, are unfounded; it should contribute revenue CAGR of 4%, with higher earn- ings growth contributions, through expiry of US EPO patents in 2012.",
+      "title": "Blood Feud - The Coming Battle for the 11 Billion Global EPO",
+      "date": null,
+      "categories": [
+        "Europe"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe modestly higher and more stable margins are plausible in the long term because of lower capital intensity from outsourcing as much as 45-50% of advanced logic, more stable profit sharing and a slowly improving product mix (exit- ing DRAM and shifting toward HPA).",
+      "title": "Texas Instruments - Understanding Key Variables  Revenue Gro",
+      "date": null,
+      "categories": [
+        "Electric Vehicles"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "we believe concerns around earnings sustain- ability in a rising-rate environment are overdiscounted, with our upside tar- gets (of 37% and 25%, respectively) reflecting the expected earnings growth of 15% and 12%, respectively, over the next five years.",
+      "title": "US Cards - Deregulation and Reinvestment Risk",
+      "date": null,
+      "categories": [
+        "Automotive"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe Comcast (CMCSA, outperform, target price $38), which has more of the telephony opportunity still in front of it than peer Cox (COX, outperform, target price $40), is best-positioned to benefit among the major cable MSOs.",
+      "title": "Voice over IP - Ripple or Tidal Wave",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe management’s guidance of 8% operating growth for Frito-Lay North America is aggressive because of the high cost of new product launches, but pricing and productivity improvements should improve margins and help drive 7% operating profit growth for the next five years.",
+      "title": "US Beverages and Snacks - Volume Growth Returns But Margins ",
+      "date": null,
+      "categories": [
+        "Electric Vehicles",
+        "Food/Beverage"
+      ],
+      "score": 4
+    },
+    {
+      "insight": "We believe top line for the industry can grow at ~5% on the back of decelerating but high-single-digit emerging market growth, especially if the developed world returns to historical ~4% levels.",
+      "title": "US Beverages  Snacks - Opportunity Outweighs Risk",
+      "date": null,
+      "categories": [
+        "Electric Vehicles",
+        "Food/Beverage"
+      ],
+      "score": 3.94
+    },
+    {
+      "insight": "we believe they deserve to trade in line with their three-year average of ~50% NTM P/E premium to MSCI Europe, which is, in our opinion, appropriate considering their superior growth prospects.",
+      "title": "The Luxury Sector Will Continue to Sparkle and Shine",
+      "date": "28-May-2013",
+      "categories": [
+        "Luxury/Consumer"
+      ],
+      "score": 3.9299999999999997
+    },
+    {
+      "insight": "We believe the cost of green hydrogen will fall to US$1-US$2/kg by 2030, reaching parity with gray hydrogen and becoming cost competitive across many industries relative to alternative fuels.",
+      "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+      "date": null,
+      "categories": [
+        "Clean Energy",
+        "Automotive"
+      ],
+      "score": 3.91
+    },
+    {
+      "insight": "we believe the ultimate size of the battery market is still underestimated by most models.",
+      "title": "Global Energy Storage - Resistance is Futile",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 3.9
+    },
+    {
+      "insight": "we believe a and on Norsk Hydro significant market deficit will then emerge, taking exchange stocks below 300,000 tonnes and prompting the aluminum price to rise to $3,300 per tonne in 2009.",
+      "title": "Aluminum and Norsk Hydro - Right Commodity Right Assets Righ",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.9
+    },
+    {
+      "insight": "we believed the sector would fall based on our estimation of how much new field activity was due to decline at $100/bbl Brent (we calculate the 2012-15 CAGR for new field activity at -19%).",
+      "title": "Hunger Games  Our Worrying Vision for an Oil Services Recess",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 3.8899999999999997
+    },
+    {
+      "insight": "We believe the PBM business model is highly levered to generic dispensing, with generics representing about 75% of total gross profit dollars while composing less than 15% of revenues.",
+      "title": "US Healthcare Distribution - PBMs  Living on the Generic Mar",
+      "date": null,
+      "categories": [
+        "Healthcare/Pharma",
+        "Automotive"
+      ],
+      "score": 3.84
+    },
+    {
+      "insight": "We believe Novartis (rated market-perform, CHF58/$52 price target), Merck (market- perform, $30) and Eli Lilly (market-perform, $63) are most likely to add new blockbuster products.",
+      "title": "Bernstein Healthcare - Diabetes Drugs  Lowering Sugar Raisin",
+      "date": null,
+      "categories": [
+        "AI/Technology",
+        "Healthcare/Pharma",
+        "Automotive"
+      ],
+      "score": 3.81
+    },
+    {
+      "insight": "we believe decline rates in general for the industry might be underestimated.",
+      "title": "Oil Field Decline Rates - The Ebb and Flow Rates of World Oi",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 3.77
+    },
+    {
+      "insight": "We believe that asking \"Will TV die?\" amounts to asking the wrong question.",
+      "title": "European Media - A TV Survival Guide",
+      "date": null,
+      "categories": [
+        "Europe"
+      ],
+      "score": 3.75
+    },
+    {
+      "insight": "we believe that the annual addressable market by Amazon is well in excess of $150 billion under its current business model, which cannot support delivery of perishable food.",
+      "title": "US Internet  US CPG - How Amazon Will Transform CPG Sales  A",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.73
+    },
+    {
+      "insight": "We believe that our coverage have been able to outperform the global luxury market thanks to a great extent to having a higher exposure to retail (55% for our coverage vs.",
+      "title": "European Luxury Goods Store Wars - All You Need to Know Abou",
+      "date": null,
+      "categories": [
+        "Luxury/Consumer",
+        "Europe"
+      ],
+      "score": 3.71
+    },
+    {
+      "insight": "we believe that 4-5% LFL sales growth is achievable over the next few years, given the geographic reach and demonstrated success of the Inditex brands in emerging markets.",
+      "title": "Inditex - Fashioning the Strongest Model in Apparel Retail",
+      "date": null,
+      "categories": [
+        "AI/Technology",
+        "Luxury/Consumer"
+      ],
+      "score": 3.71
+    },
+    {
+      "insight": "we believe deposit growth will slow to roughly 4% annually, resulting in lower net interest margins, as banks will be forced to fund asset growth with higher-cost funding.",
+      "title": "US Regional Banks - The 11th Inning Stretch",
+      "date": null,
+      "categories": [
+        "Banking/Finance"
+      ],
+      "score": 3.71
+    },
+    {
+      "insight": "we believe that macroeconomic conditions will improve and that storage can grow modestly above overall \"normalized\" IT spending, which we estimate will be 5-7% per year.",
+      "title": "Enterprise Storage - Still the Golden Child",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.69
+    },
+    {
+      "insight": "we believe the global HPP market will grow below 5% annually going forward; most significantly, we expect HPP expenditures in developing economies to decelerate from 10.",
+      "title": "US Household  Personal Products - An International Perspecti",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.69
+    },
+    {
+      "insight": "We believe that back in 2000, we weren’t wrong, we were just early.",
+      "title": "US Regional Banks - Secular Not Cyclical Margin Pressure",
+      "date": null,
+      "categories": [
+        "Banking/Finance"
+      ],
+      "score": 3.67
+    },
+    {
+      "insight": "We believe that Compass is no longer a double-digit compounder and estimate an average of 6-7% earnings growth over the longer term (and just 5% for 2019 and 2020).",
+      "title": "Global Catering - Salad Days Over",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.6399999999999997
+    },
+    {
+      "insight": "We believe that within the next five years, growth outside domestic square-footage growth will likely compose 50% or more of total growth for most large retailers.",
+      "title": "The Long View - 2006 Edition  US Perspectives",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.63
+    },
+    {
+      "insight": "We believe we are still in the first half of this remarkable EPS growth story, with only 17% of total EPS growth over the next three years being realized to date.",
+      "title": "Samsung - Just the Beginning",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.62
+    },
+    {
+      "insight": "We believe that the \"addressable market\" for the companies will grow at a 16% CAGR (2x GDP), from US$10 billion in 2013 to US$27 billion in 2020 (see Exhibit 2).",
+      "title": "China Oilfield Services - Navigating Through the Capex Cycle",
+      "date": null,
+      "categories": [
+        "China",
+        "Energy/Oil"
+      ],
+      "score": 3.6100000000000003
+    },
+    {
+      "insight": "We believe that Carlsberg should trade at a 10% discount to its peers (because of the ruble risk) but a 30% premium to the index (excluding DKK20 property).",
+      "title": "Carlsberg - From Russia With Love",
+      "date": null,
+      "categories": [
+        "Automotive"
+      ],
+      "score": 3.56
+    },
+    {
+      "insight": "we believe the market underestimates out-year revenue.",
+      "title": "Running of the Bulls - Long-Term Winners in SMID-Cap Softwar",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.54
+    },
+    {
+      "insight": "we believe investing ~$3 billion in reduced price/mix and ~$1 billion in incremental marketing/operational improvements is likely about the right outcome.",
+      "title": "Procter  Gamble - Time for Action  Enabling Growth Through L",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.54
+    },
+    {
+      "insight": "We believe the threats could shave as much as 8 percentage points off Amex's ROE, from 28% in 2014 (the last \"good year\") to potentially as low as 20%.",
+      "title": "American Express - Turning Point or Tipping Point",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.51
+    },
+    {
+      "insight": "We believe JLR will grow its profits by a CAGR of over 20% in the next three years — and generate some much-needed cash that can be diverted to India.",
+      "title": "Tata Motors - A New Global Force or at Risk of Imperial Over",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.5
+    },
+    {
+      "insight": "we believe that the structural threats outlined above will keep organic growth for Reed Elsevier as a group in the 3% (ex-cycle) region going forward.",
+      "title": "European Media - Reed Elsevier  Broken Legacy",
+      "date": null,
+      "categories": [
+        "Electric Vehicles",
+        "Europe"
+      ],
+      "score": 3.5
+    },
+    {
+      "insight": "we think the much- anticipated rebound will be somewhat disappointing, and we do not expect a return to the 12% industry growth trend of the 1990s.",
+      "title": "IT Services - Secular Problems Battling Cyclical Hopes",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.4699999999999998
+    },
+    {
+      "insight": "we believe there are three legs to the Samsung EPS growth story, driving 161% EPS growth from 2011 to 2014: Handsets, Semiconductors, and Display.",
+      "title": "Samsung - Just the Beginning",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.46
+    },
+    {
+      "insight": "We believe significant upside remains as the penetration of Revlimid maintenance into the myeloma population increases from its current 35% level.",
+      "title": "Multiple Myeloma - Patients Penetration Price and Duration O",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.46
+    },
+    {
+      "insight": "we believe the oil price re- quired for the marginal player to generate a normal return of 10% will be $70/boe, 160% above the level set in 2000.",
+      "title": "Cost-o-philia in the Oil Patch",
+      "date": "17-Sep-2007",
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 3.45
+    },
+    {
+      "insight": "We believe FMC has a number of opportunities opening up that will enable the company to grow earnings per share at a 19% CAGR through 2020E.",
+      "title": "Global Dialysis - Making Money From Bigger Waists and Tighte",
+      "date": null,
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 3.4
+    },
+    {
+      "insight": "We believe that the underlying earnings growth from 2004 to 2006 will be a fairly attractive 7% for BNP Paribas and 9% for Societe Generale.",
+      "title": "French Banks - A Lucrative Journey to the Efficient Frontier",
+      "date": null,
+      "categories": [
+        "Banking/Finance"
+      ],
+      "score": 3.4
+    },
+    {
+      "insight": "we believe the market underestimates.",
+      "title": "European Capital Goods - The Swedish Mechanicals  A Safe Hav",
+      "date": null,
+      "categories": [
+        "Europe"
+      ],
+      "score": 3.37
+    },
+    {
+      "insight": "We believe a financial stock with a 28% ROE and 12-15% EPS growth will warrant significantly more than Amex's current 75% relative P/E.",
+      "title": "American Express - Turning Point or Tipping Point",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.35
+    },
+    {
+      "insight": "we believe Commerce will command a multiple more in line with its growth rate, which would imply a stock price in the mid-to-high $40s.",
+      "title": "Commerce Bancorp - If You Build It They Will Come",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.35
+    },
+    {
+      "insight": "we believe this could be over 40% of sales in the next five years, with the bulk of growth coming from Nike's DTC e-commerce channel.",
+      "title": "Nike - Off the Bench and Ready to Win",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.33
+    },
+    {
+      "insight": "we believe oil prices will remain above $45 per barrel and will continue to escalate in line with cost inflation (see Exhibit 4).",
+      "title": "Rising Costs and the New EP Paradigm",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.29
+    },
+    {
+      "insight": "We think this is wrong because a substantial proportion of demand for implants is probably being deferred rather than destroyed.",
+      "title": "Dental Implants - Chomping at the Bit for a Return to Growth",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.2800000000000002
+    },
+    {
+      "insight": "We believe that Cadbury and Wrigley will continue to dominate the category, with combined market share over 75% and growing.",
+      "title": "Global Gum - The Chew Chew Train Has Left the Station With C",
+      "date": null,
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 3.24
+    },
+    {
+      "insight": "we think will improve over time; BRI will retain its microfinance strengths (~50% of profits) from decades of experience.",
+      "title": "Microfinancing in Indonesia - Implications of a Changing Com",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.21
+    },
+    {
+      "insight": "we believe ultimately means there will be a lot more NGLs in five years (+15% versus estimates) than the market expects.",
+      "title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 3.2
+    },
+    {
+      "insight": "we believe 2010 is not a peak earnings year and forecast BASF's EPS growth will average 10% per year from 2011 to 2015.",
+      "title": "BASF - Hidden Value Within the Worlds Largest Chemical Compa",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.19
+    },
+    {
+      "insight": "We believe the market underappreciates the competitive strength of this best-of-breed vendor in a market growing >20%.",
+      "title": "Running of the Bulls - Long-Term Winners in SMID-Cap Softwar",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.1799999999999997
+    },
+    {
+      "insight": "we believe that moved the required fee from the low $2/mcf range to the high $2/mcf range to get a low- teens return.",
+      "title": "US Gas - What Is the Right Midcycle Price for Gas",
+      "date": null,
+      "categories": [
+        "Energy/Oil"
+      ],
+      "score": 3.17
+    },
+    {
+      "insight": "We believe that Dell can deliver compounded annual growth of 11-13% in revenue and 13-15% in EPS through fiscal 2010.",
+      "title": "Dell - Intimacy Unique Valuation Attractive But Watch for Ec",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.17
+    },
+    {
+      "insight": "we believe) a rather benign world in which oil price declines at an annual pace toward mid-cycle prices of $75/bbl.",
+      "title": "EPs for Fresh Eyes",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.15
+    },
+    {
+      "insight": "we believe that Chinese oil demand can grow by another 35% or 5MMbls/d to reach close to 18MMbls/d (see Exhibit 2).",
+      "title": "The Rise and Fall of Chinas Oil Age",
+      "date": null,
+      "categories": [
+        "China",
+        "Energy/Oil"
+      ],
+      "score": 3.15
+    },
+    {
+      "insight": "we think China is unlikely to be a major source of profits for global brewers for at least a decade, maybe forever.",
+      "title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "date": "16-Feb-2021",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "score": 3.15
+    },
+    {
+      "insight": "We believe that Lexmark is a solid core holding and rate the stock outperform, with a share-price target of $90.",
+      "title": "Lexmark - Amid the Controversy an Attractive Business Model ",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.12
+    },
+    {
+      "insight": "we believe they will ultimately represent 3% of the chip mar- ket and will be a low-margin commodity business.",
+      "title": "Wireless Semis - ARM Controls the Brain STM and Infineon on ",
+      "date": null,
+      "categories": [
+        "AI/Technology"
+      ],
+      "score": 3.1
+    },
+    {
+      "insight": "We believe US$14 trillion will be spent on batteries over the next 30 years as part of the energy transition.",
+      "title": "Turn Up the Voltage Investing Across the Battery Value Chain",
+      "date": null,
+      "categories": [
+        "AI/Technology",
+        "Electric Vehicles"
+      ],
+      "score": 3.09
+    },
+    {
+      "insight": "the key issue is when to decide that the time is right to take a position that is contrary to recent trends.",
+      "title": "The Best of Bernstein  Pan-European Edition First-Quarter 20",
+      "date": null,
+      "categories": [
+        "Europe"
+      ],
+      "score": 3.08
+    },
+    {
+      "insight": "we believe that battery pack costs will reach the US$100/kWh peak by 2021, much earlier than most expect.",
+      "title": "Electric Revolution 2018 - The Resistance",
+      "date": null,
+      "categories": [
+        "Electric Vehicles"
+      ],
+      "score": 3.05
+    },
+    {
+      "insight": "we think China is unlikely to be a major source of profits for the global brewers for at least a decade.",
+      "title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "date": "16-Feb-2021",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "score": 3.04
+    },
+    {
+      "insight": "we think China is unlikely to be a major source of profits for the global brewers for at least a decade.",
+      "title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "date": "16-Feb-2021",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "score": 3.04
+    },
+    {
+      "insight": "we think China is unlikely to be a major source of profits for the global brewers for at least a decade.",
+      "title": "The Bernstein Global Beer Guide: Sixth Edition",
+      "date": "16-Feb-2021",
+      "categories": [
+        "Food/Beverage"
+      ],
+      "score": 3.04
+    },
+    {
+      "insight": "we believe denosumab can capture 20% share of the PMO market based on its safety and dosing advantages.",
+      "title": "The Bone Report - Strong Denosumab Strong Amgen",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.0300000000000002
+    },
+    {
+      "insight": "We believe hard seltzers could grow to 12%-20% of the off-trade and 2%-9% of the on-trade beer market.",
+      "title": "Hard Seltzers - To Infinity and Beyond",
+      "date": null,
+      "categories": [
+        "General"
+      ],
+      "score": 3.02
+    }
+  ],
+  "contrarian_views": [
+    {
+      "view": "The conventional wisdom is that atomization of attention and fragmentation of niche markets — thanks largely to smartphones and social media — is making brands with enduring vibrancy and global appeal just a 20th-century phenomenon.",
+      "title": "BRANDED",
+      "date": "29-Nov-2025"
+    },
+    {
+      "view": "despite Chinese investment, best illustrated by the fact that even Chinese OEMs use tires by Western companies on premium vehicles.",
+      "title": "Global Tires - Rubber Wars",
+      "date": null
+    },
+    {
+      "view": "Despite the sell-off this year, LVMH is still the first port of call for any new luxury consumer.",
+      "title": "LVMH - Trunk Show",
+      "date": null
+    },
+    {
+      "view": "Despite Japanese and South Korean OEMs taking the shift to EVs more seriously in recent years, we still see EV penetration lagging behind the three large automotive markets.",
+      "title": "Electric Revolution - Divergence",
+      "date": null
+    },
+    {
+      "view": "Unlike the other elements of the Snowball, Schneider’s software offerings were developed through a series of key acquisitions, starting in the mid-2010s.",
+      "title": "The Schneider Snowball",
+      "date": "4-Sep-2025"
+    },
+    {
+      "view": "unlike at high-end niche players — think Loro Piana or Brunello Cucinelli.",
+      "title": "Hermes - Orange Is The New Blackbook",
+      "date": null
+    },
+    {
+      "view": "Unlike many soft luxury peers, Hermès held off on aggressive price increases in response to booming post-pandemic luxury demand, opting to invest in its untapped price reservoir instead.",
+      "title": "Hermes - Orange Is The New Blackbook",
+      "date": null
+    },
+    {
+      "view": "unlike at high-end niche players — think Loro Piana or Brunello Cucinelli.",
+      "title": "Hermès - Orange Is The New Blackbook",
+      "date": null
+    },
+    {
+      "view": "Unlike many soft luxury peers, Hermès held off on aggressive price increases in response to booming post-pandemic luxury demand, opting to invest in its untapped price reservoir instead.",
+      "title": "Hermès - Orange Is The New Blackbook",
+      "date": null
+    },
+    {
+      "view": "despite the decade-long evolution of the trade relationship between the US and China from partner to competitor.",
+      "title": "Deglobalization - Its a Big World After all",
+      "date": null
+    },
+    {
+      "view": "despite being the distant #2, given the success of Pepsi Max.",
+      "title": "European Coca-Cola Bottlers - Real Magic",
+      "date": null
+    },
+    {
+      "view": "Despite this, when stripping out Russia, CCH is trading at 13.",
+      "title": "European Coca-Cola Bottlers - Real Magic",
+      "date": null
+    },
+    {
+      "view": "despite most investors deciding to ignore this — we see how this move is giving Swatch Group, among other things, a leaner FTE structure.",
+      "title": "Global Luxury Goods - In Search of Ethical Luxury",
+      "date": null
+    },
+    {
+      "view": "despite much talk about craftsmanship skills — are putting unprecedented pressure on most companies.",
+      "title": "Global Luxury Goods - In Search of Ethical Luxury",
+      "date": null
+    },
+    {
+      "view": "Despite billions in funding pouring in, with start-ups jostling with large platforms to build presence, only a few will likely survive, and simply having deep pockets hasn’t guaranteed success.",
+      "title": "India Quick Commerce - Disrupting With Speed",
+      "date": null
+    },
+    {
+      "view": "despite tech-driven models investing heavily.",
+      "title": "India Quick Commerce - Disrupting With Speed",
+      "date": null
+    },
+    {
+      "view": "Despite its expensive valuation, we believe its international growth potential is underappreciated, which can support consistent earnings growth for decades to come.",
+      "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+      "date": null
+    },
+    {
+      "view": "unlike what it has ever seen in its history.",
+      "title": "Bharat 10 - Bridging Indias Missing Middle",
+      "date": null
+    },
+    {
+      "view": "despite decades of presence in SHAPING EATING HABITS OF this market, global food giants have only penetrated a few inches down the surface.",
+      "title": "Bharat 10 - Bridging Indias Missing Middle",
+      "date": null
+    },
+    {
+      "view": "unlikely: it is near impossible.",
+      "title": "Globalization Reborn - International Logistics Is Changed Fo",
+      "date": null
+    },
+    {
+      "view": "despite consistent calls for a need to build greater scale.",
+      "title": "Global Defense - International Growth in a Dangerous World",
+      "date": null
+    },
+    {
+      "view": "Unlike conventional assets, holding crypto securely through self-custody is cumbersome.",
+      "title": "From Coin to Compute - The Bitcoin Investing Guide",
+      "date": null
+    },
+    {
+      "view": "despite slower growth and geopolitical tensions.",
+      "title": "China 20 - Made In China Beyond 2025",
+      "date": null
+    },
+    {
+      "view": "unlike everyday experience where technology substitution happens fast, adoption of industrial technologies often takes decades (Exhibit 1), a process so gradual that it loses all flavor of a disruption.",
+      "title": "The Nonasphere of Automation",
+      "date": "18-Sep-2024"
+    },
+    {
+      "view": "despite being a first mover, went bankrupt in 2018.",
+      "title": "The Nonasphere of Automation",
+      "date": "18-Sep-2024"
+    },
+    {
+      "view": "unlikely, and examine the three potential long- term threats to alcohol consumption below.",
+      "title": "Its still Five OClock Somewhere",
+      "date": null
+    },
+    {
+      "view": "Despite spirits’ weaker-than-usual performance in 2023, it still outgrew the other categories, gaining ~50bps of share of throat in 2023 (largely at the expense of beer) (Exhibit 2).",
+      "title": "Its still Five OClock Somewhere",
+      "date": null
+    },
+    {
+      "view": "despite reasonable margins, due to its exposure to the youngest, lowest affluence customer and higher competitive intensity from Primark, Shein, and other fast- fashion players.",
+      "title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+      "date": null
+    },
+    {
+      "view": "despite still generating reasonable margins) due to its exposure to the youngest, lowest affluence customer, and higher competitive intensity from Primark (owned by ABF; covered), Shein, and other fast-fashion players.",
+      "title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+      "date": null
+    },
+    {
+      "view": "unlikely to follow the same path, there is a clear push to localize production in Europe to comply with the “rules of origin.",
+      "title": "Battery Utopia",
+      "date": "17-Jun-2024"
+    },
+    {
+      "view": "DESPITE DECOUPLING DRIVE 17 SOUTH KOREA BATTERY MAKERS ARE THE BIG WINNERS FROM CHINA 49 DECOUPLING HOUSE OF THE RISING LIB: WHERE TO INVEST IN JAPAN’S BATTERY VALUE 69 CHAIN WHO WINS THE BATTERY RACE IN EUROPE? 93 CHINA EV TARIFFS BENEFIT THE US BATTERY SUPPLY CHAIN 115 BATTERY UTOPIA 3 additionalPdf/f9811e94-d7f1-4b34-8825-a58873ede8da.",
+      "title": "Battery Utopia",
+      "date": "17-Jun-2024"
+    },
+    {
+      "view": "Despite their ubiquity, cards have only penetrated 61% of global consumer purchases.",
+      "title": "Payments - The Money Machine",
+      "date": null
+    },
+    {
+      "view": "despite lower gross margin, as operating expenses are materially lower with highly efficient warehousing, distribution, and marketing.",
+      "title": "Primark - ABFs Fashionable Jewel In A Value Crown",
+      "date": null
+    },
+    {
+      "view": "Despite the current soft macro environment, we expect the 5.",
+      "title": "China Consumer - The Newest Normal",
+      "date": null
+    },
+    {
+      "view": "Unlike major competitors that are bancassurance-led businesses in Hong Kong, both AIA and Prudential operate in a high-caliber agency model, with ~70% sales generation through their captive insurance agents.",
+      "title": "AIA and Prudential - Diamonds and Pearls",
+      "date": null
+    },
+    {
+      "view": "Despite its strong predictive power, interestingly, earnings quality is not usually incorporated by ESG score providers to analyze governance practices.",
+      "title": "Sustainable Alpha  An ESG Thematic Primer",
+      "date": null
+    },
+    {
+      "view": "Despite no-alcohol wine making up just 0.",
+      "title": "The Consumer of the Future",
+      "date": "21-Nov-2023"
+    },
+    {
+      "view": "Unlike conventional assets, holding crypto securely through self-custody is cumbersome.",
+      "title": "The Institutional guide to Blockchain and digital assets",
+      "date": "1-Nov-2023"
+    },
+    {
+      "view": "unlikely to decrease significantly in cost beyond what is planned through to 2025.",
+      "title": "Battery Tech Roadmap 2023 - Faster Higher Stronger",
+      "date": null
+    },
+    {
+      "view": "unlikely to be bottlenecked, given significant capacity expansion, we expect the wind supply chain to be bottlenecked in the middle/second half of this decade, if further investments are not made and if policy targets are to be achieved.",
+      "title": "Renewables 2023 - The bedrock of the energy transition",
+      "date": null
+    },
+    {
+      "view": "despite their rapid growth during the pandemic.",
+      "title": "European Food Delivery - State of War to Spoils of War",
+      "date": null
+    },
+    {
+      "view": "despite these challenges, policy support for hydrogen has never been greater.",
+      "title": "Hydrogen Highway 2023 - Green Shoots",
+      "date": null
+    },
+    {
+      "view": "Despite its glamour, the business jet market has been one of slow growth, with deliveries in 2022 roughly the same as in 2001.",
+      "title": "Business Jets - The Industry the Future and What Would Pit B",
+      "date": null
+    },
+    {
+      "view": "unlike previous downturns, OEMs have not overproduced.",
+      "title": "Business Jets - The Industry the Future and What Would Pit B",
+      "date": null
+    },
+    {
+      "view": "despite a halt to the travel industry in 2020… 67 63 61 57 54 47 42 38 38 34 36 35 32 Airbnb L4Q trailing Ad 2 j.",
+      "title": "Airbnb - A Long Stay",
+      "date": null
+    },
+    {
+      "view": "Despite myriad sources of confusion — business models, end-markets, products, services, jargon, and complexity — Capital Goods, like any other sector, ultimately sells things to customers.",
+      "title": "EU Capital Goods - The Titans of Industry Explained in One C",
+      "date": null
+    },
+    {
+      "view": "despite regulatory tailwinds, our base case doesn’t anticipate the US transportation market reaching net zero by 2050: Technology required to scale AEP systems remains a work in progress, refueling networks haven’t been established, and there are agency issues for both carriers and OEMs (who will foot the bill and bear the sunk cost of prior ICE investments?).",
+      "title": "US Trucking - Is Net Zero by 2050 Realistic",
+      "date": null
+    },
+    {
+      "view": "despite limited growth in arable land and, therefore, yield increases must come from technology development, partly from the seeds themselves and the crop protection chemicals (CPCs).",
+      "title": "Agricultural Inputs - Seed Spray Eat Repeat",
+      "date": null
+    },
+    {
+      "view": "despite the uplift from the pandemic and will likely be the only growth channel for food retailers for the next decade and beyond.",
+      "title": "Ocado - Shoptimus Prime",
+      "date": null
+    },
+    {
+      "view": "Despite the sell-off over the last year, there are a number of key turning points coming up over the next few years, which should drive the stock higher — peak capex, free cash flow (FCF) breakeven, Solutions EBITDA breakeven, and EPS breakeven.",
+      "title": "Ocado - Shoptimus Prime",
+      "date": null
+    }
+  ],
+  "insights_by_theme": {
+    "Europe": [
+      {
+        "insight": "importantly, the long-term forecasting function of an LLM is linear.",
+        "title": "The Long View  European Edition 2025",
+        "date": null
+      },
+      {
+        "insight": "We believe the most powerful investment themes are rooted in rigorous analysis of the forces shaping an industry’s medium- and long-term evolution.",
+        "title": "The Long View  European Edition 2025",
+        "date": null
+      },
+      {
+        "insight": "We think it is worthwhile for our analysts each year to ask: over the next five years, how could everything change? Given the rising threat from AI, we also think it is worthwhile for our analysts to learn a joke or two.",
+        "title": "The Long View  European Edition 2025",
+        "date": null
+      },
+      {
+        "insight": "We believe there are some opportunities for further M&A, though nothing imminent.",
+        "title": "European Coca-Cola Bottlers - Real Magic",
+        "date": null
+      },
+      {
+        "insight": "We believe Coca-Cola Europacific Partners has strong ꟷ but well understood ꟷ fundamentals, and rate it Market-Perform.",
+        "title": "European Coca-Cola Bottlers - Real Magic",
+        "date": null
+      },
+      {
+        "insight": "we believe the most powerful investment themes are rooted in rigorous analysis of the forces shaping an industry’s medium- and long-term evolution.",
+        "title": "The Long View  European Edition 2024",
+        "date": null
+      },
+      {
+        "insight": "We think it is worthwhile asking our analysts each year to spend some time thinking about their sectors and questioning the most interesting question any analyst can ask about their own sector: over the next five years, how could everything change? Colin McGranahan, Head of Research colin.",
+        "title": "The Long View  European Edition 2024",
+        "date": null
+      },
+      {
+        "insight": "we believe the most powerful investment themes are rooted in rigorous analysis of the forces shaping an industry's medium- and long-term evolution.",
+        "title": "The Long View  European Edition 2023",
+        "date": null
+      },
+      {
+        "insight": "We think it is worthwhile asking our analysts each year to spend some time thinking about their sectors and questioning specifically: over the next five years, how could everything change? Colin McGranahan, Global Director of Research colin.",
+        "title": "The Long View  European Edition 2023",
+        "date": null
+      },
+      {
+        "insight": "we think the long-term growth drivers remain intact.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "We think there could be large-scale consolidation in Europe, Asia, and South America over the next few years, leading to several global players dominating.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "We think this inflection can continue with more stacking, increased basket sizes, more density, and improved efficiencies in 3PL delivery.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "we believe our cheatsheets are the most useful analysis one can make of the sector's revenue build-up, because they tie to reported datapoints while also using logical inference.",
+        "title": "EU Capital Goods - The Titans of Industry Explained in One C",
+        "date": null
+      },
+      {
+        "insight": "We believe the Fourth Industrial Revolution will be embodied in Capital Goods, creating successive waves of growth ahead.",
+        "title": "EU Capital Goods - The Titans of Industry Explained in One C",
+        "date": null
+      },
+      {
+        "insight": "we believe European Capital Goods offers an attractive package of benefits.",
+        "title": "EU Capital Goods - The Titans of Industry Explained in One C",
+        "date": null
+      },
+      {
+        "insight": "Critically, as the core topic of this Blackbook, we've also built conviction around the financial and balance sheet resilience of the Integrated Oil sector.",
+        "title": "European Integrated Oils - Survival of the Fittest",
+        "date": null
+      },
+      {
+        "insight": "We believed, as we still do today, that recent softness in international spot gas, chemical, and refining margins would pass, as would the demand collapse from Covid-19, and were willing to look through this weakness for the rerating we expected in the stocks.",
+        "title": "European Integrated Oils - Survival of the Fittest",
+        "date": null
+      },
+      {
+        "insight": "we believe vaccines command a multiple closer to consumer than pharma owing to the high barriers to entry.",
+        "title": "Vaccines - The Robin Hood of Therapeutics",
+        "date": null
+      },
+      {
+        "insight": "We think vaccines are a good business.",
+        "title": "Vaccines - The Robin Hood of Therapeutics",
+        "date": null
+      },
+      {
+        "insight": "We believe our \"4 Pillars of Success\" framework is a robust mechanism to assess industry and company EPS growth and ROIC momentum, which drive shareholder value.",
+        "title": "European Food  HPC - 12-Year Global Market Share Analysis",
+        "date": null
+      }
+    ],
+    "AI/Technology": [
+      {
+        "insight": "we believe the industry is fast getting derisked from any political regime shifts impacting its prospects.",
+        "title": "Digital Assets - The Rising Titans of the Blockchain Era",
+        "date": null
+      },
+      {
+        "insight": "We believe the earnings tailwinds are sustainable, driven by regulatory tailwinds, not merely by crypto upside.",
+        "title": "Digital Assets - The Rising Titans of the Blockchain Era",
+        "date": null
+      },
+      {
+        "insight": "We believe tokenization of real-world assets will unleash digital-native capital markets.",
+        "title": "Digital Assets - The Rising Titans of the Blockchain Era",
+        "date": null
+      },
+      {
+        "insight": "importantly, it solves for the talent problem as the bar to use Gen AI tools is quite low — with a simple statement written in English, one can create effective codes and/or financial analysis.",
+        "title": "The Future of Tech",
+        "date": "1-May-2025"
+      },
+      {
+        "insight": "we believe the concern around trusting a model completely (especially when there are still problems of hallucination) would persist, making the future of Gen AI in asset management still a man+machine model.",
+        "title": "The Future of Tech",
+        "date": "1-May-2025"
+      },
+      {
+        "insight": "We believe there is a huge opportunity for companies to offer full-stack quant solutions and AI agents to asset managers, enabling a much faster adoption within the industry.",
+        "title": "The Future of Tech",
+        "date": "1-May-2025"
+      },
+      {
+        "insight": "We believe Walmart is one of a few US retailers that have a legitimate chance to grow e-grocery profitably, thanks to its unparalleled scale and early investments.",
+        "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+        "date": null
+      },
+      {
+        "insight": "we believe its international growth potential is underappreciated, which can support consistent earnings growth for decades to come.",
+        "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+        "date": null
+      },
+      {
+        "insight": "We believe consumers will increasingly turn to retailers that can offer compelling value in everyday grocery items, which positions Walmart and Costco well.",
+        "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+        "date": null
+      },
+      {
+        "insight": "we think some of this was due to the need to handle unions carefully and to avoid giving the game away to competitors.",
+        "title": "Ahold Delhaize - The Once and future King of Retail",
+        "date": null
+      },
+      {
+        "insight": "The key question is whether AD has been over-earning in the US, where it has been delivering a margin of >4.",
+        "title": "Ahold Delhaize - The Once and future King of Retail",
+        "date": null
+      },
+      {
+        "insight": "we believe China spending can nevertheless remain robust at high levels as our analysis suggests China continues to require more equipment and capacity to fulfill self- sufficiency targets.",
+        "title": "Semiconductor Equipment Investment Primer, 2024 Edition",
+        "date": "20-Nov-2024"
+      },
+      {
+        "insight": "we believe WFE spending in NAND has to gradually normalize as suppliers need to upgrade technologies to stay cost competitive.",
+        "title": "Semiconductor Equipment Investment Primer, 2024 Edition",
+        "date": "20-Nov-2024"
+      },
+      {
+        "insight": "We believe China will return to high-teens growth for both companies, despite different paths taken.",
+        "title": "AIA and Prudential - Diamonds and Pearls",
+        "date": null
+      },
+      {
+        "insight": "We believe that additional near-term financial incentives are needed for farmers to adopt regenerative agricultural practices (e.",
+        "title": "Sustainable Alpha  An ESG Thematic Primer",
+        "date": null
+      },
+      {
+        "insight": "importantly, is it now ready to deliver on those promises? As you'll realize by the time you wrap up the last chapter, our assessments indicate that it is finally ready.",
+        "title": "Indias Promise - The Prosaic Path to Sustained Growth",
+        "date": null
+      },
+      {
+        "insight": "We think digital care can challenge the assumption that the supply of doctors and nurses is constrained, leading to increased access, and also lower unit costs and better quality.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We think digital care and AI-based care will ultimately substitute certain doctor and nurse functions, greatly increasing the effective supply of clinicians and reducing unit costs.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We believe AI and digital care can address the issue of access to care.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We believe the real opportunity in stablecoins is in its transformation from offshore-unregulated-crypto to an onshore, regulated model with more direct utility around mainstream payments and global settlement.",
+        "title": "The Institutional guide to Blockchain and digital assets",
+        "date": "1-Nov-2023"
+      }
+    ],
+    "Automotive": [
+      {
+        "insight": "We think Tier 1 moats are structurally enduring, and electrification and sustainability shift dials further in their favor, giving us conviction in ongoing mix shift and margin expansion.",
+        "title": "Global Tires - Rubber Wars",
+        "date": null
+      },
+      {
+        "insight": "we think the impact on dialysis players, Fresenius Medical Care and DaVita, is neutral over the next 5-10 years, but longer term we expect some headwinds.",
+        "title": "Global Healthcare - GLP-1s Vs The Weight Of The World",
+        "date": null
+      },
+      {
+        "insight": "We believe this headwind will dissipate over time as utilization in the core Medicaid population remains stable, and Medicaid plans should receive favorable rate adjustments over the next 12 months that will compensate for the changed risk pool.",
+        "title": "Healthcare Services 101",
+        "date": "27-Nov-2024"
+      },
+      {
+        "insight": "We believe margins for MA payers will recover over time as the industry will self-correct on pricing, and we see a moderation in utilization as a near-term catalyst for stocks in early 2025.",
+        "title": "Healthcare Services 101",
+        "date": "27-Nov-2024"
+      },
+      {
+        "insight": "We believe the reason was that Rethink went too far in trying to disrupt robotics.",
+        "title": "The Nonasphere of Automation",
+        "date": "18-Sep-2024"
+      },
+      {
+        "insight": "We think digital care can challenge the assumption that the supply of doctors and nurses is constrained, leading to increased access, and also lower unit costs and better quality.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We think digital care and AI-based care will ultimately substitute certain doctor and nurse functions, greatly increasing the effective supply of clinicians and reducing unit costs.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We believe AI and digital care can address the issue of access to care.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "we believe the inflection point for hydrogen will come in the 2025-30 window, as we move out of the demonstration phase and into the implementation phase.",
+        "title": "Hydrogen Highway 2022 - Rocky Road to Decarbonization",
+        "date": null
+      },
+      {
+        "insight": "We think if things go smoothly, it will be at least another five to six years for meaningful revenue to develop: (1) The technology remains a work in progress; building an algorithm to replace the driver (L4+) is an emerging technology.",
+        "title": "Autonomous Trucking - Long-Haul Investors Wanted",
+        "date": null
+      },
+      {
+        "insight": "importantly, it has an immensely high energy density per unit of mass, which makes it versatile as a fuel and an ideal replacement for hydrocarbons in hard- to-decarbonize sectors such as transport, industry, and heating.",
+        "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+        "date": null
+      },
+      {
+        "insight": "we believe there are a few practical alternatives to hydrogen.",
+        "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+        "date": null
+      },
+      {
+        "insight": "We believe the cost of green hydrogen will fall to US$1-US$2/kg by 2030, reaching parity with gray hydrogen and becoming cost competitive across many industries relative to alternative fuels.",
+        "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+        "date": null
+      },
+      {
+        "insight": "We think it will take longer than the market expects, as the supply shock we have been living through meets the demand shock of delivering the vaccine, and we then live through the restocking that will accompany global economic recovery.",
+        "title": "The Golden Age of Air Cargo",
+        "date": "12-Feb-2021"
+      },
+      {
+        "insight": "we think that also speaks to a stronger recovery in freight demand skewing the risks in favor of the parcel industry.",
+        "title": "The Golden Age of Air Cargo",
+        "date": "12-Feb-2021"
+      },
+      {
+        "insight": "we believe Covid-19 will act as a catalyst to drive top-line growth.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "we believe a recession caused by a pandemic would look quite different.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "We believe this \"New Philips\" can deliver an average 5.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "We think these top dealers will (continue to) benefit from several key drivers of growth, and consider them core holdings for investors looking for quality growth compounders in China.",
+        "title": "Chinese Auto Dealers - Aftersales as a Service",
+        "date": null
+      },
+      {
+        "insight": "We think the multi-year earnings growth trajectories of these businesses mean their shares can continue to perform strongly.",
+        "title": "Chinese Auto Dealers - Aftersales as a Service",
+        "date": null
+      }
+    ],
+    "Luxury/Consumer": [
+      {
+        "insight": "Importantly, the LVMH “growth formula” of the past decade — the “montee en gamme” — is in need of reinvention.",
+        "title": "LVMH - Trunk Show",
+        "date": null
+      },
+      {
+        "insight": "WE BELIEVE HERMÈS IS Within the global luxury industry, Hermès has delivered best-in-class total shareholder returns AN INVESTMENT FOR ALL (TSR) and share price performance over the past two decades.",
+        "title": "Hermes - Orange Is The New Blackbook",
+        "date": null
+      },
+      {
+        "insight": "We believe this performance is sustainable.",
+        "title": "Hermes - Orange Is The New Blackbook",
+        "date": null
+      },
+      {
+        "insight": "we believe: aspirational consumers go back to the brand in good times, just when rich consumers may be setting their sights on more expensive products and services.",
+        "title": "Hermes - Orange Is The New Blackbook",
+        "date": null
+      },
+      {
+        "insight": "we believe legislative, social, and governance pressures will ensure they remain relevant.",
+        "title": "Global Luxury Goods - In Search of Ethical Luxury",
+        "date": null
+      },
+      {
+        "insight": "We believe Walmart is one of a few US retailers that have a legitimate chance to grow e-grocery profitably, thanks to its unparalleled scale and early investments.",
+        "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+        "date": null
+      },
+      {
+        "insight": "we believe its international growth potential is underappreciated, which can support consistent earnings growth for decades to come.",
+        "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+        "date": null
+      },
+      {
+        "insight": "We believe consumers will increasingly turn to retailers that can offer compelling value in everyday grocery items, which positions Walmart and Costco well.",
+        "title": "US Retailing Broadlines  Hardlines - Shop for opportunities ",
+        "date": null
+      },
+      {
+        "insight": "we think some of this was due to the need to handle unions carefully and to avoid giving the game away to competitors.",
+        "title": "Ahold Delhaize - The Once and future King of Retail",
+        "date": null
+      },
+      {
+        "insight": "The key question is whether AD has been over-earning in the US, where it has been delivering a margin of >4.",
+        "title": "Ahold Delhaize - The Once and future King of Retail",
+        "date": null
+      },
+      {
+        "insight": "We think that the growth and margin outlook of each concept would justify the Group multiple by itself.",
+        "title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+        "date": null
+      },
+      {
+        "insight": "we think each of the other concepts can justify the Group’s multiple by itself.",
+        "title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+        "date": null
+      },
+      {
+        "insight": "we think the concepts are not so bad (18-21% PBT margins) with strong execution, propositions, and productivity.",
+        "title": "Inditex - Zara Is Only the Beginning A Portfolio of Fashion ",
+        "date": null
+      },
+      {
+        "insight": "We believe six criteria can help us gauge which luxury stocks can be great investments over the long term.",
+        "title": "Global Luxury Goods - The Six Rings of Quality",
+        "date": null
+      },
+      {
+        "insight": "We believe six criteria can help us gauge the luxury stocks that can be great investments over the long term: Constant and predictable performance.",
+        "title": "Global Luxury Goods - The Six Rings of Quality",
+        "date": null
+      },
+      {
+        "insight": "we think represents an attractive opportunity for high-quality growth.",
+        "title": "Primark - ABFs Fashionable Jewel In A Value Crown",
+        "date": null
+      },
+      {
+        "insight": "We think margin can expand to ~15% over the next 5-10 years from 10% in 2024, driven by geographical mix, which is not in consensus.",
+        "title": "Primark - ABFs Fashionable Jewel In A Value Crown",
+        "date": null
+      },
+      {
+        "insight": "we think there is a multi-year path to expand from 10% to ~15%, driven by geographical mix shift, US and German profitability improvement, and operating leverage on opex.",
+        "title": "Primark - ABFs Fashionable Jewel In A Value Crown",
+        "date": null
+      },
+      {
+        "insight": "we think, assuming equal excellent brand stewardship, older and bigger brands stand before younger and smaller brands in the minds of consumers.",
+        "title": "Global Luxury Goods - The Challengers Cycle",
+        "date": null
+      },
+      {
+        "insight": "we believe that category (and ultimately) industry leadership depends on four factors: Acquiring and maintaining volume leadership.",
+        "title": "Global Luxury Goods - The Challengers Cycle",
+        "date": null
+      }
+    ],
+    "General": [
+      {
+        "insight": "We think it can double its US store base over the next 10 years.",
+        "title": "Zara - The Chameleon Queen",
+        "date": null
+      },
+      {
+        "insight": "we think Inditex is well-set to continue to compound, weathering deglobalization and leaning into growth themes of premiumization, scarcity, space optimization, and US store expansion (Exhibit 2).",
+        "title": "Zara - The Chameleon Queen",
+        "date": null
+      },
+      {
+        "insight": "We think Inditex is well-set to continue to compound at an 8% sales CAGR over FY25-FY28 (>2-3x faster than the market), weathering deglobalization and premiumizing through scarcity and larger, experiential stores, and delivering industry- leading margins at ~20% EBIT (nearly 3x higher than H&M).",
+        "title": "Zara - The Chameleon Queen",
+        "date": null
+      },
+      {
+        "insight": "We believe idiosyncratic elements of Schneider’s portfolio have enabled this consistent outperformance.",
+        "title": "The Schneider Snowball",
+        "date": "4-Sep-2025"
+      },
+      {
+        "insight": "we believe is a less well-understood part of its offerings, we show how the offering most importantly acts as a tool to make corporates see sustainability and energy management as integrated strategic choices, spurring demand for Schneider’s core Energy Management franchise.",
+        "title": "The Schneider Snowball",
+        "date": "4-Sep-2025"
+      },
+      {
+        "insight": "we believe connectable products have a long growth runway ahead, set to make up more than one-third of group sales by 2028.",
+        "title": "The Schneider Snowball",
+        "date": "4-Sep-2025"
+      },
+      {
+        "insight": "WE BELIEVE HERMÈS IS Within the global luxury industry, Hermès has delivered best-in-class total shareholder returns AN INVESTMENT FOR ALL (TSR) and share price performance over the past two decades.",
+        "title": "Hermès - Orange Is The New Blackbook",
+        "date": null
+      },
+      {
+        "insight": "We believe this performance is sustainable.",
+        "title": "Hermès - Orange Is The New Blackbook",
+        "date": null
+      },
+      {
+        "insight": "we believe: aspirational consumers go back to the brand in good times, just when rich consumers may be setting their sights on more expensive products and services.",
+        "title": "Hermès - Orange Is The New Blackbook",
+        "date": null
+      },
+      {
+        "insight": "We believe Bitcoin being the younger asset has more headroom to grow from $1.",
+        "title": "From Coin to Compute - The Bitcoin Investing Guide",
+        "date": null
+      },
+      {
+        "insight": "We believe Bitcoin today signifies several intersecting trends — a digital asset hitting mainstream institutional adoption, Bitcoin’s evolving role in energy infrastructure, innovation in energy- efficient mining chip design, AI data center opportunities for Bitcoin miners, and leveraging Blockchain tech for financial innovation.",
+        "title": "From Coin to Compute - The Bitcoin Investing Guide",
+        "date": null
+      },
+      {
+        "insight": "WE BELIEVE THERE IS NO REASON TO We estimate that, based on shipment data, US consumers drank on average 8.",
+        "title": "Its still Five OClock Somewhere",
+        "date": null
+      },
+      {
+        "insight": "We believe there is no reason to panic.",
+        "title": "Its still Five OClock Somewhere",
+        "date": null
+      },
+      {
+        "insight": "We believe that if you haven't been following precious metals, this is the right tome (and perhaps time) to start.",
+        "title": "Is It Enough to Just Glitter? A Precious Metals Primer",
+        "date": "8-Jan-2024"
+      },
+      {
+        "insight": "we think 50-50 is the maximum achievable mix until the brand reaches maturity.",
+        "title": "Global Sportswear - The Great DTC Shift",
+        "date": null
+      },
+      {
+        "insight": "We believe the current agricultural upcycle will be longer than currently expected, with previous booms lasting six years or more.",
+        "title": "Agricultural Inputs - Seed Spray Eat Repeat",
+        "date": null
+      },
+      {
+        "insight": "We believe current market leaders to be best positioned for the future.",
+        "title": "Agricultural Inputs - Seed Spray Eat Repeat",
+        "date": null
+      },
+      {
+        "insight": "We believe Bayer can break out from sentiment jail, with the pharma pipeline upgraded, the agricultural cycle continuing, and new leadership re-evaluating the portfolio.",
+        "title": "Agricultural Inputs - Seed Spray Eat Repeat",
+        "date": null
+      },
+      {
+        "insight": "we believe that thoughtful regulation to minimize harm and maximize benefits is critical and that corporates must lean into earning their “license to trade.",
+        "title": "North America Cannabis - Is the Buzz Gone",
+        "date": null
+      },
+      {
+        "insight": "We believe Tilray (Market-Perform, target price $3.",
+        "title": "North America Cannabis - Is the Buzz Gone",
+        "date": null
+      }
+    ],
+    "Electric Vehicles": [
+      {
+        "insight": "We believe that the value creation from these reforms will be more significant and sustainable than the basics pursued to date.",
+        "title": "Japan Returns Revolution",
+        "date": "4-Sep-2025"
+      },
+      {
+        "insight": "We believe electric vehicles (EVs) will fully replace internal combustion engine (ICE) vehicles over the coming decades.",
+        "title": "Battery Utopia",
+        "date": "17-Jun-2024"
+      },
+      {
+        "insight": "we believe capacity expansion will need to take place rapidly outside China to meet the growing demand from the US and Europe.",
+        "title": "Battery Utopia",
+        "date": "17-Jun-2024"
+      },
+      {
+        "insight": "we believe the slowdown in growth is temporary.",
+        "title": "Battery Utopia",
+        "date": "17-Jun-2024"
+      },
+      {
+        "insight": "We believe over 200TWh of batteries will be required for the energy transition both in EVs ENERGY TRANSITION and energy storage.",
+        "title": "Battery Tech Roadmap 2023 - Faster Higher Stronger",
+        "date": null
+      },
+      {
+        "insight": "We believe the industry has come a long way on many dimensions.",
+        "title": "Alcohol and ESG - Can Selling a Psychoactive Drug Ever Be ES",
+        "date": null
+      },
+      {
+        "insight": "We believe US$14 trillion will be spent on batteries over the next 30 years as part of the energy transition.",
+        "title": "Turn Up the Voltage Investing Across the Battery Value Chain",
+        "date": null
+      },
+      {
+        "insight": "We believe investors should look broadly across the value chain for opportunities.",
+        "title": "Turn Up the Voltage Investing Across the Battery Value Chain",
+        "date": null
+      },
+      {
+        "insight": "We believe a material rerating is to come.",
+        "title": "Hyatt - Regency Revival",
+        "date": null
+      },
+      {
+        "insight": "we think L'Oréal, Nestle, and Lindt are well positioned for long- term returns.",
+        "title": "Consumer Irrelevance",
+        "date": "6-Dec-2021"
+      },
+      {
+        "insight": "we believe Covid-19 will act as a catalyst to drive top-line growth.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "we believe a recession caused by a pandemic would look quite different.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "We believe this \"New Philips\" can deliver an average 5.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "we think this current wave of consolidation is far from over.",
+        "title": "Consumer Chemicals - The Ingredients of Success in Food  Bev",
+        "date": null
+      },
+      {
+        "insight": "We believe the next wave of consolidation has just started.",
+        "title": "Consumer Chemicals - The Ingredients of Success in Food  Bev",
+        "date": null
+      },
+      {
+        "insight": "We think the answer here is consolidation — of both orders and the market — and expect an equilibrium to emerge.",
+        "title": "Evolution Not Revolution - Digital Ordering Delivery and Res",
+        "date": null
+      },
+      {
+        "insight": "We believe there is a far greater likelihood of significant deficits appearing in the iron ore market than is reflected in any current commodity price forecast, or indeed, as discounted in the values of the major mining companies.",
+        "title": "Valuing Jevons Invaluable Metal  Prospects for Global Iron O",
+        "date": null
+      },
+      {
+        "insight": "we believe that most forecasts of trend steel demand growth are simply not commensurate with global economic growth expectations over the same period, given steel's crucial role in the growth process.",
+        "title": "Valuing Jevons Invaluable Metal  Prospects for Global Iron O",
+        "date": null
+      },
+      {
+        "insight": "WE THINK CURRENT ESTIMATES We believe that the current understanding of the world's iron ore and steel production by OF CHINESE PRODUCTION entities such as the UN, the World Steel Association (WSA), the major industrial VOLUMES ARE WRONG consultancies, as well as the world's leading iron ore producers is incorrect.",
+        "title": "Valuing Jevons Invaluable Metal  Prospects for Global Iron O",
+        "date": null
+      },
+      {
+        "insight": "We believe vertically integrated OEMs — Tesla (Market-Perform) and BYD (Outperform) — are better positioned in a world where we may see tightness and bottlenecks in the supply chain.",
+        "title": "Electric Revolution 2018 - The Resistance",
+        "date": null
+      }
+    ],
+    "Japan": [
+      {
+        "insight": "We believe that the value creation from these reforms will be more significant and sustainable than the basics pursued to date.",
+        "title": "Japan Returns Revolution",
+        "date": "4-Sep-2025"
+      },
+      {
+        "insight": "we believe Japan is currently in a similar multi-year bull phase.",
+        "title": "Japan - The Land of Rising Returns",
+        "date": null
+      },
+      {
+        "insight": "We believe Japan is in the early stages of a multi-year bull cycle and argue for a strategic overweight to Japan equities.",
+        "title": "Japan - The Land of Rising Returns",
+        "date": null
+      },
+      {
+        "insight": "we believe the 2024 rally is likely to be led by large-caps.",
+        "title": "Japan - The Land of Rising Returns",
+        "date": null
+      }
+    ],
+    "Healthcare/Pharma": [
+      {
+        "insight": "we think the impact on dialysis players, Fresenius Medical Care and DaVita, is neutral over the next 5-10 years, but longer term we expect some headwinds.",
+        "title": "Global Healthcare - GLP-1s Vs The Weight Of The World",
+        "date": null
+      },
+      {
+        "insight": "We believe this headwind will dissipate over time as utilization in the core Medicaid population remains stable, and Medicaid plans should receive favorable rate adjustments over the next 12 months that will compensate for the changed risk pool.",
+        "title": "Healthcare Services 101",
+        "date": "27-Nov-2024"
+      },
+      {
+        "insight": "We believe margins for MA payers will recover over time as the industry will self-correct on pricing, and we see a moderation in utilization as a near-term catalyst for stocks in early 2025.",
+        "title": "Healthcare Services 101",
+        "date": "27-Nov-2024"
+      },
+      {
+        "insight": "we believe procedure volumes will be resilient across most subsegments, and any GLP-1 impact could take decades to materialize.",
+        "title": "Beyond The Scale - GLP-1 Drugs Diets Decisions",
+        "date": null
+      },
+      {
+        "insight": "We think digital care can challenge the assumption that the supply of doctors and nurses is constrained, leading to increased access, and also lower unit costs and better quality.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We think digital care and AI-based care will ultimately substitute certain doctor and nurse functions, greatly increasing the effective supply of clinicians and reducing unit costs.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We believe AI and digital care can address the issue of access to care.",
+        "title": "Global Healthcare - Dr AI Will See You Now",
+        "date": null
+      },
+      {
+        "insight": "We believe the industry has come a long way on many dimensions.",
+        "title": "Alcohol and ESG - Can Selling a Psychoactive Drug Ever Be ES",
+        "date": null
+      },
+      {
+        "insight": "we believe Covid-19 will act as a catalyst to drive top-line growth.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "we believe a recession caused by a pandemic would look quite different.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "We believe this \"New Philips\" can deliver an average 5.",
+        "title": "Philips - Harnessing the Healthcare Data Revolution",
+        "date": null
+      },
+      {
+        "insight": "we believe vaccines command a multiple closer to consumer than pharma owing to the high barriers to entry.",
+        "title": "Vaccines - The Robin Hood of Therapeutics",
+        "date": null
+      },
+      {
+        "insight": "We think vaccines are a good business.",
+        "title": "Vaccines - The Robin Hood of Therapeutics",
+        "date": null
+      },
+      {
+        "insight": "We believe such products will increasingly see most of their revenue coming from ex-U.",
+        "title": "Glorious Middle Age - The 2012 Biotech Rally Why It Might Co",
+        "date": null
+      },
+      {
+        "insight": "We believe many of the factors supporting the recent rally are sustainable, and that the fundamentals of the industry today are relatively strong.",
+        "title": "Glorious Middle Age - The 2012 Biotech Rally Why It Might Co",
+        "date": null
+      },
+      {
+        "insight": "We think the explanation has two components.",
+        "title": "Global Pharmaceuticals - Generating Alpha from Drug Stocks",
+        "date": null
+      },
+      {
+        "insight": "We think that sector-specific quantitative approaches are probably under-explored.",
+        "title": "Global Pharmaceuticals - Generating Alpha from Drug Stocks",
+        "date": null
+      },
+      {
+        "insight": "We think differential growth in the pharmaceutical sector is unusually predictable given long product cycles, known patent expiries, and a general absence of economic cyclicality.",
+        "title": "Global Pharmaceuticals - Generating Alpha from Drug Stocks",
+        "date": null
+      },
+      {
+        "insight": "We think 0-1% growth may be the most likely figure, but the risks around this value are skewed to the negative were there to be further macroeconomic disappointment or more stringent austerity measures implemented.",
+        "title": "Global Pharmaceuticals - The Implications of European Auster",
+        "date": null
+      },
+      {
+        "insight": "We believe that growth of the market will remain depressed in the low single-digits with some modest mix and cyclical recovery partially offsetting the increasing efforts of payers to limit their payments for spine surgeries.",
+        "title": "Medical Devices - Spine Market Under Scrutiny",
+        "date": null
+      }
+    ],
+    "China": [
+      {
+        "insight": "We believe investors are best served through a selection of high-quality companies that are market leaders today and will remain so.",
+        "title": "China 20 - Made In China Beyond 2025",
+        "date": null
+      },
+      {
+        "insight": "we believe, is going to be a key source of return for investors going forward as Chinese companies go global and leverage their low-cost, high-quality product strategy outside China.",
+        "title": "China 20 - Made In China Beyond 2025",
+        "date": null
+      },
+      {
+        "insight": "we think a cosmetics company cannot succeed without differentiated and innovative products upon which it optimizes through marketing.",
+        "title": "China Cosmetics - Zero to Hero",
+        "date": null
+      },
+      {
+        "insight": "we believe portfolios need to have higher Growth exposure and the inefficiencies of China mainland markets should be addressed systematically.",
+        "title": "Chinese Equities - Uninvestable No More",
+        "date": null
+      },
+      {
+        "insight": "we believe ESG investors in China need to reassess their strategies as they still remain overweight most Big Tech and Real Estate firms.",
+        "title": "Chinese Equities - Uninvestable No More",
+        "date": null
+      },
+      {
+        "insight": "we believe CDF will be able to maintain its leadership by leveraging its competitive advantages in: (1) economies of scale at the procurement side, and (2) better access to governmental projects due to its state-owned background.",
+        "title": "China Duty Free - All the Retail None of the Travel",
+        "date": null
+      },
+      {
+        "insight": "we believe a portfolio approach will ultimately prove more successful, and Bud is ahead with three of the top 7 strongest Super Premium brand equities and a wider portfolio of offerings at varying stages of development.",
+        "title": "The 2021 China Beer Guide",
+        "date": "1-Mar-2021"
+      },
+      {
+        "insight": "importantly, challenges are carefully analyzed to help avoid pitfalls and profit from this trend safely.",
+        "title": "Chinese Semiconductors - Think Global Expand Local",
+        "date": null
+      },
+      {
+        "insight": "importantly, with the precision and rigor that you wouldn't find easily elsewhere.",
+        "title": "Chinese Semiconductors - Think Global Expand Local",
+        "date": null
+      },
+      {
+        "insight": "we believe this Blackbook will help you navigate them successfully and profitably.",
+        "title": "Chinese Semiconductors - Think Global Expand Local",
+        "date": null
+      },
+      {
+        "insight": "We think these top dealers will (continue to) benefit from several key drivers of growth, and consider them core holdings for investors looking for quality growth compounders in China.",
+        "title": "Chinese Auto Dealers - Aftersales as a Service",
+        "date": null
+      },
+      {
+        "insight": "We think the multi-year earnings growth trajectories of these businesses mean their shares can continue to perform strongly.",
+        "title": "Chinese Auto Dealers - Aftersales as a Service",
+        "date": null
+      },
+      {
+        "insight": "We believe global demand has another 10MMbls/d of growth, with over half from China.",
+        "title": "The Rise and Fall of Chinas Oil Age",
+        "date": null
+      },
+      {
+        "insight": "we believe that Chinese oil demand can grow by another 35% or 5MMbls/d to reach close to 18MMbls/d (see Exhibit 2).",
+        "title": "The Rise and Fall of Chinas Oil Age",
+        "date": null
+      },
+      {
+        "insight": "we believe that these are likely to remain intact over the medium to long term.",
+        "title": "China Consumer - Where to Play How to WinPremium Is the New ",
+        "date": null
+      },
+      {
+        "insight": "we believe AI will make a major impact in China, namely, healthcare, automotive, surveillance, and automation, to explore AI's position and progress in them.",
+        "title": "Artificial Intelligence in China",
+        "date": "26-Jan-2018"
+      },
+      {
+        "insight": "We believe this Blackbook will help you better navigate through the uncharted waters.",
+        "title": "Chinese Semiconductors 2018 - Gearing Up for a New Era",
+        "date": null
+      },
+      {
+        "insight": "we believe fabless companies and OSAT (outsourced INCUMBENT PLAYERS AND WE assembly-and-test) companies are more vulnerable to China’s rise.",
+        "title": "Chinese Semiconductors 2018 - Gearing Up for a New Era",
+        "date": null
+      },
+      {
+        "insight": "We believe that the owners of credible, established Premium brands are best placed to continue capturing the spoils.",
+        "title": "China Consumer - Premium Is The New Mainstream",
+        "date": null
+      },
+      {
+        "insight": "we believe ecommerce should still be the most efficient monetization engine, social media should have improved with a bigger push for ad dollars, search will likely be slowing, and gaming will stall.",
+        "title": "China Internet - Theres Time Enough But None to Spare",
+        "date": null
+      }
+    ],
+    "Airlines/Travel": [
+      {
+        "insight": "We believe we are at an attractive medium-term entry point.",
+        "title": "Global Hotels - Asset-light Returns Heavy",
+        "date": null
+      },
+      {
+        "insight": "we believe CDF will be able to maintain its leadership by leveraging its competitive advantages in: (1) economies of scale at the procurement side, and (2) better access to governmental projects due to its state-owned background.",
+        "title": "China Duty Free - All the Retail None of the Travel",
+        "date": null
+      },
+      {
+        "insight": "we believe the best operators can offset the risks.",
+        "title": "Global Hotels - Back on the Road or Up in the Air",
+        "date": null
+      },
+      {
+        "insight": "We believe travel is resilient: Hilton opened its first hotel in 1919, one year after the Spanish Flu.",
+        "title": "Global Hotels - Back on the Road or Up in the Air",
+        "date": null
+      },
+      {
+        "insight": "we believe travel will be resilient.",
+        "title": "Global Hotels - Back on the Road or Up in the Air",
+        "date": null
+      },
+      {
+        "insight": "We believe the business models of hotel brands and OTAs are converging and will continue to do so over time.",
+        "title": "Global Lodging - Hotels vs OTAs",
+        "date": null
+      },
+      {
+        "insight": "Importantly, history shows that once deferred maintenance begins, growth tends to continue for the next three years.",
+        "title": "Commercial Aircraft - New Markets Old Airplanes  A Growth St",
+        "date": null
+      },
+      {
+        "insight": "We believe the Airbus move to re-engine the A320 was the wrong decision, as we expect the A320neo to lower prices on current A320s.",
+        "title": "Commercial Aircraft - New Markets Old Airplanes  A Growth St",
+        "date": null
+      }
+    ],
+    "ESG/Sustainability": [
+      {
+        "insight": "We believe that additional near-term financial incentives are needed for farmers to adopt regenerative agricultural practices (e.",
+        "title": "Sustainable Alpha  An ESG Thematic Primer",
+        "date": null
+      },
+      {
+        "insight": "We believe the industry has come a long way on many dimensions.",
+        "title": "Alcohol and ESG - Can Selling a Psychoactive Drug Ever Be ES",
+        "date": null
+      },
+      {
+        "insight": "we think about supply chain traceability and accounting for companies’ environmental and biodiversity footprints.",
+        "title": "Ten Shades of Green  An ESG Thematic Primer",
+        "date": null
+      },
+      {
+        "insight": "We believe that the most important investment insights often come from looking at the world through a different lens.",
+        "title": "ESG - Beyond Ratings and Scores",
+        "date": null
+      }
+    ],
+    "India": [
+      {
+        "insight": "importantly, is it now ready to deliver on those promises? As you'll realize by the time you wrap up the last chapter, our assessments indicate that it is finally ready.",
+        "title": "Indias Promise - The Prosaic Path to Sustained Growth",
+        "date": null
+      },
+      {
+        "insight": "we believe EBITDA can double again to over INR2tn by FY26 through growth in Jio and retail expansion.",
+        "title": "Reliance Industries - Indias Exxon ATT and Amazon Rolled Int",
+        "date": null
+      },
+      {
+        "insight": "We believe this small window of opportunity, if missed, could fragment the market and increase competition.",
+        "title": "India Autos - Bern to RunWe Built an E-Bike and Red-Lined th",
+        "date": null
+      },
+      {
+        "insight": "we believe in-sourcing in small appliances and white goods will cap growth for such manufacturers in the long term.",
+        "title": "India Consumer Appliances - Rise of the Indian Brands",
+        "date": null
+      },
+      {
+        "insight": "we believe it is too early to differentiate between vendors at this stage as all have room to grow in the medium term.",
+        "title": "India Consumer Appliances - Rise of the Indian Brands",
+        "date": null
+      },
+      {
+        "insight": "importantly, the recent deregulation of spectrum trading and sharing is starting to unleash market consolidation, which we believe will lead to a lessening of competitive intensity.",
+        "title": "Indian Telecoms - Still Not for the Faint-Hearted",
+        "date": null
+      },
+      {
+        "insight": "We believe 2016 will be an important year in resetting the path forward.",
+        "title": "Indian Telecoms - Still Not for the Faint-Hearted",
+        "date": null
+      },
+      {
+        "insight": "We believe recent regulatory changes — particularly the deregulation of spectrum trading and sharing — as well as the impending \"data tsunami\" as users migrate from heavily congested 3G networks to new uncongested 4G services, will reset the market, and drive operator consolidation.",
+        "title": "Indian Telecoms - Still Not for the Faint-Hearted",
+        "date": null
+      }
+    ],
+    "Food/Beverage": [
+      {
+        "insight": "we think the long-term growth drivers remain intact.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "We think there could be large-scale consolidation in Europe, Asia, and South America over the next few years, leading to several global players dominating.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "We think this inflection can continue with more stacking, increased basket sizes, more density, and improved efficiencies in 3PL delivery.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "we believe a portfolio approach will ultimately prove more successful, and Bud is ahead with three of the top 7 strongest Super Premium brand equities and a wider portfolio of offerings at varying stages of development.",
+        "title": "The 2021 China Beer Guide",
+        "date": "1-Mar-2021"
+      },
+      {
+        "insight": "we believe that the group as a whole could benefit in terms of market share if ecommerce sales accelerate meaningfully due to the greater ability of larger brands and companies to pay for online shelf space, less competition from challenger brands that exit the market, and rekindling of a stronger relationship with retailers.",
+        "title": "US Food - Famine or Feast Post Covid-19",
+        "date": null
+      },
+      {
+        "insight": "we think this current wave of consolidation is far from over.",
+        "title": "Consumer Chemicals - The Ingredients of Success in Food  Bev",
+        "date": null
+      },
+      {
+        "insight": "We believe the next wave of consolidation has just started.",
+        "title": "Consumer Chemicals - The Ingredients of Success in Food  Bev",
+        "date": null
+      },
+      {
+        "insight": "We believe our \"4 Pillars of Success\" framework is a robust mechanism to assess industry and company EPS growth and ROIC momentum, which drive shareholder value.",
+        "title": "European Food  HPC - 12-Year Global Market Share Analysis",
+        "date": null
+      },
+      {
+        "insight": "We believe that this framework encapsulates the key drivers of shareholder value: Sustainable Top-Line Growth, Operating Effectiveness, Strong Generation and Sensible Use of Cash, and Management Quality.",
+        "title": "European Food  HPC - 12-Year Global Market Share Analysis",
+        "date": null
+      },
+      {
+        "insight": "importantly, we believe the Group can continue to deliver strong operating and stock performance over the next five to 10 years, as we expect 4-5% top-line growth, 40- 50bps margin growth and high single-digit EPS growth, plus a 2-3% dividend yield.",
+        "title": "European Food  HPC - 12-Year Global Market Share Analysis",
+        "date": null
+      },
+      {
+        "insight": "We believe our \"4 Pillars of Success\" framework is a robust mechanism to assess market- and company-specific dynamics in the Food and HPC industries.",
+        "title": "European Food  HPC - Our Framework and Company Theses in 5 x",
+        "date": null
+      },
+      {
+        "insight": "importantly, we believe that this strong performance can continue.",
+        "title": "European Food  HPC - Our Framework and Company Theses in 5 x",
+        "date": null
+      },
+      {
+        "insight": "We believe this strong performance can continue.",
+        "title": "European Food  HPC - Our Framework and Company Theses in 5 x",
+        "date": null
+      },
+      {
+        "insight": "We believe our \"4 Pillars of Success\" framework is a robust mechanism to assess market- and company-specific dynamics in the Food industry.",
+        "title": "European Food - The Industry Deep Dive Still Attractive Not ",
+        "date": null
+      },
+      {
+        "insight": "importantly, we believe that this strong operating and stock performance can continue.",
+        "title": "European Food - The Industry Deep Dive Still Attractive Not ",
+        "date": null
+      },
+      {
+        "insight": "importantly, sustained good operating performance should continue to drive attractive total shareholder returns.",
+        "title": "European Food - The Industry Deep Dive Still Attractive Not ",
+        "date": null
+      },
+      {
+        "insight": "we think China is unlikely to be a major source of profits for global brewers for at least a decade.",
+        "title": "The Bernstein Global Beer Guide: Sixth Edition",
+        "date": "16-Feb-2021"
+      },
+      {
+        "insight": "We believe our \"4 Pillars of Success\" framework is a robust mechanism to assess industry and company EPS growth and ROIC momentum, which drive shareholder value.",
+        "title": "European Food  HPC - 10-Year Global Market Share Analysis",
+        "date": null
+      },
+      {
+        "insight": "importantly, we believe the sector can continue to deliver strong operating and stock performance over the next five to 10 years, as we expect 4-5% top-line growth, 40-50bps margin growth and high single-digit EPS growth, plus a 2-3% dividend yield.",
+        "title": "European Food  HPC - 10-Year Global Market Share Analysis",
+        "date": null
+      },
+      {
+        "insight": "We believe that this framework encapsulates the key drivers of shareholder value: sustainable top-line growth, operating effectiveness, strong generation and sensible use of cash, and management quality.",
+        "title": "European Food  HPC - 10-Year Global Market Share Analysis",
+        "date": null
+      }
+    ],
+    "Energy/Oil": [
+      {
+        "insight": "we think the long-term growth drivers remain intact.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "We think there could be large-scale consolidation in Europe, Asia, and South America over the next few years, leading to several global players dominating.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "We think this inflection can continue with more stacking, increased basket sizes, more density, and improved efficiencies in 3PL delivery.",
+        "title": "European Food Delivery - State of War to Spoils of War",
+        "date": null
+      },
+      {
+        "insight": "we believe that moved the required fee from the low $2/mcf range to the high $2/mcf range to get a low- teens return.",
+        "title": "US Gas - What Is the Right Midcycle Price for Gas",
+        "date": null
+      },
+      {
+        "insight": "we believe the two that matter most are medium-term LNG (liquefied natural gas) starts and the amount of free gas coming from oil associated gas at the bottom of the cost curve.",
+        "title": "US Gas - What Is the Right Midcycle Price for Gas",
+        "date": null
+      },
+      {
+        "insight": "We think annual battery sales by 2050 could reach 12TWh compared to 0.",
+        "title": "Global Energy Storage - Resistance is Futile",
+        "date": null
+      },
+      {
+        "insight": "we believe the ultimate size of the battery market is still underestimated by most models.",
+        "title": "Global Energy Storage - Resistance is Futile",
+        "date": null
+      },
+      {
+        "insight": "We think it can grow almost 100x from current levels (166GWh in 2020) to 12TWh in 2050.",
+        "title": "Global Energy Storage - Resistance is Futile",
+        "date": null
+      },
+      {
+        "insight": "We believe that should change in the coming years; the decade-long shale buildout is ending, which should move midstream companies into stabler free cash generation mode.",
+        "title": "Natural Gas  MLPs - Midstream 101",
+        "date": null
+      },
+      {
+        "insight": "Critically, as the core topic of this Blackbook, we've also built conviction around the financial and balance sheet resilience of the Integrated Oil sector.",
+        "title": "European Integrated Oils - Survival of the Fittest",
+        "date": null
+      },
+      {
+        "insight": "We believed, as we still do today, that recent softness in international spot gas, chemical, and refining margins would pass, as would the demand collapse from Covid-19, and were willing to look through this weakness for the rerating we expected in the stocks.",
+        "title": "European Integrated Oils - Survival of the Fittest",
+        "date": null
+      },
+      {
+        "insight": "we believe the NGL midstream chain (defined as processing => NGL pipeline => fractionation => NGL exports) has actual barriers to entry, unlike most other subsectors of midstream.",
+        "title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+        "date": null
+      },
+      {
+        "insight": "we believe ultimately means there will be a lot more NGLs in five years (+15% versus estimates) than the market expects.",
+        "title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+        "date": null
+      },
+      {
+        "insight": "We think of midstream as having four subsectors — (1) gathering and processing, (2) gas transport, (3) natural gas liquid (NGL) transport, and (4) crude transport.",
+        "title": "Why Natural Gas Liquids NGL Midstream Is the Best Midstream",
+        "date": null
+      },
+      {
+        "insight": "We believe global demand has another 10MMbls/d of growth, with over half from China.",
+        "title": "The Rise and Fall of Chinas Oil Age",
+        "date": null
+      },
+      {
+        "insight": "we believe that Chinese oil demand can grow by another 35% or 5MMbls/d to reach close to 18MMbls/d (see Exhibit 2).",
+        "title": "The Rise and Fall of Chinas Oil Age",
+        "date": null
+      },
+      {
+        "insight": "we believe that the oil linkage will prevail, given the lack of alternatives.",
+        "title": "Goodbye Gas Glut  A New Supercool Cycle Begins",
+        "date": null
+      },
+      {
+        "insight": "we believe that in the low US$40s, US oil production would be flat.",
+        "title": "US Natural Gas - Long Way Down",
+        "date": null
+      },
+      {
+        "insight": "We believe that this will spread to the Marcellus/Utica, resulting in a US$2.",
+        "title": "US Natural Gas - Long Way Down",
+        "date": null
+      },
+      {
+        "insight": "We believe gas prices will fall to US$2.",
+        "title": "US Natural Gas - Long Way Down",
+        "date": null
+      }
+    ],
+    "Clean Energy": [
+      {
+        "insight": "We believe hydrogen will play a pivotal role in the energy transition.",
+        "title": "Hydrogen Highway 2023 - Green Shoots",
+        "date": null
+      },
+      {
+        "insight": "We believe that the energy density of hydrogen gives advantages to operators, especially in heavy goods vehicles at Class 5 or above.",
+        "title": "Hydrogen Highway 2023 - Green Shoots",
+        "date": null
+      },
+      {
+        "insight": "we believe the inflection point for hydrogen will come in the 2025-30 window, as we move out of the demonstration phase and into the implementation phase.",
+        "title": "Hydrogen Highway 2022 - Rocky Road to Decarbonization",
+        "date": null
+      },
+      {
+        "insight": "We believe polysilicon prices will be more resilient as China's tighter controls of energy quota will cause delays to capacity expansion.",
+        "title": "The New Solar Paradigm",
+        "date": "4-Jan-2022"
+      },
+      {
+        "insight": "importantly, it has an immensely high energy density per unit of mass, which makes it versatile as a fuel and an ideal replacement for hydrocarbons in hard- to-decarbonize sectors such as transport, industry, and heating.",
+        "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+        "date": null
+      },
+      {
+        "insight": "we believe there are a few practical alternatives to hydrogen.",
+        "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+        "date": null
+      },
+      {
+        "insight": "We believe the cost of green hydrogen will fall to US$1-US$2/kg by 2030, reaching parity with gray hydrogen and becoming cost competitive across many industries relative to alternative fuels.",
+        "title": "Hydrogen Highway 2021 - Hydrogen One Carbon Zero",
+        "date": null
+      },
+      {
+        "insight": "We believe that the current valuation does not include any value for Ørsted's pipeline beyond 2022, nor does it reflect any upside from lower capex (vs.",
+        "title": "Catch Offshore Wind in Your Sails With Ørsted",
+        "date": "23-Nov-2017"
+      },
+      {
+        "insight": "We believe Infineon is next on the list, and this Blackbook brings together several years' worth of evidence, which we believe strongly supports this conclusion.",
+        "title": "Power Semiconductors - The Electric Vehicle and Clean Energy",
+        "date": null
+      },
+      {
+        "insight": "We believe Enel, Enel Green Power, Iberdrola, EDF, and E.",
+        "title": "The Sun Also Rises - Distributed Solar and the Future of the",
+        "date": null
+      },
+      {
+        "insight": "we believe that there are three fundamental mistakes that many investors make when viewing the solar industry.",
+        "title": "Solar and the Next Energy Revolution: Beginning to See the Light",
+        "date": "19-Sep-2013"
+      },
+      {
+        "insight": "we think Apple can develop defensible sourcing strategies, bringing in enough volume either in negotiations with Samsung or through the development of sourcing alternatives.",
+        "title": "Global Handsets in 2013 - Winds of Change in Mobile Ecosyste",
+        "date": null
+      },
+      {
+        "insight": "We believe Samsung largely owes its success to its \"integrated-dominant\" business Stakes in This Confrontation model.",
+        "title": "Global Handsets in 2013 - Winds of Change in Mobile Ecosyste",
+        "date": null
+      },
+      {
+        "insight": "We believe Apple has to develop enough scale in an alternative sourcing cluster that can compete against Samsung.",
+        "title": "Global Handsets in 2013 - Winds of Change in Mobile Ecosyste",
+        "date": null
+      },
+      {
+        "insight": "We believe the PC OEMs prefer this model, and Windows 8 would allow them to compete more effectively against the new form factors.",
+        "title": "Windows 8  Catalyzing the PC Ecosystem and Beyond",
+        "date": null
+      },
+      {
+        "insight": "we believe Windows 8 could \"reset\" the competitive environment in the Wintel space, allowing them to recapture some of the product leadership (and consumer mind share) lost with the introduction of the iPad and Android tablets.",
+        "title": "Windows 8  Catalyzing the PC Ecosystem and Beyond",
+        "date": null
+      },
+      {
+        "insight": "we believe the expansion of deepwater development activity will be the next intensity driver.",
+        "title": "US Oil Services - Winds of Change The Shifting Drivers of Se",
+        "date": null
+      },
+      {
+        "insight": "we believe that oil and gas production will only increase as long as prices are sufficiently high.",
+        "title": "US Oil Services - Winds of Change The Shifting Drivers of Se",
+        "date": null
+      },
+      {
+        "insight": "we believe that an uptrend in service intensity is here to stay, the forces that will determine the trajectory are changing, with critical implications for investors taking positions in the oilfield services.",
+        "title": "US Oil Services - Winds of Change The Shifting Drivers of Se",
+        "date": null
+      },
+      {
+        "insight": "We believe that domestic Chinese prices will continue to fall while Chinese suppliers benefit from lower input costs, including government financing aimed at increasing international expansion.",
+        "title": "Earth Wind and Fire - The Global Outlook for Renewable and C",
+        "date": null
+      }
+    ],
+    "Banking/Finance": [
+      {
+        "insight": "we believe some could be winners — Tinkoff for instance continues to put up supernormal profits, while Kakao Bank, in spite of the market backdrop, is a successful digital bank in its own right.",
+        "title": "Digital Banks 20 - The Change Is Permanentthe Valuations Are",
+        "date": null
+      },
+      {
+        "insight": "We believe digital banks aren't just here to stay — new entrants will continue to pop up, and incumbent traditional banks will respond to the threat by going digital, blurring the lines in the process.",
+        "title": "Digital Banks 20 - The Change Is Permanentthe Valuations Are",
+        "date": null
+      },
+      {
+        "insight": "we believe more digital banks will come to the public markets at some point — our goal is to share insights on how to separate the wheat from the chaff and pick winners.",
+        "title": "Digital Banks 20 - The Change Is Permanentthe Valuations Are",
+        "date": null
+      },
+      {
+        "insight": "we think this is the wrong way to look at the company.",
+        "title": "SoftBank - Still The Berkshire Hathaway of Tech",
+        "date": null
+      },
+      {
+        "insight": "we think investors should focus on two key points.",
+        "title": "SoftBank - Still The Berkshire Hathaway of Tech",
+        "date": null
+      },
+      {
+        "insight": "We believe the true value of the Vision Fund is not currently reflected in the Group's shares.",
+        "title": "SoftBank - Still The Berkshire Hathaway of Tech",
+        "date": null
+      },
+      {
+        "insight": "we think Regions does too, though its current run-rate efficiency ratio would suggest otherwise.",
+        "title": "Superregional Banks - Leaner and Cleaner",
+        "date": null
+      },
+      {
+        "insight": "we think it's important to look beyond 2018 to find some of the potentially under-appreciated (and longer-term) fundamental improvement stories.",
+        "title": "Superregional Banks - Leaner and Cleaner",
+        "date": null
+      },
+      {
+        "insight": "we think the key differentiator has been the divergence in operating leverage, which in turn affects efficiency ratio trends, earnings growth, and overall ROA and ROTCE expansion.",
+        "title": "Superregional Banks - Leaner and Cleaner",
+        "date": null
+      },
+      {
+        "insight": "we think the active versus passive debate will become less relevant, while the question of trust could become more important.",
+        "title": "Trust in Asset Management?",
+        "date": "26-Feb-2018"
+      },
+      {
+        "insight": "we think that trust is emerging as a key force for change in the investment industry.",
+        "title": "Trust in Asset Management?",
+        "date": "26-Feb-2018"
+      },
+      {
+        "insight": "We think that trust is becoming one of the key concepts that will define the future of the asset management industry.",
+        "title": "Trust in Asset Management?",
+        "date": "26-Feb-2018"
+      },
+      {
+        "insight": "we think Zurich should trade at a discount rather than at a premium to its peers (as an example, Allianz has substantially less reserve risk than Zurich).",
+        "title": "Lifting the Veil - An In-Depth Assessment of Insurance Reser",
+        "date": null
+      },
+      {
+        "insight": "we think China's long-term expansion plans in Asia will be positive for the group.",
+        "title": "Singaporean Banks - A Review of the Long-Term Case With the ",
+        "date": null
+      },
+      {
+        "insight": "We think attention is turning to a question of the longer-term case — hence, the relevance of our investment-case review to look beyond the credit cycle to the next five years.",
+        "title": "Singaporean Banks - A Review of the Long-Term Case With the ",
+        "date": null
+      },
+      {
+        "insight": "we think there are interesting ways to position oneself in the group — Wells Fargo screens cheap relative to peers, has attractive dry powder on the balance sheet, and should see efficiency ratio improvement over the next two to three years.",
+        "title": "Superregional Banks - Quality Compounders With Cyclical Upsi",
+        "date": null
+      },
+      {
+        "insight": "we think a crucial step for the industry to take.",
+        "title": "The Future of Asset Management",
+        "date": "17-Nov-2016"
+      },
+      {
+        "insight": "we think there is a stable, defendable core asset management industry that provides the returns that asset owners desperately need in a low-return world.",
+        "title": "The Future of Asset Management",
+        "date": "17-Nov-2016"
+      },
+      {
+        "insight": "we think it is an appropriate time to: (1) review (assess how each country has performed, against expectations set in the beginning of 2015); (2) refocus (based on the longer term backdrops so critical to supporting banking sector attractiveness); and (3) rebalance (overweighting countries and banking systems most likely to attract resurgent interest as the ASEAN region finds stronger footing).",
+        "title": "ASEAN Banks - The Need to Reposition for Divergent Long-Term",
+        "date": null
+      },
+      {
+        "insight": "we believe are positive about, and raise warnings regarding our most significant areas of concern.",
+        "title": "ASEAN Banks - The Need to Reposition for Divergent Long-Term",
+        "date": null
+      }
+    ],
+    "Defense": [
+      {
+        "insight": "we believe it is most For the exclusive use of GRANT WEI at PARNASSUS INVESTMENTS on 27-Dec-2025 important to look beneath the top line of the budget at individual stocks, because budget growth exposures are set to diverge, making stock picking more important than in the past.",
+        "title": "Global Defense - Games Without Frontiers War Without Tears",
+        "date": null
+      },
+      {
+        "insight": "we believe stock picking is now more important than ever, as budget trends diverge.",
+        "title": "Global Defense - Games Without Frontiers War Without Tears",
+        "date": null
+      },
+      {
+        "insight": "we believe disappointed investors who had focused on the improving budget outlook.",
+        "title": "Global Defense - In Years of Living Dangerously",
+        "date": null
+      },
+      {
+        "insight": "We believe it is good to be in defense, but a better entry point may come later in 2018, particularly with risk around midterm elections.",
+        "title": "Global Defense - In Years of Living Dangerously",
+        "date": null
+      }
+    ]
+  },
+  "predictions_by_year": {
+    "2025": [
+      {
+        "prediction": "we expect this to rise to 3% of sales by 2028, with cross-selling synergies as high as 6% of group sales.",
+        "title": "The Schneider Snowball",
+        "date": "4-Sep-2025"
+      }
+    ],
+    "2024": [
+      {
+        "prediction": "will likely have the largest capacity in Europe by 2030.",
+        "title": "Battery Utopia",
+        "date": "17-Jun-2024"
+      },
+      {
+        "prediction": "15% CAGR by 2030 and the mix is DEMAND IS ENTERING AN shifting toward AI, which is 4x more power-intensive than traditional data centers.",
+        "title": "The Electric Butterfly Effect",
+        "date": "24-May-2024"
+      }
+    ],
+    "2023": [
+      {
+        "prediction": "We expect the crypto asset management industry to evolve from a ~$50 billion cottage industry today to ~$650 billion in managed assets by 2028, led by regulated ETFs, index-based passives, and active liquid crypto products.",
+        "title": "The Institutional guide to Blockchain and digital assets",
+        "date": "1-Nov-2023"
+      },
+      {
+        "prediction": "We expect ~$28 Bn and $95Bn in revenues across all institutional crypto products led by trading, prime broking, custody, ETFs, and tokenized securities over the next five and ten years, respectively (Exhibit 1 to Exhibit 3).",
+        "title": "The Institutional guide to Blockchain and digital assets",
+        "date": "1-Nov-2023"
+      }
+    ],
+    "2022": [
+      {
+        "prediction": "will likely see their market share drop to only 20% by 2060, according to President Xi's remarks in in October 2021.",
+        "title": "The New Solar Paradigm",
+        "date": "4-Jan-2022"
+      }
+    ],
+    "2021": [
+      {
+        "prediction": "25% cost decline in onshore and 45% in offshore by 2030.",
+        "title": "Propelling the Winds of Change: Vestas and Siemens Gamesa Initiation",
+        "date": "11-May-2021"
+      },
+      {
+        "prediction": "20% CAGR, reaching close to a 10% share by 2024.",
+        "title": "The 2021 China Beer Guide",
+        "date": "1-Mar-2021"
+      },
+      {
+        "prediction": "we expect the Super Premium segment to continue growing at a ~20% CAGR, reaching close to a 10% share by 2024.",
+        "title": "The 2021 China Beer Guide",
+        "date": "1-Mar-2021"
+      }
+    ],
+    "2014": [
+      {
+        "prediction": "We expect 3-4% GDP-driven growth globally over the next five years, with emerging markets growing at double the speed of developed markets.",
+        "title": "Introduction to European Insurance: How to Transform Risk Into Value",
+        "date": "1-Jul-2014"
+      },
+      {
+        "prediction": "we expect to be the case over the next few years.",
+        "title": "The Ag-Cellent Times Are Over — A Critical View of the Agricultural Cycle and Its Inputs",
+        "date": "20-May-2014"
+      }
+    ],
+    "2011": [
+      {
+        "prediction": "we expect a tight supply-demand balance and prices to be volatile around a higher mean for two of the biggest crops over the next three to five years.",
+        "title": "Four Ways to Play Soft Commodity Inflation",
+        "date": "9-Feb-2011"
+      }
+    ],
+    "2010": [
+      {
+        "prediction": "we expect wireless equipment spending to grow reasonably over the next five years, largely driven by mobile broadband.",
+        "title": "Understanding Telecom Equipment Competitive Dynamics and Growth Prospects",
+        "date": "13-Sep-2010"
+      }
+    ],
+    "2009": [
+      {
+        "prediction": "will decline from 2010 though 2020 — and could even disappear by 2020.",
+        "title": "When the Oil Well Runs Dry",
+        "date": "18-Nov-2009"
+      }
+    ],
+    "2004": [
+      {
+        "prediction": "we expect the twin investment vectors of third- generation wireless and residential broadband to converge over the next few years to deliver nearly ubiquitous and seamless communications applications.",
+        "title": "The Telecommunications Equipment Cycle: How Big, How Long, Who Wins",
+        "date": "12-Nov-2004"
+      }
+    ]
+  }
+}

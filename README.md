@@ -1,40 +1,38 @@
 # SwipeStreet
 
-Mobile app that transforms institutional research into tweet-sized learning cards.
+Bite-sized investing lessons delivered through a swipe-based mobile app.
 
 ## Architecture
 
 ```
 swipestreet/
-├── backend/          # FastAPI server
-├── content/          # Card generation pipeline
-├── data/             # Raw Bernstein research data
-└── mobile/           # React Native iOS app (Expo)
+├── backend/          # Express.js API server
+├── mobile/           # React Native (Expo) iOS/Android app
+└── .github/          # CI/CD workflows
 ```
 
 ## Quick Start
 
-### 1. Generate Cards
-
-```bash
-cd content
-pip install -r requirements.txt
-python card_generator.py
-```
-
-This creates `content/cards/cards.json` with ~167 learning cards.
-
-### 2. Start Backend
+### 1. Start Backend
 
 ```bash
 cd backend
-pip install -r requirements.txt
-python main.py
+npm install
+cp .env.example .env  # Configure environment variables
+npm run dev
 ```
 
-API runs at `http://localhost:8000`
+API runs at `http://localhost:3001`
 
-### 3. Run Mobile App
+Required environment variables:
+- `SUPABASE_URL` - Your Supabase project URL
+- `SUPABASE_KEY` - Supabase service role key
+- `ANTHROPIC_API_KEY` - Claude API key for chat
+- `STRIPE_SECRET_KEY` - Stripe secret key
+- `STRIPE_WEBHOOK_SECRET` - Stripe webhook signing secret
+- `JWT_SECRET` - Secret for JWT tokens
+
+### 2. Run Mobile App
 
 ```bash
 cd mobile
@@ -42,72 +40,86 @@ npm install
 npx expo start
 ```
 
-Press `i` for iOS simulator or scan QR with Expo Go.
+Press `i` for iOS simulator, `a` for Android emulator, or scan QR with Expo Go.
 
 ## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/api/auth/register` | POST | Register device |
-| `/api/feed` | GET | Get card feed |
-| `/api/feed/categories` | GET | List categories |
-| `/api/progress` | POST | Mark card seen/saved |
-| `/api/saved` | GET | Get saved cards |
-| `/api/sync/cards` | GET | Sync all cards for offline |
+| `/api/auth/me` | GET | Get user profile |
+| `/api/cards/feed` | GET | Get personalized card feed |
+| `/api/cards/meta/categories` | GET | List categories |
+| `/api/cards/action` | POST | Record card action (seen/saved/liked/disliked) |
+| `/api/cards/user/saved` | GET | Get saved cards |
+| `/api/cards/sync/all` | GET | Sync all cards for offline |
+| `/api/chat/message` | POST | Chat with AI tutor |
 | `/api/subscription/status` | GET | Check subscription |
+| `/api/subscription/checkout` | POST | Create Stripe checkout |
+| `/api/admin/*` | Various | Admin panel endpoints |
+
+## Features
+
+- **Swipe-based learning**: Swipe right for positive signal, left for "show less like this"
+- **AI Chat Tutor**: Ask follow-up questions about any card
+- **Personalized Feed**: TikTok-style recommendation based on your preferences
+- **Analyst Profile**: Filter content by industries and geographies you cover
+- **Offline Mode**: Cards cached for offline learning
+- **Subscription**: Monthly/yearly plans via Stripe
 
 ## Card Types
 
+- **lesson** - Educational content
 - **insight** - Key analytical insight
-- **prediction** - Forward-looking statement
-- **contrarian** - Against-consensus view
+- **pattern** - Market pattern or trend
 - **number** - Key statistic or metric
 - **thesis** - Investment thesis summary
 
-## Categories
+## Building for Production
 
-- AI/Technology
-- Automotive
-- China
-- Clean Energy
-- Electric Vehicles
-- Energy/Oil
-- Europe
-- Food/Beverage
-- Healthcare/Pharma
-- Luxury/Consumer
+### Backend Deployment
 
-## Offline Mode
+Deploy to Railway, Render, or any Node.js hosting:
 
-Cards are automatically cached for offline learning. The app works fully offline after initial sync.
+```bash
+cd backend
+npm run build  # if using TypeScript
+npm start
+```
 
-## Subscription (RevenueCat)
-
-1. Create RevenueCat account
-2. Add iOS/Android app
-3. Create "pro" entitlement
-4. Add API keys to `mobile/src/services/subscription.ts`
-
-## Building for iOS
+### Mobile App
 
 ```bash
 cd mobile
-npx expo prebuild
-npx expo run:ios
+
+# Preview build (internal testing)
+eas build --profile preview --platform all
+
+# Production build (app stores)
+eas build --profile production --platform all
+
+# Submit to stores
+eas submit --platform all
 ```
 
-Or use EAS Build:
+### App Store Configuration
 
-```bash
-eas build --platform ios
-```
+**iOS:**
+1. Create app in App Store Connect
+2. Update `eas.json` with Apple credentials
+3. Run `eas submit -p ios`
 
-## Data Source
+**Android:**
+1. Create app in Google Play Console
+2. Generate service account key as `google-play-key.json`
+3. Run `eas submit -p android`
 
-Content sourced from Bernstein Research Blackbooks covering:
-- 1000+ research reports
-- 17 themes
-- 10+ years of data
+## Admin Panel
+
+Access the admin panel at `http://localhost:3001/admin` to:
+- View dashboard stats
+- Manage content cards
+- View users and subscriptions
 
 ## License
 

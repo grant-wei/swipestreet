@@ -1,1 +1,46 @@
-mobile/
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Build outputs
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# Secrets and keys
+*.pem
+*.key
+*.p12
+*.p8
+*.jks
+*.mobileprovision
+google-play-key.json
+
+# Mobile specific (if not using separate .gitignore)
+.expo/
+web-build/
+*.tsbuildinfo
+/ios
+/android

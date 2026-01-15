@@ -12,21 +12,37 @@ const anthropic = new Anthropic({
 // Chat about a card
 router.post('/message', optionalAuth, async (req, res, next) => {
   try {
-    const { card_id, messages } = req.body;
+    const { card_id, messages, card: cardPayload } = req.body;
 
-    if (!card_id || !messages || !Array.isArray(messages)) {
-      return res.status(400).json({ error: 'card_id and messages array required' });
+    if (!messages || !Array.isArray(messages)) {
+      return res.status(400).json({ error: 'messages array required' });
     }
 
-    // Get card content
-    const { data: card, error } = await supabase
-      .from('cards')
-      .select('type, content, expanded, categories, tickers')
-      .eq('id', card_id)
-      .single();
+    let card = null;
+    if (card_id) {
+      const { data, error } = await supabase
+        .from('cards')
+        .select('type, content, expanded, categories, tickers')
+        .eq('id', card_id)
+        .single();
 
-    if (error || !card) {
-      return res.status(404).json({ error: 'Card not found' });
+      if (!error && data) {
+        card = data;
+      }
+    }
+
+    if (!card && cardPayload) {
+      card = {
+        type: cardPayload.type || 'insight',
+        content: cardPayload.content,
+        expanded: cardPayload.expanded || '',
+        categories: Array.isArray(cardPayload.categories) ? cardPayload.categories : [],
+        tickers: Array.isArray(cardPayload.tickers) ? cardPayload.tickers : [],
+      };
+    }
+
+    if (!card || !card.content) {
+      return res.status(card_id ? 404 : 400).json({ error: 'Card not found' });
     }
 
     // Build context from card only - no internal data
@@ -60,12 +76,15 @@ Help the user understand this insight better. Be concise (2-3 sentences max per 
 
     // Log chat for analytics (optional)
     if (req.user?.userId) {
-      await supabase.from('chat_logs').insert({
+      const { error: logError } = await supabase.from('chat_logs').insert({
         user_id: req.user.userId,
         card_id,
         message_count: messages.length + 1,
         created_at: new Date().toISOString(),
-      }).catch(() => {}); // Don't fail if logging fails
+      });
+      if (logError) {
+        console.warn('Chat log insert failed:', logError.message || logError);
+      }
     }
 
     res.json({

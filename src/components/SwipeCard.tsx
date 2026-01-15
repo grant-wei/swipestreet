@@ -9,6 +9,7 @@ import {
   PanResponder,
   Platform,
   Pressable,
+  ViewStyle,
 } from 'react-native';
 import * as Clipboard from 'expo-clipboard';
 import * as Haptics from 'expo-haptics';
@@ -27,6 +28,8 @@ interface Props {
   onPrev: () => void;
   currentIndex: number;
   totalCards: number;
+  isPreview?: boolean;
+  containerStyle?: ViewStyle;
 }
 
 // Color system
@@ -97,14 +100,26 @@ function getContentLayers(card: Card): string[] {
   return layers;
 }
 
-export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, onPrev, currentIndex, totalCards }: Props) {
+export function SwipeCard({
+  card,
+  isSaved,
+  onSave,
+  onLike,
+  onDislike,
+  onNext,
+  onPrev,
+  currentIndex,
+  totalCards,
+  isPreview = false,
+  containerStyle,
+}: Props) {
   const [copied, setCopied] = useState(false);
   const [currentLayer, setCurrentLayer] = useState(0);
   const [showActions, setShowActions] = useState(false);
   const [showChat, setShowChat] = useState(false);
 
   const pan = useRef(new Animated.ValueXY()).current;
-  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const fadeAnim = useRef(new Animated.Value(1)).current;
   const layerFade = useRef(new Animated.Value(1)).current;
   const actionsOpacity = useRef(new Animated.Value(0)).current;
 
@@ -119,13 +134,11 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
   // Reset layer on card change
   useEffect(() => {
     setCurrentLayer(0);
-    fadeAnim.setValue(0);
+    setShowActions(false);
+    setShowChat(false);
+    fadeAnim.setValue(1);
     layerFade.setValue(1);
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: 200,
-      useNativeDriver: true,
-    }).start();
+    actionsOpacity.setValue(0);
   }, [currentIndex]);
 
   // Animate layer transition
@@ -167,6 +180,7 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
   const panResponder = React.useRef(
     PanResponder.create({
       onMoveShouldSetPanResponder: (_, gestureState) => {
+        if (isPreview) return false;
         return Math.abs(gestureState.dy) > 15 || Math.abs(gestureState.dx) > 15;
       },
       onPanResponderGrant: () => {
@@ -243,6 +257,18 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
     onSave();
   };
 
+  const handleDislikeButton = () => {
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+    onDislike();
+    onNext();
+  };
+
+  const handleLikeButton = () => {
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    onLike();
+    onNext();
+  };
+
   const handleCopy = async () => {
     try {
       if (Platform.OS === 'web') {
@@ -290,11 +316,13 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
   };
 
   return (
-    <View style={styles.outerContainer}>
+    <View style={[styles.outerContainer, containerStyle]} pointerEvents={isPreview ? 'none' : 'auto'}>
       {/* Progress bar */}
-      <View style={styles.progressContainer}>
-        <View style={[styles.progressBar, { width: `${progress}%` }]} />
-      </View>
+      {!isPreview && (
+        <View style={styles.progressContainer}>
+          <View style={[styles.progressBar, { width: `${progress}%` }]} />
+        </View>
+      )}
 
       <Animated.View
         style={[
@@ -304,11 +332,11 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
             opacity: fadeAnim,
           },
         ]}
-        {...panResponder.panHandlers}
+        {...(!isPreview ? panResponder.panHandlers : {})}
       >
         <Pressable
           style={styles.touchable}
-          onLongPress={handleLongPress}
+          onLongPress={!isPreview ? handleLongPress : undefined}
           delayLongPress={400}
         >
           <View style={styles.cardWrapper}>
@@ -360,6 +388,30 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
                 {layers[currentLayer]}
               </Text>
             </Animated.View>
+
+            {/* Quick actions */}
+            {!isPreview && (
+              <View style={styles.actionRow}>
+                <TouchableOpacity
+                  style={[styles.quickActionButton, styles.quickActionButtonDislike]}
+                  onPress={handleDislikeButton}
+                  activeOpacity={0.8}
+                >
+                  <Text style={[styles.quickActionButtonText, styles.quickActionButtonTextDislike]}>
+                    Dislike
+                  </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={[styles.quickActionButton, styles.quickActionButtonLike]}
+                  onPress={handleLikeButton}
+                  activeOpacity={0.8}
+                >
+                  <Text style={[styles.quickActionButtonText, styles.quickActionButtonTextLike]}>
+                    Like
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            )}
 
             {/* Footer */}
             <View style={styles.footerContainer}>
@@ -436,11 +488,13 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
       </Animated.View>
 
       {/* Chat Interface */}
-      <ChatInterface
-        visible={showChat}
-        onClose={() => setShowChat(false)}
-        card={card}
-      />
+      {!isPreview && (
+        <ChatInterface
+          visible={showChat}
+          onClose={() => setShowChat(false)}
+          card={card}
+        />
+      )}
     </View>
   );
 }
@@ -448,7 +502,7 @@ export function SwipeCard({ card, isSaved, onSave, onLike, onDislike, onNext, on
 const styles = StyleSheet.create({
   outerContainer: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: 'transparent',
   },
 
   progressContainer: {
@@ -467,7 +521,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: 'transparent',
   },
 
   touchable: {
@@ -573,6 +627,40 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 21,
     fontWeight: '400',
+  },
+
+  // Actions
+  actionRow: {
+    flexDirection: 'row',
+    gap: SPACING.sm,
+    paddingHorizontal: SPACING.xs,
+    marginTop: SPACING.sm,
+  },
+  quickActionButton: {
+    flex: 1,
+    paddingVertical: 8,
+    borderRadius: RADIUS.pill,
+    borderWidth: 1,
+    borderColor: COLORS.cardBorder,
+    alignItems: 'center',
+  },
+  quickActionButtonDislike: {
+    backgroundColor: 'rgba(77, 77, 77, 0.06)',
+  },
+  quickActionButtonLike: {
+    backgroundColor: COLORS.accentSubtle,
+    borderColor: COLORS.accentMedium,
+  },
+  quickActionButtonText: {
+    fontSize: 12,
+    fontWeight: '600',
+    letterSpacing: 0.3,
+  },
+  quickActionButtonTextDislike: {
+    color: COLORS.textSecondary,
+  },
+  quickActionButtonTextLike: {
+    color: COLORS.accent,
   },
 
   // Footer

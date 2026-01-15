@@ -128,10 +128,20 @@ class ApiService {
 
   // ============ CHAT ============
 
-  async chat(cardId: string, messages: Array<{ role: 'user' | 'assistant'; content: string }>): Promise<{ message: string }> {
+  async chat(card: Card, messages: Array<{ role: 'user' | 'assistant'; content: string }>): Promise<{ message: string }> {
     return this.request('/chat/message', {
       method: 'POST',
-      body: JSON.stringify({ card_id: cardId, messages }),
+      body: JSON.stringify({
+        card_id: card.id,
+        card: {
+          type: card.type,
+          content: card.content,
+          expanded: card.expanded,
+          categories: card.categories,
+          tickers: card.tickers,
+        },
+        messages,
+      }),
     });
   }
 

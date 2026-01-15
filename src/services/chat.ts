@@ -11,7 +11,7 @@ export async function getClaudeResponse(
   card: Card
 ): Promise<string> {
   try {
-    const response = await api.chat(card.id, messages);
+    const response = await api.chat(card, messages);
     return response.message;
   } catch (error) {
     console.error('Chat error:', error);

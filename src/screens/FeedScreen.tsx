@@ -25,6 +25,7 @@ export function FeedScreen() {
   } = useStore();
 
   const currentCard = cards[currentIndex];
+  const upcomingCard = cards[currentIndex + 1];
 
   const handleSave = useCallback(() => {
     if (!currentCard) return;
@@ -83,20 +84,38 @@ export function FeedScreen() {
         </View>
       </View>
 
-      {/* Card */}
-      {currentCard && (
-        <SwipeCard
-          card={currentCard}
-          isSaved={savedIds.has(currentCard.id)}
-          onSave={handleSave}
-          onLike={handleLike}
-          onDislike={handleDislike}
-          onNext={handleNext}
-          onPrev={prevCard}
-          currentIndex={currentIndex}
-          totalCards={cards.length}
-        />
-      )}
+      {/* Card stack */}
+      <View style={styles.cardStack}>
+        {upcomingCard && (
+          <SwipeCard
+            card={upcomingCard}
+            isSaved={savedIds.has(upcomingCard.id)}
+            onSave={handleSave}
+            onLike={handleLike}
+            onDislike={handleDislike}
+            onNext={handleNext}
+            onPrev={prevCard}
+            currentIndex={currentIndex + 1}
+            totalCards={cards.length}
+            isPreview
+            containerStyle={[styles.cardLayer, styles.cardLayerPreview]}
+          />
+        )}
+        {currentCard && (
+          <SwipeCard
+            card={currentCard}
+            isSaved={savedIds.has(currentCard.id)}
+            onSave={handleSave}
+            onLike={handleLike}
+            onDislike={handleDislike}
+            onNext={handleNext}
+            onPrev={prevCard}
+            currentIndex={currentIndex}
+            totalCards={cards.length}
+            containerStyle={[styles.cardLayer, styles.cardLayerActive]}
+          />
+        )}
+      </View>
     </SafeAreaView>
   );
 }
@@ -170,5 +189,19 @@ const styles = StyleSheet.create({
     height: 2,
     backgroundColor: COLORS.accent,
     borderRadius: 1,
+  },
+  cardStack: {
+    flex: 1,
+    position: 'relative',
+  },
+  cardLayer: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  cardLayerPreview: {
+    transform: [{ scale: 0.98 }, { translateY: 8 }],
+    opacity: 0.9,
+  },
+  cardLayerActive: {
+    transform: [{ scale: 1 }],
   },
 });

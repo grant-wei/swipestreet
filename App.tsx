@@ -7,7 +7,6 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 
 import { FeedScreen } from './src/screens/FeedScreen';
-import { SavedScreen } from './src/screens/SavedScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
 import { OnboardingScreen } from './src/screens/OnboardingScreen';
 import { api } from './src/services/api';
@@ -57,7 +56,6 @@ const LightTheme = {
 function TabIcon({ name, focused }: { name: string; focused: boolean }) {
   const icons: Record<string, string> = {
     Feed: '|||',
-    Saved: '*',
     Settings: '@',
   };
 
@@ -141,7 +139,6 @@ export default function App() {
             })}
           >
             <Tab.Screen name="Feed" component={FeedScreen} />
-            <Tab.Screen name="Saved" component={SavedScreen} />
             <Tab.Screen name="Settings" component={SettingsScreen} />
           </Tab.Navigator>
         </NavigationContainer>

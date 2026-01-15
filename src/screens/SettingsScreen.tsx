@@ -49,7 +49,7 @@ const COLORS = {
 };
 
 export function SettingsScreen() {
-  const { cardsSeenToday, isSubscribed, syncCards, analystProfile, setAnalystProfile } = useStore();
+  const { isSubscribed, syncCards, analystProfile, setAnalystProfile } = useStore();
   const [lastSync, setLastSync] = useState<string | null>(null);
   const [showProfileEditor, setShowProfileEditor] = useState(false);
   const [editIndustries, setEditIndustries] = useState<string[]>([]);
@@ -136,17 +136,6 @@ export function SettingsScreen() {
       </View>
 
       <ScrollView style={styles.content}>
-        {/* Stats Section */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Your Progress</Text>
-          <View style={styles.statsRow}>
-            <View style={styles.statItem}>
-              <Text style={styles.statNumber}>{cardsSeenToday}</Text>
-              <Text style={styles.statLabel}>Cards Today</Text>
-            </View>
-          </View>
-        </View>
-
         {/* Subscription Section */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Subscription</Text>
@@ -329,29 +318,6 @@ const styles = StyleSheet.create({
     letterSpacing: 1.5,
     textTransform: 'uppercase',
     marginBottom: 16,
-  },
-  statsRow: {
-    flexDirection: 'row',
-  },
-  statItem: {
-    backgroundColor: COLORS.card,
-    borderRadius: 8,
-    padding: 16,
-    flex: 1,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: COLORS.border,
-  },
-  statNumber: {
-    color: COLORS.textPrimary,
-    fontSize: 32,
-    fontWeight: '600',
-    fontFamily: Platform.OS === 'ios' ? 'Georgia' : 'serif',
-  },
-  statLabel: {
-    color: COLORS.textMuted,
-    fontSize: 12,
-    marginTop: 4,
   },
   subscriptionBadge: {
     backgroundColor: COLORS.accentGreen,

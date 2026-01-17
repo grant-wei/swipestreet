@@ -58,25 +58,6 @@ router.get('/feed', optionalAuth, async (req, res, next) => {
   }
 });
 
-// Get single card
-router.get('/:id', async (req, res, next) => {
-  try {
-    const { data: card, error } = await supabase
-      .from('cards')
-      .select('*')
-      .eq('id', req.params.id)
-      .single();
-
-    if (error || !card) {
-      return res.status(404).json({ error: 'Card not found' });
-    }
-
-    res.json({ card });
-  } catch (error) {
-    next(error);
-  }
-});
-
 // Get categories
 router.get('/meta/categories', async (req, res, next) => {
   try {
@@ -117,6 +98,35 @@ router.post('/action', authenticateToken, async (req, res, next) => {
       return res.status(400).json({ error: 'Invalid action' });
     }
 
+    if (action === 'unsaved') {
+      await supabase
+        .from('user_progress')
+        .delete()
+        .eq('user_id', userId)
+        .eq('card_id', card_id)
+        .eq('action', 'saved');
+
+      return res.json({ success: true });
+    }
+
+    if (action === 'liked') {
+      await supabase
+        .from('user_progress')
+        .delete()
+        .eq('user_id', userId)
+        .eq('card_id', card_id)
+        .eq('action', 'disliked');
+    }
+
+    if (action === 'disliked') {
+      await supabase
+        .from('user_progress')
+        .delete()
+        .eq('user_id', userId)
+        .eq('card_id', card_id)
+        .eq('action', 'liked');
+    }
+
     // Record in progress table
     const { error } = await supabase.from('user_progress').upsert({
       user_id: userId,
@@ -124,7 +134,7 @@ router.post('/action', authenticateToken, async (req, res, next) => {
       action,
       created_at: new Date().toISOString(),
     }, {
-      onConflict: 'user_id,card_id',
+      onConflict: 'user_id,card_id,action',
     });
 
     if (error) {
@@ -137,6 +147,70 @@ router.post('/action', authenticateToken, async (req, res, next) => {
     }
 
     res.json({ success: true });
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Get comments for a card (all users)
+router.get('/comments', authenticateToken, async (req, res, next) => {
+  try {
+    const { card_id } = req.query;
+    if (!card_id || typeof card_id !== 'string') {
+      return res.status(400).json({ error: 'card_id required' });
+    }
+
+    const { data: comments, error } = await supabase
+      .from('card_comments')
+      .select('id, card_id, text, created_at')
+      .eq('card_id', card_id)
+      .order('created_at', { ascending: true });
+
+    if (error) {
+      return res.status(500).json({ error: 'Failed to fetch comments' });
+    }
+
+    res.json({ comments: comments || [] });
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Add a comment to a card
+router.post('/comments', authenticateToken, async (req, res, next) => {
+  try {
+    const { card_id, text } = req.body;
+    const userId = req.user.userId;
+
+    if (!card_id || typeof card_id !== 'string') {
+      return res.status(400).json({ error: 'card_id required' });
+    }
+
+    const normalized = typeof text === 'string' ? text.trim() : '';
+    if (!normalized) {
+      return res.status(400).json({ error: 'text required' });
+    }
+
+    if (normalized.length > 500) {
+      return res.status(400).json({ error: 'text too long (max 500)' });
+    }
+
+    const { data: comment, error } = await supabase
+      .from('card_comments')
+      .insert({
+        user_id: userId,
+        card_id,
+        text: normalized,
+        created_at: new Date().toISOString(),
+      })
+      .select('id, card_id, text, created_at')
+      .single();
+
+    if (error) {
+      return res.status(500).json({ error: 'Failed to add comment' });
+    }
+
+    res.json({ comment });
   } catch (error) {
     next(error);
   }
@@ -181,6 +255,25 @@ router.get('/sync/all', authenticateToken, async (req, res, next) => {
       cards: cards || [],
       synced_at: new Date().toISOString(),
     });
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Get single card
+router.get('/:id', async (req, res, next) => {
+  try {
+    const { data: card, error } = await supabase
+      .from('cards')
+      .select('*')
+      .eq('id', req.params.id)
+      .single();
+
+    if (error || !card) {
+      return res.status(404).json({ error: 'Card not found' });
+    }
+
+    res.json({ card });
   } catch (error) {
     next(error);
   }

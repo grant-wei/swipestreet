@@ -2,8 +2,42 @@ const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const { supabase } = require('../services/supabase');
 const { generateToken, authenticateToken } = require('../middleware/auth');
+const { sendVerificationEmail } = require('../services/email');
 
 const router = express.Router();
+const VERIFICATION_CODE_TTL_MINUTES = 15;
+
+function normalizeEmail(value) {
+  return value.trim().toLowerCase();
+}
+
+function isValidEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+function normalizeLinkedInUrl(value) {
+  const trimmed = value.trim();
+  if (!trimmed) return '';
+  if (!/^https?:\/\//i.test(trimmed)) {
+    return `https://${trimmed}`;
+  }
+  return trimmed;
+}
+
+function isValidLinkedInUrl(value) {
+  try {
+    const url = new URL(value);
+    const hostname = url.hostname.replace(/^www\./i, '');
+    if (hostname !== 'linkedin.com') return false;
+    return url.pathname.startsWith('/in/') || url.pathname.startsWith('/company/');
+  } catch (error) {
+    return false;
+  }
+}
+
+function generateVerificationCode() {
+  return Math.floor(100000 + Math.random() * 900000).toString();
+}
 
 // Register new user or login existing
 router.post('/register', async (req, res, next) => {
@@ -70,7 +104,7 @@ router.get('/me', authenticateToken, async (req, res, next) => {
   try {
     const { data: user, error } = await supabase
       .from('users')
-      .select('id, email, name, subscription_status, subscription_end, analyst_profile, created_at')
+      .select('id, email, name, subscription_status, subscription_end, analyst_profile, created_at, work_email, work_email_verified_at, linkedin_url, investor_verification_status, investor_verified_at')
       .eq('id', req.user.userId)
       .single();
 
@@ -107,6 +141,128 @@ router.patch('/me', authenticateToken, async (req, res, next) => {
     }
 
     res.json({ user });
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Request investor verification (work email + LinkedIn)
+router.post('/investor/request', authenticateToken, async (req, res, next) => {
+  try {
+    const { work_email, linkedin_url } = req.body;
+
+    if (!work_email || !linkedin_url) {
+      return res.status(400).json({ error: 'work_email and linkedin_url required' });
+    }
+
+    const normalizedEmail = normalizeEmail(work_email);
+    const normalizedLinkedIn = normalizeLinkedInUrl(linkedin_url);
+
+    if (!isValidEmail(normalizedEmail)) {
+      return res.status(400).json({ error: 'Invalid work email format' });
+    }
+
+    if (!isValidLinkedInUrl(normalizedLinkedIn)) {
+      return res.status(400).json({ error: 'Invalid LinkedIn URL' });
+    }
+
+    const code = generateVerificationCode();
+    const expiresAt = new Date(
+      Date.now() + VERIFICATION_CODE_TTL_MINUTES * 60 * 1000
+    ).toISOString();
+    const now = new Date().toISOString();
+
+    const { error } = await supabase
+      .from('users')
+      .update({
+        work_email: normalizedEmail,
+        linkedin_url: normalizedLinkedIn,
+        investor_verification_status: 'pending_email',
+        investor_verification_requested_at: now,
+        investor_verification_code: code,
+        investor_verification_code_expires_at: expiresAt,
+        investor_verified_at: null,
+        work_email_verified_at: null,
+        updated_at: now,
+      })
+      .eq('id', req.user.userId);
+
+    if (error) {
+      return res.status(500).json({ error: 'Failed to start verification' });
+    }
+
+    const emailResult = await sendVerificationEmail(normalizedEmail, code);
+    if (!emailResult.sent && process.env.NODE_ENV === 'production') {
+      return res.status(500).json({ error: 'Failed to send verification email' });
+    }
+
+    res.json({
+      status: 'pending_email',
+      expires_at: expiresAt,
+      ...(emailResult.sent ? {} : { debug_code: code }),
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Verify investor email code
+router.post('/investor/verify', authenticateToken, async (req, res, next) => {
+  try {
+    const { code } = req.body;
+
+    if (!code) {
+      return res.status(400).json({ error: 'verification code required' });
+    }
+
+    const { data: user, error } = await supabase
+      .from('users')
+      .select('work_email, linkedin_url, investor_verification_code, investor_verification_code_expires_at')
+      .eq('id', req.user.userId)
+      .single();
+
+    if (error || !user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    if (!user.investor_verification_code) {
+      return res.status(400).json({ error: 'No verification request found' });
+    }
+
+    if (
+      user.investor_verification_code_expires_at &&
+      new Date(user.investor_verification_code_expires_at) < new Date()
+    ) {
+      return res.status(400).json({ error: 'Verification code expired' });
+    }
+
+    if (String(code).trim() !== String(user.investor_verification_code)) {
+      return res.status(400).json({ error: 'Invalid verification code' });
+    }
+
+    if (!user.work_email || !user.linkedin_url) {
+      return res.status(400).json({ error: 'Missing work email or LinkedIn URL' });
+    }
+
+    const now = new Date().toISOString();
+
+    const { error: updateError } = await supabase
+      .from('users')
+      .update({
+        investor_verification_status: 'verified',
+        work_email_verified_at: now,
+        investor_verified_at: now,
+        investor_verification_code: null,
+        investor_verification_code_expires_at: null,
+        updated_at: now,
+      })
+      .eq('id', req.user.userId);
+
+    if (updateError) {
+      return res.status(500).json({ error: 'Failed to verify investor' });
+    }
+
+    res.json({ status: 'verified', verified_at: now });
   } catch (error) {
     next(error);
   }

@@ -10,7 +10,7 @@ if (!supabaseUrl || !supabaseKey) {
   process.exit(1);
 }
 
-const cardsPath = path.resolve(__dirname, '..', '..', 'mobile', 'src', 'data', 'cards.json');
+const cardsPath = path.resolve(__dirname, '..', '..', 'content', 'cards', 'cards.json');
 const cardsData = require(cardsPath);
 const cards = Array.isArray(cardsData.cards) ? cardsData.cards : [];
 

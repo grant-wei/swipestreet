@@ -18,6 +18,17 @@ CREATE TABLE IF NOT EXISTS users (
   analyst_profile JSONB DEFAULT '{}',
   is_admin BOOLEAN DEFAULT FALSE,
 
+  -- Investor verification
+  work_email TEXT,
+  work_email_verified_at TIMESTAMPTZ,
+  linkedin_url TEXT,
+  investor_verification_status TEXT DEFAULT 'unverified'
+    CHECK (investor_verification_status IN ('unverified', 'pending_email', 'verified', 'rejected')),
+  investor_verification_requested_at TIMESTAMPTZ,
+  investor_verification_code TEXT,
+  investor_verification_code_expires_at TIMESTAMPTZ,
+  investor_verified_at TIMESTAMPTZ,
+
   -- Timestamps
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
@@ -57,12 +68,25 @@ CREATE TABLE IF NOT EXISTS user_progress (
   action TEXT NOT NULL CHECK (action IN ('seen', 'saved', 'unsaved', 'liked', 'disliked')),
   created_at TIMESTAMPTZ DEFAULT NOW(),
 
-  UNIQUE(user_id, card_id)
+  UNIQUE(user_id, card_id, action)
 );
 
 CREATE INDEX idx_progress_user ON user_progress(user_id);
 CREATE INDEX idx_progress_card ON user_progress(card_id);
 CREATE INDEX idx_progress_action ON user_progress(action);
+
+-- ============ CARD COMMENTS ============
+CREATE TABLE IF NOT EXISTS card_comments (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  card_id TEXT NOT NULL,
+  text TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX idx_comments_user ON card_comments(user_id);
+CREATE INDEX idx_comments_card ON card_comments(card_id);
+CREATE INDEX idx_comments_created ON card_comments(created_at);
 
 -- ============ USER PREFERENCES ============
 CREATE TABLE IF NOT EXISTS user_preferences (
@@ -104,6 +128,7 @@ CREATE INDEX idx_analytics_created ON analytics_events(created_at);
 -- Enable RLS
 ALTER TABLE users ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_progress ENABLE ROW LEVEL SECURITY;
+ALTER TABLE card_comments ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_preferences ENABLE ROW LEVEL SECURITY;
 ALTER TABLE chat_logs ENABLE ROW LEVEL SECURITY;
 ALTER TABLE analytics_events ENABLE ROW LEVEL SECURITY;
@@ -119,6 +144,9 @@ CREATE POLICY "Users can update own profile" ON users FOR UPDATE USING (auth.uid
 CREATE POLICY "Users can view own progress" ON user_progress FOR SELECT USING (auth.uid()::text = user_id::text);
 CREATE POLICY "Users can insert own progress" ON user_progress FOR INSERT WITH CHECK (auth.uid()::text = user_id::text);
 CREATE POLICY "Users can update own progress" ON user_progress FOR UPDATE USING (auth.uid()::text = user_id::text);
+
+CREATE POLICY "Comments are viewable by everyone" ON card_comments FOR SELECT USING (true);
+CREATE POLICY "Users can insert own comments" ON card_comments FOR INSERT WITH CHECK (auth.uid()::text = user_id::text);
 
 CREATE POLICY "Users can view own preferences" ON user_preferences FOR SELECT USING (auth.uid()::text = user_id::text);
 CREATE POLICY "Users can upsert own preferences" ON user_preferences FOR ALL USING (auth.uid()::text = user_id::text);

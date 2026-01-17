@@ -43,7 +43,11 @@ except:
 
 # Paths
 BASE_DIR = Path(__file__).parent.parent
-DATA_DIR = BASE_DIR / "data"
+TRAINING_DIR = BASE_DIR / "training_data"
+SOURCES_DIR = TRAINING_DIR / "sources"
+DATA_DIR = SOURCES_DIR / "bernstein"  # Primary source (legacy JSON)
+CUSTOM_DIR = SOURCES_DIR / "custom"   # User-added sources
+EXTRACTED_DIR = TRAINING_DIR / "extracted"  # New: extracted chunks
 OUTPUT_DIR = BASE_DIR / "content" / "cards"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -471,9 +475,10 @@ def generate_card_rules(insight: dict) -> list:
 
 
 def load_data() -> dict:
-    """Load Bernstein data."""
-    data = {"insights": [], "contrarian_views": [], "ai_views": []}
+    """Load training data from bernstein and custom directories."""
+    data = {"insights": [], "contrarian_views": [], "ai_views": [], "custom": []}
 
+    # Load Bernstein data
     f = DATA_DIR / "comprehensive_insights.json"
     if f.exists():
         with open(f, 'r', encoding='utf-8') as file:
@@ -493,6 +498,26 @@ def load_data() -> dict:
             if isinstance(d, list):
                 data["ai_views"].extend(d)
 
+    # Load custom training data
+    if CUSTOM_DIR.exists():
+        for json_file in CUSTOM_DIR.glob("**/*.json"):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as file:
+                    custom_data = json.load(file)
+                    if isinstance(custom_data, list):
+                        data["custom"].extend(custom_data)
+                    elif isinstance(custom_data, dict):
+                        # Support both formats
+                        if "insights" in custom_data:
+                            data["custom"].extend(custom_data["insights"])
+                        elif "key_views" in custom_data:
+                            data["ai_views"].append(custom_data)
+                        else:
+                            data["custom"].append(custom_data)
+                print(f"Loaded custom data: {json_file.name}")
+            except Exception as e:
+                print(f"Error loading {json_file}: {e}")
+
     return data
 
 
@@ -505,7 +530,7 @@ def main(use_ai: bool = False):
     data = load_data()
     cards = []
 
-    print(f"\nData: {len(data['insights'])} insights, {len(data['contrarian_views'])} contrarian, {len(data['ai_views'])} AI reports")
+    print(f"\nData: {len(data['insights'])} insights, {len(data['contrarian_views'])} contrarian, {len(data['ai_views'])} AI reports, {len(data['custom'])} custom")
 
     gen = generate_card_ai if use_ai else generate_card_rules
 
@@ -532,6 +557,20 @@ def main(use_ai: bool = False):
         for view in report.get("key_views", [])[:2]:
             item = {"insight": view, "title": title, "categories": ["AI/Technology"]}
             cards.extend(gen(item))
+
+    # Process custom training data
+    if data["custom"]:
+        print(f"Processing {len(data['custom'])} custom items...")
+        for i, item in enumerate(data["custom"]):
+            # Normalize format
+            if "insight" not in item and "content" in item:
+                item["insight"] = item["content"]
+            if "insight" not in item and "text" in item:
+                item["insight"] = item["text"]
+            if "insight" in item:
+                cards.extend(gen(item))
+            if (i+1) % 25 == 0:
+                print(f"  {i+1} done -> {len(cards)} cards")
 
     # Dedupe
     seen = set()

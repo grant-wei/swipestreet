@@ -44,3 +44,4 @@ web-build/
 *.tsbuildinfo
 /ios
 /android
+training_data/

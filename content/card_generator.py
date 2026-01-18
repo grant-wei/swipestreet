@@ -51,52 +51,51 @@ EXTRACTED_DIR = TRAINING_DIR / "extracted"  # New: extracted chunks
 OUTPUT_DIR = BASE_DIR / "content" / "cards"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-CARD_PROMPT = """Convert this research into 1-2 educational investing lessons.
+CARD_PROMPT = """Convert this research into a CASE STUDY about a specific company.
 
-PURPOSE: Teach investors timeless principles through real examples. Focus on HIGH-LEVEL IDEAS that transfer across sectors and time periods.
+PURPOSE: Teach investors through a narrative story about a real company. The case study has 4 cards that tell a complete story.
 
-CARD FORMAT:
-Write 3-4 flowing sentences that:
-1. State the investing principle clearly
-2. Show how the research illustrates it
-3. End with what investors should remember
+CASE STUDY STRUCTURE (4 cards):
+1. THE SETUP (type: "setup") - What was the situation? What problem or opportunity existed?
+2. THE CATALYST (type: "catalyst") - What changed? What insight or event shifted the narrative?
+3. THE OUTCOME (type: "outcome") - What happened? How did it play out?
+4. THE TAKEAWAY (type: "takeaway") - What's the transferable lesson for other investments?
 
-Do NOT use labels like "THE LESSON:" or "THE EXAMPLE:" - just write naturally.
-
-CARD TYPES:
-- lesson: a timeless investing principle with example
-- pattern: a recurring market pattern to recognize
-- framework: a mental model for analyzing investments
+EACH CARD:
+- 2-3 sentences, 40-80 words
+- Mention the company by name
+- Be specific and concrete
+- No hedging language
 
 RULES:
-- Use proper grammar and complete sentences
-- 3-4 sentences, 60-120 words
-- No hedging language (remove "may", "could", "potentially")
-- No research jargon or meta-commentary
-- Focus on the PRINCIPLE, not the specific company/sector
-- Each card should teach something applicable to other situations
+- Extract the company name and ticker from the research
+- If multiple companies, focus on the primary one
+- Tell a coherent story across all 4 cards
+- Make it feel like a mini-documentary
 
-AVOID:
-- Specific prices, multiples, or market caps
-- Company-specific details that won't age well
-- Jargon that requires finance background
-
-CATEGORIES (pick 1-2):
-- Valuation: how to think about price vs value
-- Moats: identifying sustainable advantages
-- Psychology: behavioral errors and biases
-- Business Models: how companies create value
-- Capital Allocation: management decisions
-- Cycles: recognizing patterns over time
+CATEGORIES (pick 1-2 for the case study):
+- Valuation, Moats, Psychology, Business Models, Capital Allocation, Cycles
 
 RESEARCH:
 Title: {title}
 Content: {content}
 
-Return JSON array only:
-[{{"type": "lesson|pattern|framework", "content": "...", "tickers": [], "categories": ["Valuation", "Moats"]}}]
+Return JSON object:
+{{
+  "company": "Company Name",
+  "ticker": "TICK",
+  "title": "The [Company] [Story Theme]",
+  "description": "One sentence hook",
+  "categories": ["Category1", "Category2"],
+  "cards": [
+    {{"type": "setup", "content": "..."}},
+    {{"type": "catalyst", "content": "..."}},
+    {{"type": "outcome", "content": "..."}},
+    {{"type": "takeaway", "content": "..."}}
+  ]
+}}
 
-Keep the JSON simple - no expanded field in the response.
+If no clear company is mentioned, return null.
 """
 
 # Valid categories
@@ -282,8 +281,110 @@ Return ONLY the paragraphs, no headers or labels."""
     return expanded
 
 
+def generate_case_study_ai(insight: dict) -> dict | None:
+    """Generate a case study using Claude."""
+    if not HAS_ANTHROPIC or not client:
+        return None
+
+    content = clean_text(insight.get("insight", insight.get("view", insight.get("prediction", ""))))
+    if len(content) < 50:
+        return None
+
+    title = insight.get("title", "")
+
+    try:
+        response = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=1000,
+            messages=[{
+                "role": "user",
+                "content": CARD_PROMPT.format(title=title, content=content[:1200])
+            }]
+        )
+
+        text = response.content[0].text.strip()
+
+        # Handle "null" response
+        if text.lower() == "null" or text.lower() == "none":
+            return None
+
+        # Parse JSON
+        if text.startswith('{'):
+            case_study = json.loads(text)
+        else:
+            match = re.search(r'\{.*\}', text, re.DOTALL)
+            if match:
+                case_study = json.loads(match.group())
+            else:
+                return None
+
+        # Validate case study structure
+        if not case_study or not isinstance(case_study, dict):
+            return None
+
+        company = case_study.get("company", "")
+        ticker = case_study.get("ticker", "")
+        cs_title = case_study.get("title", "")
+        description = case_study.get("description", "")
+        cards_data = case_study.get("cards", [])
+
+        if not company or not cs_title or len(cards_data) < 3:
+            return None
+
+        # Validate categories
+        ai_cats = case_study.get("categories", [])
+        valid_cats = [cat for cat in ai_cats if cat in VALID_CATEGORIES]
+        if not valid_cats:
+            valid_cats = ["Psychology"]
+
+        # Build case study
+        case_study_id = str(uuid.uuid4())[:8]
+        cards = []
+
+        for i, card_data in enumerate(cards_data):
+            card_content = card_data.get("content", "").strip()
+            if not card_content:
+                continue
+
+            # Capitalize first letter
+            card_content = card_content[0].upper() + card_content[1:] if card_content else card_content
+
+            cards.append({
+                "id": f"{case_study_id}_{i+1}",
+                "type": card_data.get("type", "lesson"),
+                "content": card_content,
+                "expanded": "",
+                "tickers": [ticker] if ticker else [],
+                "source": "bernstein",
+                "source_title": title,
+                "categories": valid_cats,
+                "created_at": datetime.now().isoformat(),
+                "case_study_id": case_study_id,
+                "card_order": i + 1,
+                "company_name": company
+            })
+
+        if len(cards) < 3:
+            return None
+
+        return {
+            "id": case_study_id,
+            "title": cs_title,
+            "company": company,
+            "ticker": ticker,
+            "description": description,
+            "cards": cards,
+            "categories": valid_cats,
+            "created_at": datetime.now().isoformat()
+        }
+
+    except Exception as e:
+        print(f"Case study AI error: {e}")
+        return None
+
+
 def generate_card_ai(insight: dict) -> list:
-    """Generate cards using Claude."""
+    """Generate cards using Claude (legacy - for non-case-study cards)."""
     if not HAS_ANTHROPIC or not client:
         return generate_card_rules(insight)
 
@@ -292,75 +393,61 @@ def generate_card_ai(insight: dict) -> list:
         return []
 
     title = insight.get("title", "")
-    categories = insight.get("categories", ["General"])
 
     try:
+        # Use a simpler prompt for standalone cards
+        simple_prompt = f"""Convert this research into 1 educational investing lesson.
+
+Write 3-4 sentences that teach an investing principle. Be specific - mention companies by name if referenced.
+
+RESEARCH:
+Title: {title}
+Content: {content[:800]}
+
+Return JSON:
+{{"type": "lesson", "content": "...", "tickers": ["TICK"], "categories": ["Valuation"]}}
+"""
         response = client.messages.create(
             model="claude-sonnet-4-20250514",
-            max_tokens=600,
-            messages=[{
-                "role": "user",
-                "content": CARD_PROMPT.format(title=title, content=content[:800])
-            }]
+            max_tokens=400,
+            messages=[{"role": "user", "content": simple_prompt}]
         )
 
         text = response.content[0].text.strip()
 
-        # Debug: print first 200 chars of response
-        # print(f"DEBUG: {text[:200]}")
-
         # Parse JSON
-        if text.startswith('['):
-            cards = json.loads(text)
-        elif text.startswith('{'):
-            # Single card returned
-            cards = [json.loads(text)]
+        if text.startswith('{'):
+            card = json.loads(text)
         else:
-            match = re.search(r'\[.*\]', text, re.DOTALL)
+            match = re.search(r'\{.*\}', text, re.DOTALL)
             if match:
-                cards = json.loads(match.group())
+                card = json.loads(match.group())
             else:
-                # Try to find a single JSON object
-                match = re.search(r'\{.*\}', text, re.DOTALL)
-                if match:
-                    cards = [json.loads(match.group())]
-                else:
-                    return generate_card_rules(insight)
+                return generate_card_rules(insight)
 
-        # Validate
-        valid = []
-        for card in cards:
-            if isinstance(card, dict) and card.get("content"):
-                c = card["content"].strip()
-                # Ensure first letter is capitalized
-                if c:
-                    c = c[0].upper() + c[1:]
-                # Skip is_complete_card for now - may be too strict
-                if len(c) > 30:
-                    # Use AI-generated categories, validate against allowed list
-                    ai_cats = card.get("categories", [])
-                    card_cats = [cat for cat in ai_cats if cat in VALID_CATEGORIES]
-                    if not card_cats:
-                        card_cats = ["Psychology"]  # Default fallback
+        if isinstance(card, dict) and card.get("content"):
+            c = card["content"].strip()
+            if c:
+                c = c[0].upper() + c[1:]
+            if len(c) > 30:
+                ai_cats = card.get("categories", [])
+                card_cats = [cat for cat in ai_cats if cat in VALID_CATEGORIES]
+                if not card_cats:
+                    card_cats = ["Psychology"]
 
-                    # Generate expanded content based on card type and category
-                    cat = card_cats[0] if card_cats else "Psychology"
-                    card_type = card.get("type", "lesson")
-                    expanded = generate_expanded_content(c, cat, card_type)
+                return [{
+                    "id": str(uuid.uuid4())[:8],
+                    "type": card.get("type", "lesson"),
+                    "content": c,
+                    "expanded": "",
+                    "tickers": card.get("tickers", []),
+                    "source": "bernstein",
+                    "source_title": title,
+                    "categories": card_cats,
+                    "created_at": datetime.now().isoformat()
+                }]
 
-                    valid.append({
-                        "id": str(uuid.uuid4())[:8],
-                        "type": card.get("type", "lesson"),
-                        "content": c,
-                        "expanded": expanded,
-                        "tickers": card.get("tickers", []),
-                        "source": "bernstein",
-                        "source_title": title,
-                        "categories": card_cats,
-                        "created_at": datetime.now().isoformat()
-                    })
-
-        return valid if valid else generate_card_rules(insight)
+        return generate_card_rules(insight)
 
     except Exception as e:
         print(f"AI error: {e}")
@@ -521,86 +608,142 @@ def load_data() -> dict:
     return data
 
 
-def main(use_ai: bool = False):
+def main(use_ai: bool = False, case_studies_only: bool = False):
     print("=" * 50)
     print("SWIPESTREET CARD GENERATOR v2")
-    print(f"Mode: {'AI' if use_ai else 'Rules'}")
+    mode = "Case Studies" if case_studies_only else ("AI" if use_ai else "Rules")
+    print(f"Mode: {mode}")
     print("=" * 50)
 
     data = load_data()
     cards = []
+    case_studies = []
 
     print(f"\nData: {len(data['insights'])} insights, {len(data['contrarian_views'])} contrarian, {len(data['ai_views'])} AI reports, {len(data['custom'])} custom")
 
-    gen = generate_card_ai if use_ai else generate_card_rules
+    if case_studies_only and use_ai:
+        # Generate case studies
+        print("\nGenerating case studies...")
+        all_items = data["insights"][:100] + data["contrarian_views"][:50]
 
-    # Process insights
-    print("\nProcessing insights...")
-    for i, item in enumerate(data["insights"][:100]):
-        cards.extend(gen(item))
-        if (i+1) % 25 == 0:
-            print(f"  {i+1} done -> {len(cards)} cards")
+        for i, item in enumerate(all_items):
+            if "view" in item and "insight" not in item:
+                item["insight"] = item["view"]
 
-    # Process contrarian
-    print("Processing contrarian views...")
-    for item in data["contrarian_views"][:50]:
-        item["insight"] = item.get("view", "")
-        result = gen(item)
-        for c in result:
-            c["type"] = "contrarian"
-        cards.extend(result)
+            cs = generate_case_study_ai(item)
+            if cs:
+                case_studies.append(cs)
+                print(f"  [{len(case_studies)}] {cs['title']} ({cs['ticker']})")
 
-    # Process AI views
-    print("Processing AI reports...")
-    for report in data["ai_views"][:30]:
-        title = report.get("title", "")
-        for view in report.get("key_views", [])[:2]:
-            item = {"insight": view, "title": title, "categories": ["AI/Technology"]}
+            if (i+1) % 25 == 0:
+                print(f"  Processed {i+1}/{len(all_items)}...")
+
+        # Dedupe by company
+        seen_companies = set()
+        unique_cs = []
+        for cs in case_studies:
+            key = cs["company"].lower()
+            if key not in seen_companies:
+                seen_companies.add(key)
+                unique_cs.append(cs)
+
+        print(f"\nTotal: {len(unique_cs)} unique case studies")
+
+        # Save case studies
+        out = OUTPUT_DIR / "case_studies.json"
+        with open(out, 'w', encoding='utf-8') as f:
+            json.dump({
+                "generated_at": datetime.now().isoformat(),
+                "total_case_studies": len(unique_cs),
+                "case_studies": unique_cs
+            }, f, indent=2, ensure_ascii=False)
+        print(f"Saved: {out}")
+
+        # Also copy to mobile data dir
+        mobile_out = BASE_DIR / "mobile" / "src" / "data" / "case_studies.json"
+        with open(mobile_out, 'w', encoding='utf-8') as f:
+            json.dump({
+                "generated_at": datetime.now().isoformat(),
+                "total_case_studies": len(unique_cs),
+                "case_studies": unique_cs
+            }, f, indent=2, ensure_ascii=False)
+        print(f"Copied to: {mobile_out}")
+
+        # Samples
+        print("\n" + "=" * 50)
+        print("CASE STUDY SAMPLES")
+        print("=" * 50)
+        for cs in unique_cs[:3]:
+            print(f"\n[{cs['ticker']}] {cs['title']}")
+            print(f"  {cs['description']}")
+            for card in cs['cards']:
+                print(f"  - [{card['type']}] {card['content'][:60]}...")
+
+    else:
+        # Original card generation logic
+        gen = generate_card_ai if use_ai else generate_card_rules
+
+        print("\nProcessing insights...")
+        for i, item in enumerate(data["insights"][:100]):
             cards.extend(gen(item))
-
-    # Process custom training data
-    if data["custom"]:
-        print(f"Processing {len(data['custom'])} custom items...")
-        for i, item in enumerate(data["custom"]):
-            # Normalize format
-            if "insight" not in item and "content" in item:
-                item["insight"] = item["content"]
-            if "insight" not in item and "text" in item:
-                item["insight"] = item["text"]
-            if "insight" in item:
-                cards.extend(gen(item))
             if (i+1) % 25 == 0:
                 print(f"  {i+1} done -> {len(cards)} cards")
 
-    # Dedupe
-    seen = set()
-    unique = []
-    for c in cards:
-        key = c["content"][:40]
-        if key not in seen:
-            seen.add(key)
-            unique.append(c)
+        print("Processing contrarian views...")
+        for item in data["contrarian_views"][:50]:
+            item["insight"] = item.get("view", "")
+            result = gen(item)
+            for c in result:
+                c["type"] = "contrarian"
+            cards.extend(result)
 
-    print(f"\nTotal: {len(unique)} unique cards")
+        print("Processing AI reports...")
+        for report in data["ai_views"][:30]:
+            title = report.get("title", "")
+            for view in report.get("key_views", [])[:2]:
+                item = {"insight": view, "title": title, "categories": ["AI/Technology"]}
+                cards.extend(gen(item))
 
-    # Save
-    out = OUTPUT_DIR / "cards.json"
-    with open(out, 'w', encoding='utf-8') as f:
-        json.dump({
-            "generated_at": datetime.now().isoformat(),
-            "total_cards": len(unique),
-            "cards": unique
-        }, f, indent=2, ensure_ascii=False)
+        if data["custom"]:
+            print(f"Processing {len(data['custom'])} custom items...")
+            for i, item in enumerate(data["custom"]):
+                if "insight" not in item and "content" in item:
+                    item["insight"] = item["content"]
+                if "insight" not in item and "text" in item:
+                    item["insight"] = item["text"]
+                if "insight" in item:
+                    cards.extend(gen(item))
+                if (i+1) % 25 == 0:
+                    print(f"  {i+1} done -> {len(cards)} cards")
 
-    print(f"Saved: {out}")
+        # Dedupe
+        seen = set()
+        unique = []
+        for c in cards:
+            key = c["content"][:40]
+            if key not in seen:
+                seen.add(key)
+                unique.append(c)
 
-    # Samples
-    print("\n" + "=" * 50)
-    print("SAMPLES")
-    print("=" * 50)
-    for c in unique[:8]:
-        print(f"\n[{c['type'].upper()}]")
-        print(f"{c['content']}")
+        print(f"\nTotal: {len(unique)} unique cards")
+
+        # Save
+        out = OUTPUT_DIR / "cards.json"
+        with open(out, 'w', encoding='utf-8') as f:
+            json.dump({
+                "generated_at": datetime.now().isoformat(),
+                "total_cards": len(unique),
+                "cards": unique
+            }, f, indent=2, ensure_ascii=False)
+
+        print(f"Saved: {out}")
+
+        print("\n" + "=" * 50)
+        print("SAMPLES")
+        print("=" * 50)
+        for c in unique[:8]:
+            print(f"\n[{c['type'].upper()}]")
+            print(f"{c['content']}")
 
 
 if __name__ == "__main__":

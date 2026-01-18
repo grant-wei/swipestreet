@@ -1,0 +1,394 @@
+{
+  "generated_at": "2026-01-17T20:03:21Z",
+  "total_ideas": 16,
+  "ideas": [
+    {
+      "id": "15403ca9",
+      "type": "idea",
+      "content": "Current price: ~$190\nP/E: ~28x\n5Y P/E low: ~16x\n5Y P/E high: ~35x\nEV/EBITDA: ~22x\n5Y EV/EBITDA low: ~13x\n5Y EV/EBITDA high: ~28x\nBusiness: Apple sells premium devices and services to a large installed base.\nMispricing: Market prices Apple like hardware demand will stall, but services mix and ecosystem lock-in support steady EPS growth.",
+      "tickers": [
+        "AAPL"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Technology Hardware & Equipment",
+        "Technology Hardware, Storage & Peripherals",
+        "US"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Apple",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Technology Hardware & Equipment",
+      "gics_industry": "Technology Hardware, Storage & Peripherals",
+      "gics_sub_industry": "Technology Hardware, Storage & Peripherals"
+    },
+    {
+      "id": "3e4560a6",
+      "type": "idea",
+      "content": "Current price: ~$420\nP/E: ~34x\n5Y P/E low: ~24x\n5Y P/E high: ~38x\nEV/EBITDA: ~27x\n5Y EV/EBITDA low: ~19x\n5Y EV/EBITDA high: ~30x\nBusiness: Microsoft sells productivity software and cloud infrastructure with high switching costs.\nMispricing: The market underweights AI copilots and cloud optimization that can drive durable pricing power.",
+      "tickers": [
+        "MSFT"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Software & Services",
+        "Software",
+        "US"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Microsoft",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Software & Services",
+      "gics_industry": "Software",
+      "gics_sub_industry": "Systems Software"
+    },
+    {
+      "id": "758fdd8d",
+      "type": "idea",
+      "content": "Current price: ~$650\nP/E: ~40x\n5Y P/E low: ~20x\n5Y P/E high: ~60x\nEV/EBITDA: ~32x\n5Y EV/EBITDA low: ~16x\n5Y EV/EBITDA high: ~48x\nBusiness: Nvidia supplies GPUs and software that power AI training and inference.\nMispricing: The market assumes AI demand fades quickly, but multi-year deployment cycles can keep utilization elevated.",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Semiconductors & Semiconductor Equipment",
+        "Semiconductors",
+        "US"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Nvidia",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Semiconductors & Semiconductor Equipment",
+      "gics_industry": "Semiconductors",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "id": "96e3554e",
+      "type": "idea",
+      "content": "Current price: ~$170\nP/E: ~40x\n5Y P/E low: ~35x\n5Y P/E high: ~80x\nEV/EBITDA: ~32x\n5Y EV/EBITDA low: ~28x\n5Y EV/EBITDA high: ~64x\nBusiness: Amazon runs a massive retail and logistics platform plus AWS cloud services.\nMispricing: Retail margins are improving and AWS can reaccelerate, yet the stock is still priced as a low-margin retailer.",
+      "tickers": [
+        "AMZN"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Consumer Discretionary",
+        "Consumer Discretionary Distribution & Retail",
+        "Broadline Retail",
+        "US",
+        "Consumer"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Amazon",
+      "gics_sector": "Consumer Discretionary",
+      "gics_industry_group": "Consumer Discretionary Distribution & Retail",
+      "gics_industry": "Broadline Retail",
+      "gics_sub_industry": "Broadline Retail"
+    },
+    {
+      "id": "a0033cee",
+      "type": "idea",
+      "content": "Current price: ~$150\nP/E: ~22x\n5Y P/E low: ~18x\n5Y P/E high: ~32x\nEV/EBITDA: ~18x\n5Y EV/EBITDA low: ~14x\n5Y EV/EBITDA high: ~26x\nBusiness: Alphabet dominates search advertising and is scaling Google Cloud.\nMispricing: AI search risk is over-discounted while distribution strength and cloud scale protect cash flows.",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Communication Services",
+        "Media & Entertainment",
+        "Interactive Media & Services",
+        "US",
+        "Telecom"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Alphabet",
+      "gics_sector": "Communication Services",
+      "gics_industry_group": "Media & Entertainment",
+      "gics_industry": "Interactive Media & Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "id": "ca35dfe0",
+      "type": "idea",
+      "content": "Current price: ~$470\nP/E: ~24x\n5Y P/E low: ~12x\n5Y P/E high: ~30x\nEV/EBITDA: ~19x\n5Y EV/EBITDA low: ~10x\n5Y EV/EBITDA high: ~24x\nBusiness: Meta monetizes social attention through targeted advertising across its apps.\nMispricing: The market treats AI infra spend as a permanent drag, but efficiency gains can keep margins resilient.",
+      "tickers": [
+        "META"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Communication Services",
+        "Media & Entertainment",
+        "Interactive Media & Services",
+        "US",
+        "Telecom"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Meta Platforms",
+      "gics_sector": "Communication Services",
+      "gics_industry_group": "Media & Entertainment",
+      "gics_industry": "Interactive Media & Services",
+      "gics_sub_industry": "Interactive Media & Services"
+    },
+    {
+      "id": "d8129754",
+      "type": "idea",
+      "content": "Current price: ~$220\nP/E: ~55x\n5Y P/E low: ~30x\n5Y P/E high: ~180x\nEV/EBITDA: ~44x\n5Y EV/EBITDA low: ~24x\n5Y EV/EBITDA high: ~144x\nBusiness: Tesla sells electric vehicles and energy storage with vertically integrated manufacturing.\nMispricing: Near-term auto margins dominate sentiment, while autonomy and energy optionality are underweighted.",
+      "tickers": [
+        "TSLA"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Consumer Discretionary",
+        "Automobiles & Components",
+        "Automobiles",
+        "US",
+        "Consumer"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Tesla",
+      "gics_sector": "Consumer Discretionary",
+      "gics_industry_group": "Automobiles & Components",
+      "gics_industry": "Automobiles",
+      "gics_sub_industry": "Automobile Manufacturers"
+    },
+    {
+      "id": "d96f3b8c",
+      "type": "idea",
+      "content": "Current price: ~$850\nP/E: ~33x\n5Y P/E low: ~25x\n5Y P/E high: ~45x\nEV/EBITDA: ~26x\n5Y EV/EBITDA low: ~20x\n5Y EV/EBITDA high: ~36x\nBusiness: ASML supplies lithography tools required for leading-edge chips.\nMispricing: Order timing is cyclical, but EUV demand is structural and backlog durability is undervalued.",
+      "tickers": [
+        "ASML"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Semiconductors & Semiconductor Equipment",
+        "Semiconductor Equipment",
+        "Europe"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "ASML",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Semiconductors & Semiconductor Equipment",
+      "gics_industry": "Semiconductor Equipment",
+      "gics_sub_industry": "Semiconductor Equipment"
+    },
+    {
+      "id": "dda631a1",
+      "type": "idea",
+      "content": "Current price: ~$125\nP/E: ~22x\n5Y P/E low: ~15x\n5Y P/E high: ~30x\nEV/EBITDA: ~18x\n5Y EV/EBITDA low: ~12x\n5Y EV/EBITDA high: ~24x\nBusiness: TSMC is the leading contract chip manufacturer for advanced nodes.\nMispricing: Geopolitical risk is heavily priced, but node leadership and AI demand support pricing power.",
+      "tickers": [
+        "TSM"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Semiconductors & Semiconductor Equipment",
+        "Semiconductors",
+        "Asia"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "TSMC",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Semiconductors & Semiconductor Equipment",
+      "gics_industry": "Semiconductors",
+      "gics_sub_industry": "Semiconductors"
+    },
+    {
+      "id": "e5e860ec",
+      "type": "idea",
+      "content": "Current price: ~$300\nP/E: ~28x\n5Y P/E low: ~20x\n5Y P/E high: ~45x\nEV/EBITDA: ~22x\n5Y EV/EBITDA low: ~16x\n5Y EV/EBITDA high: ~36x\nBusiness: Salesforce provides CRM software embedded in customer workflows.\nMispricing: Growth skepticism ignores margin expansion and AI add-ons that can lift earnings quality.",
+      "tickers": [
+        "CRM"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Software & Services",
+        "Software",
+        "US"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Salesforce",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Software & Services",
+      "gics_industry": "Software",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "id": "f6f865aa",
+      "type": "idea",
+      "content": "Current price: ~$22\nP/E: ~70x\n5Y P/E low: ~35x\n5Y P/E high: ~200x\nEV/EBITDA: ~56x\n5Y EV/EBITDA low: ~28x\n5Y EV/EBITDA high: ~160x\nBusiness: Palantir sells data platforms to governments and enterprises for complex operations.\nMispricing: The market prices lumpy gov revenue, but platform adoption could broaden the enterprise base.",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Software & Services",
+        "Software",
+        "US"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Palantir",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Software & Services",
+      "gics_industry": "Software",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "id": "f8d56190",
+      "type": "idea",
+      "content": "Current price: ~$190\nP/E: ~80x\n5Y P/E low: ~50x\n5Y P/E high: ~200x\nEV/EBITDA: ~64x\n5Y EV/EBITDA low: ~40x\n5Y EV/EBITDA high: ~160x\nBusiness: Snowflake is a cloud data platform with usage-based pricing.\nMispricing: Consumption volatility masks strong data gravity and long-term net retention potential.",
+      "tickers": [
+        "SNOW"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Technology",
+        "Information Technology",
+        "Software & Services",
+        "Software",
+        "US"
+      ],
+      "created_at": "2026-01-16T10:12:36.662Z",
+      "company_name": "Snowflake",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "Software & Services",
+      "gics_industry": "Software",
+      "gics_sub_industry": "Application Software"
+    },
+    {
+      "id": "c9c2a8a1",
+      "type": "idea",
+      "content": "Current price: ~$330\nP/E: ~18x\n5Y P/E low: ~10x\n5Y P/E high: ~22x\nEV/EBITDA: ~13x\n5Y EV/EBITDA low: ~7x\n5Y EV/EBITDA high: ~15x\nBusiness: Caterpillar sells heavy equipment and engines to construction, mining, and energy customers.\nMispricing: The market prices CAT as late-cycle cyclicality, but backlog quality and aftermarket services support resilient cash flow.",
+      "tickers": [
+        "CAT"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Industrials",
+        "Capital Goods",
+        "Machinery",
+        "US",
+        "Industrial"
+      ],
+      "created_at": "2026-01-17T20:03:21Z",
+      "company_name": "Caterpillar",
+      "gics_sector": "Industrials",
+      "gics_industry_group": "Capital Goods",
+      "gics_industry": "Machinery",
+      "gics_sub_industry": "Construction Machinery & Heavy Trucks"
+    },
+    {
+      "id": "c5df4f92",
+      "type": "idea",
+      "content": "Current price: ~$200\nP/E: ~24x\n5Y P/E low: ~18x\n5Y P/E high: ~27x\nEV/EBITDA: ~16x\n5Y EV/EBITDA low: ~12x\n5Y EV/EBITDA high: ~18x\nBusiness: Honeywell sells aerospace, automation, and safety solutions with a large installed base.\nMispricing: The market overlooks software mix and recurring service revenue that can defend margins in a slowdown.",
+      "tickers": [
+        "HON"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Industrials",
+        "Capital Goods",
+        "Industrial Conglomerates",
+        "US",
+        "Industrial"
+      ],
+      "created_at": "2026-01-17T20:03:21Z",
+      "company_name": "Honeywell",
+      "gics_sector": "Industrials",
+      "gics_industry_group": "Capital Goods",
+      "gics_industry": "Industrial Conglomerates",
+      "gics_sub_industry": "Industrial Conglomerates"
+    },
+    {
+      "id": "d16d7f8b",
+      "type": "idea",
+      "content": "Current price: ~$240\nP/E: ~20x\n5Y P/E low: ~14x\n5Y P/E high: ~26x\nEV/EBITDA: ~12x\n5Y EV/EBITDA low: ~9x\n5Y EV/EBITDA high: ~15x\nBusiness: Union Pacific operates a western U.S. rail network with high barriers to entry.\nMispricing: The market treats volume cycles as permanent, but pricing discipline and efficiency gains sustain free cash flow.",
+      "tickers": [
+        "UNP"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Industrials",
+        "Transportation",
+        "Railroads",
+        "US",
+        "Industrial"
+      ],
+      "created_at": "2026-01-17T20:03:21Z",
+      "company_name": "Union Pacific",
+      "gics_sector": "Industrials",
+      "gics_industry_group": "Transportation",
+      "gics_industry": "Ground Transportation",
+      "gics_sub_industry": "Railroads"
+    },
+    {
+      "id": "e1b2c1d0",
+      "type": "idea",
+      "content": "Current price: ~$380\nP/E: ~12x\n5Y P/E low: ~8x\n5Y P/E high: ~20x\nEV/EBITDA: ~9x\n5Y EV/EBITDA low: ~6x\n5Y EV/EBITDA high: ~13x\nBusiness: Deere sells agricultural and construction equipment with growing precision ag software.\nMispricing: The market prices peak farm income, but software attach and replacement demand support a higher through-cycle multiple.",
+      "tickers": [
+        "DE"
+      ],
+      "source": "internal",
+      "source_title": "SwipeStreet",
+      "categories": [
+        "Ideas",
+        "Industrials",
+        "Capital Goods",
+        "Machinery",
+        "US",
+        "Industrial"
+      ],
+      "created_at": "2026-01-17T20:03:21Z",
+      "company_name": "Deere",
+      "gics_sector": "Industrials",
+      "gics_industry_group": "Capital Goods",
+      "gics_industry": "Machinery",
+      "gics_sub_industry": "Agricultural & Farm Machinery"
+    }
+  ]
+}

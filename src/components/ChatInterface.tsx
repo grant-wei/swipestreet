@@ -4,19 +4,24 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  TouchableWithoutFeedback,
   StyleSheet,
   ScrollView,
   KeyboardAvoidingView,
+  Keyboard,
   Platform,
   Animated,
   Dimensions,
   ActivityIndicator,
+  PanResponder,
 } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Card } from '../types';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { getClaudeResponse } from '../services/chat';
+import { useKeyboardOffset } from '../hooks/useKeyboardOffset';
 
-const { height } = Dimensions.get('window');
+const { height: windowHeight } = Dimensions.get('window');
 
 interface Message {
   id: string;
@@ -31,17 +36,17 @@ interface Props {
 }
 
 const COLORS = {
-  background: '#EDEAE5',
-  cardBg: '#F9F8F6',
-  textPrimary: '#1C1C1C',
-  textSecondary: '#4D4D4D',
-  textMuted: '#7A7A7A',
-  textLight: '#A8A8A8',
-  textFaint: '#C8C8C8',
-  accent: '#A84820',
-  accentSubtle: 'rgba(168, 72, 32, 0.08)',
-  divider: '#DDD9D3',
-  userBubble: '#A84820',
+  background: '#f9fafb',
+  cardBg: '#ffffff',
+  textPrimary: '#111827',
+  textSecondary: '#4b5563',
+  textMuted: '#9ca3af',
+  textLight: '#9ca3af',
+  textFaint: '#d1d5db',
+  accent: '#3b82f6',
+  accentSubtle: 'rgba(59, 130, 246, 0.08)',
+  divider: '#e5e7eb',
+  userBubble: '#3b82f6',
   assistantBubble: '#FFFFFF',
 };
 
@@ -50,8 +55,41 @@ export function ChatInterface({ visible, onClose, card }: Props) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const slideAnim = useRef(new Animated.Value(height)).current;
+  const [keyboardVisible, setKeyboardVisible] = useState(false);
+  const insets = useSafeAreaInsets();
+  const slideAnim = useRef(new Animated.Value(windowHeight)).current;
+  const keyboardOffsetWeb = useKeyboardOffset();
   const scrollViewRef = useRef<ScrollView>(null);
+  const inputRef = useRef<TextInput>(null);
+  const isWeb = Platform.OS === 'web';
+  const dragY = useRef(new Animated.Value(0)).current;
+
+  // Swipe down to dismiss
+  const panResponder = useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: () => false,
+      onMoveShouldSetPanResponder: (_, gestureState) => {
+        return gestureState.dy > 10 && Math.abs(gestureState.dx) < Math.abs(gestureState.dy);
+      },
+      onPanResponderMove: (_, gestureState) => {
+        if (gestureState.dy > 0) {
+          dragY.setValue(gestureState.dy);
+        }
+      },
+      onPanResponderRelease: (_, gestureState) => {
+        if (gestureState.dy > 80 || gestureState.vy > 0.5) {
+          Keyboard.dismiss();
+          onClose();
+        }
+        Animated.spring(dragY, {
+          toValue: 0,
+          useNativeDriver: true,
+          tension: 100,
+          friction: 10,
+        }).start();
+      },
+    })
+  ).current;
 
   useEffect(() => {
     if (visible) {
@@ -69,22 +107,50 @@ export function ChatInterface({ visible, onClose, card }: Props) {
       }).start();
     } else {
       Animated.timing(slideAnim, {
-        toValue: height,
+        toValue: windowHeight,
         duration: 250,
         useNativeDriver: true,
       }).start();
     }
   }, [visible, card.id]);
 
-  const handleSend = async () => {
-    if (!inputText.trim() || isLoading) return;
+  useEffect(() => {
+    const showEvent = Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow';
+    const hideEvent = Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide';
+
+    const showSub = Keyboard.addListener(showEvent, () => setKeyboardVisible(true));
+    const hideSub = Keyboard.addListener(hideEvent, () => setKeyboardVisible(false));
+
+    return () => {
+      showSub.remove();
+      hideSub.remove();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!keyboardVisible) return;
+    const timer = setTimeout(() => {
+      scrollViewRef.current?.scrollToEnd({ animated: true });
+    }, 60);
+    return () => clearTimeout(timer);
+  }, [keyboardVisible, messages.length]);
+
+  const handleInputFocus = () => {
+    requestAnimationFrame(() => {
+      scrollViewRef.current?.scrollToEnd({ animated: true });
+    });
+  };
+
+  const handleSend = async (overrideText?: string) => {
+    const nextText = (overrideText ?? inputText).trim();
+    if (!nextText || isLoading) return;
 
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
 
     const userMessage: Message = {
       id: Date.now().toString(),
       role: 'user',
-      content: inputText.trim(),
+      content: nextText,
     };
 
     setMessages(prev => [...prev, userMessage]);
@@ -140,66 +206,99 @@ export function ChatInterface({ visible, onClose, card }: Props) {
     setInputText(question);
   };
 
+  const handleChangeText = (text: string) => {
+    if (text.includes('\n')) {
+      const cleaned = text.replace(/\n/g, '').trim();
+      if (cleaned.length > 0) {
+        handleSend(cleaned);
+      }
+      setInputText('');
+      return;
+    }
+
+    setInputText(text);
+  };
+
   if (!visible) return null;
 
-  return (
-    <Animated.View
-      style={[
-        styles.container,
-        { transform: [{ translateY: slideAnim }] },
-      ]}
-    >
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        style={styles.keyboardView}
-      >
-        {/* Header */}
-        <View style={styles.header}>
-          <View style={styles.headerHandle} />
-          <View style={styles.headerContent}>
-            <Text style={styles.headerTitle}>Ask a question</Text>
+  // Safe area padding when keyboard is closed
+  const composerPaddingBottom = keyboardVisible ? 0 : insets.bottom;
+  const webComposerPaddingBottom = isWeb
+    ? ('calc(env(safe-area-inset-bottom) + 8px)' as any)
+    : composerPaddingBottom;
+
+  const handleBackdropPress = () => {
+    Keyboard.dismiss();
+    onClose();
+  };
+
+  const chatContent = (
+    <>
+      {/* Header with swipe-to-dismiss */}
+      <View style={styles.header} {...panResponder.panHandlers}>
+        <View style={styles.headerHandle} />
+        <View style={styles.headerContent}>
+          <Text style={styles.headerTitle}>Ask a question</Text>
+          <View style={styles.headerRight}>
+            {keyboardVisible && (
+              <TouchableOpacity
+                onPress={() => Keyboard.dismiss()}
+                style={styles.keyboardDismissButton}
+              >
+                <Text style={styles.keyboardDismissText}>Hide</Text>
+              </TouchableOpacity>
+            )}
             <TouchableOpacity onPress={onClose} style={styles.closeButton}>
               <Text style={styles.closeText}>Done</Text>
             </TouchableOpacity>
           </View>
         </View>
+      </View>
 
-        {/* Messages */}
-        <ScrollView
-          ref={scrollViewRef}
-          style={styles.messagesContainer}
-          contentContainerStyle={styles.messagesContent}
-          showsVerticalScrollIndicator={false}
-        >
-          {messages.map((message) => (
-            <View
-              key={message.id}
+      {/* Messages */}
+      <ScrollView
+        ref={scrollViewRef}
+        style={styles.messagesContainer}
+        contentContainerStyle={styles.messagesContent}
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+      >
+        {messages.map((message) => (
+          <View
+            key={message.id}
+            style={[
+              styles.messageBubble,
+              message.role === 'user' ? styles.userBubble : styles.assistantBubble,
+            ]}
+          >
+            <Text
               style={[
-                styles.messageBubble,
-                message.role === 'user' ? styles.userBubble : styles.assistantBubble,
+                styles.messageText,
+                message.role === 'user' && styles.userMessageText,
               ]}
             >
-              <Text
-                style={[
-                  styles.messageText,
-                  message.role === 'user' && styles.userMessageText,
-                ]}
-              >
-                {message.content}
-              </Text>
-            </View>
-          ))}
+              {message.content}
+            </Text>
+          </View>
+        ))}
 
-          {isLoading && (
-            <View style={[styles.messageBubble, styles.assistantBubble]}>
-              <ActivityIndicator size="small" color={COLORS.accent} />
-            </View>
-          )}
-        </ScrollView>
+        {isLoading && (
+          <View style={[styles.messageBubble, styles.assistantBubble]}>
+            <ActivityIndicator size="small" color={COLORS.accent} />
+          </View>
+        )}
+      </ScrollView>
 
+      {/* Composer - in normal flex flow, KeyboardAvoidingView handles keyboard */}
+      <View style={styles.composerArea}>
         {/* Suggestions */}
         {messages.length <= 1 && (
-          <View style={styles.suggestionsContainer}>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={styles.suggestionsContainer}
+            contentContainerStyle={styles.suggestionsContent}
+          >
             {suggestedQuestions.map((question, index) => (
               <TouchableOpacity
                 key={index}
@@ -209,21 +308,33 @@ export function ChatInterface({ visible, onClose, card }: Props) {
                 <Text style={styles.suggestionText}>{question}</Text>
               </TouchableOpacity>
             ))}
-          </View>
+          </ScrollView>
         )}
 
         {/* Input */}
-        <View style={styles.inputContainer}>
+        <View
+          style={[
+            styles.inputContainer,
+            {
+              paddingBottom: composerPaddingBottom,
+              paddingTop: keyboardVisible ? 8 : 12,
+            },
+            isWeb ? ({ paddingBottom: webComposerPaddingBottom } as any) : null,
+          ]}
+        >
           <TextInput
+            ref={inputRef}
             style={styles.input}
             value={inputText}
-            onChangeText={setInputText}
+            onChangeText={handleChangeText}
             placeholder="Type your question..."
             placeholderTextColor={COLORS.textLight}
             multiline
             maxLength={500}
+            onFocus={handleInputFocus}
             onSubmitEditing={handleSend}
             returnKeyType="send"
+            contextMenuHidden={Platform.OS === 'ios'}
           />
           <TouchableOpacity
             style={[styles.sendButton, !inputText.trim() && styles.sendButtonDisabled]}
@@ -233,18 +344,72 @@ export function ChatInterface({ visible, onClose, card }: Props) {
             <Text style={styles.sendButtonText}>Send</Text>
           </TouchableOpacity>
         </View>
-      </KeyboardAvoidingView>
+      </View>
+    </>
+  );
+
+  const backdrop = (
+    <TouchableWithoutFeedback onPress={handleBackdropPress}>
+      <View style={styles.backdrop} />
+    </TouchableWithoutFeedback>
+  );
+
+  // Reduce sheet height when keyboard is visible to prevent clipping
+  const sheetHeight = keyboardVisible ? windowHeight * 0.5 : windowHeight * 0.65;
+
+  const sheetContent = (
+    <Animated.View
+      style={[
+        styles.container,
+        isWeb && styles.containerWeb,
+        {
+          height: sheetHeight,
+          transform: [
+            { translateY: Animated.add(slideAnim, dragY) },
+          ],
+        },
+      ]}
+    >
+      {chatContent}
     </Animated.View>
+  );
+
+  return Platform.OS === 'web' ? (
+    <View style={styles.overlay}>
+      {backdrop}
+      <View
+        style={[
+          styles.sheetWrapper,
+          { paddingBottom: keyboardOffsetWeb },
+        ]}
+      >
+        {sheetContent}
+      </View>
+    </View>
+  ) : (
+    <View style={styles.overlay}>
+      {backdrop}
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={styles.sheetWrapper}
+        keyboardVerticalOffset={0}
+      >
+        {sheetContent}
+      </KeyboardAvoidingView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  backdrop: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+  },
   container: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: height * 0.65,
+    width: '100%',
     backgroundColor: COLORS.background,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
@@ -253,9 +418,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 12,
     elevation: 20,
+    overflow: 'hidden',
   },
-  keyboardView: {
+  containerWeb: {
+    position: 'fixed' as any,
+  },
+  sheetWrapper: {
     flex: 1,
+    justifyContent: 'flex-end',
   },
   header: {
     alignItems: 'center',
@@ -263,6 +433,7 @@ const styles = StyleSheet.create({
     paddingBottom: 12,
     borderBottomWidth: 1,
     borderBottomColor: COLORS.divider,
+    flexShrink: 0,
   },
   headerHandle: {
     width: 36,
@@ -283,6 +454,19 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: COLORS.textPrimary,
   },
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 16,
+  },
+  keyboardDismissButton: {
+    padding: 4,
+  },
+  keyboardDismissText: {
+    fontSize: 15,
+    fontWeight: '500',
+    color: COLORS.textMuted,
+  },
   closeButton: {
     padding: 4,
   },
@@ -296,7 +480,10 @@ const styles = StyleSheet.create({
   },
   messagesContent: {
     padding: 16,
-    paddingBottom: 8,
+  },
+  composerArea: {
+    backgroundColor: COLORS.background,
+    flexShrink: 0,
   },
   messageBubble: {
     maxWidth: '85%',
@@ -325,8 +512,13 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   suggestionsContainer: {
+    maxHeight: 44,
+    flexGrow: 0,
+    flexShrink: 0,
+  },
+  suggestionsContent: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    alignItems: 'center',
     paddingHorizontal: 16,
     paddingBottom: 12,
     gap: 8,
@@ -337,7 +529,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: 'rgba(168, 72, 32, 0.15)',
+    borderColor: 'rgba(59, 130, 246, 0.15)',
   },
   suggestionText: {
     fontSize: 13,
@@ -346,12 +538,13 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'center',
     padding: 12,
-    paddingBottom: Platform.OS === 'ios' ? 28 : 12,
     borderTopWidth: 1,
     borderTopColor: COLORS.divider,
     backgroundColor: COLORS.cardBg,
+    gap: 10,
+    flexShrink: 0,
   },
   input: {
     flex: 1,
@@ -365,13 +558,16 @@ const styles = StyleSheet.create({
     maxHeight: 100,
     borderWidth: 1,
     borderColor: COLORS.divider,
+    minHeight: 44,
   },
   sendButton: {
-    marginLeft: 10,
     backgroundColor: COLORS.accent,
     paddingHorizontal: 18,
-    paddingVertical: 10,
-    borderRadius: 20,
+    height: 44,
+    minWidth: 72,
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   sendButtonDisabled: {
     backgroundColor: COLORS.textFaint,

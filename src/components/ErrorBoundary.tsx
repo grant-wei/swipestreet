@@ -13,12 +13,12 @@ interface State {
 }
 
 const COLORS = {
-  background: '#EDEAE5',
-  cardBg: '#F9F8F6',
-  textPrimary: '#1C1C1C',
-  textSecondary: '#4D4D4D',
-  textMuted: '#7A7A7A',
-  accent: '#A84820',
+  background: '#f9fafb',
+  cardBg: '#ffffff',
+  textPrimary: '#111827',
+  textSecondary: '#4b5563',
+  textMuted: '#9ca3af',
+  accent: '#3b82f6',
   error: '#DC2626',
 };
 

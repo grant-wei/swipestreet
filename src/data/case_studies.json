@@ -1,0 +1,65 @@
+{
+  "case_studies": [
+    {
+      "id": "cs-aig-turnaround",
+      "type": "lesson",
+      "content": "By 2008, AIG had transformed from a conservative insurance giant into a leveraged bet on mortgage derivatives. Its Financial Products division had written $440B in credit default swaps on subprime mortgages. The company had strayed far from its core insurance operations into complex financial instruments it didn't fully understand.",
+      "expanded": "The $182B government bailout saved AIG from bankruptcy, but came with a price: the U.S. Treasury took a 92% stake. CEO Robert Benmosche, brought in 2009, focused the company back on its core property-casualty and life insurance businesses. Over 5 years, AIG sold $70B in assets.\n\nBy 2012, AIG had fully repaid the government bailout plus $22.7B in profit to taxpayers. The company returned to the S&P 500 and began paying dividends again in 2013. The restructured AIG was fundamentally different: smaller, simpler, and focused on insurance.\n\nLesson: Turnarounds require painful focus. AIG's recovery came from selling beloved businesses and returning to basics. The best path forward often means becoming smaller, not bigger.",
+      "tickers": ["AIG"],
+      "source": "case_study",
+      "source_title": "The AIG Turnaround",
+      "categories": ["Capital Allocation", "Turnarounds"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "company_name": "American International Group"
+    },
+    {
+      "id": "cs-apple-services",
+      "type": "lesson",
+      "content": "In 2016, iPhone growth was slowing. Wall Street valued Apple at 10x earnings - a 'hardware discount' reflecting fears of smartphone commoditization. The bear case was simple: Apple was a one-product company with 70% of revenue from iPhone. When smartphone growth slowed, Apple would become a value trap.",
+      "expanded": "Apple began breaking out Services revenue separately in 2016, revealing a $25B business growing 20%+ annually. Tim Cook pivoted investor focus from iPhone units to the 1B+ active device installed base and recurring revenue from App Store, Apple Music, iCloud, and later TV+, Arcade, and Fitness+.\n\nServices grew from $25B in 2016 to $85B+ by 2024. Apple's P/E expanded from 10x to 25-30x as investors re-rated the stock as a recurring revenue business. The math was powerful: Services carried 70%+ gross margins vs. 35% for hardware.\n\nLesson: Valuation is about narrative as much as numbers. Apple didn't just grow Services - they taught investors to value them differently. The installed base was always there; the story changed.",
+      "tickers": ["AAPL"],
+      "source": "case_study",
+      "source_title": "Apple's Services Pivot",
+      "categories": ["Business Model", "Valuation"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "company_name": "Apple Inc."
+    },
+    {
+      "id": "cs-netflix-streaming",
+      "type": "lesson",
+      "content": "In 2007, Netflix was a successful DVD-by-mail company with 7M subscribers and $1.2B revenue. The business was profitable with strong unit economics. Why change anything? Reed Hastings saw that broadband speeds were improving exponentially. Within 5-10 years, streaming would be viable. Netflix could disrupt itself, or be disrupted.",
+      "expanded": "Netflix launched streaming in 2007 as a free add-on to DVD subscriptions. The key insight was licensing economics - content deals were initially cheap because studios didn't understand streaming's potential. Netflix locked in multi-year deals at favorable rates before competitors noticed.\n\nBy 2024, Netflix had 260M+ streaming subscribers globally. DVD-by-mail was finally shut down in 2023. The 2011 Qwikster debacle cost 800K subscribers and 75% of stock value, but Netflix recovered and emerged stronger.\n\nLesson: It's better to cannibalize yourself than be disrupted by others. Netflix sacrificed short-term DVD profits to build a streaming moat that competitors couldn't replicate. Start transitions early when you have runway.",
+      "tickers": ["NFLX"],
+      "source": "case_study",
+      "source_title": "Netflix's DVD-to-Streaming Leap",
+      "categories": ["Disruption", "Strategy"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "company_name": "Netflix Inc."
+    },
+    {
+      "id": "cs-microsoft-cloud",
+      "type": "lesson",
+      "content": "In 2014, Microsoft was 'dead money.' Windows dominated PCs but PCs were dying. Mobile was lost to Apple and Google. The stock had gone nowhere for 14 years. Under Steve Ballmer, Microsoft was notoriously protective of Windows - internal projects that threatened Windows revenue were killed.",
+      "expanded": "Satya Nadella became CEO in 2014 and immediately shifted focus to 'cloud-first, mobile-first.' He killed Windows Phone, embraced Linux, and bet everything on Azure. His cultural shift was as important as his strategic shift - he replaced stack-ranking with growth mindset and made peace with competitors.\n\nMicrosoft's market cap grew from $300B in 2014 to over $3T by 2024. Azure became the #2 cloud platform. Cloud revenue went from ~$4B to $100B+. The AI partnership with OpenAI positioned Microsoft for the next platform shift.\n\nLesson: Culture eats strategy for breakfast. Nadella's technical strategy was sound, but his cultural transformation enabled Microsoft to execute. Protect your future, not your past.",
+      "tickers": ["MSFT"],
+      "source": "case_study",
+      "source_title": "Microsoft's Cloud Reinvention",
+      "categories": ["Leadership", "Transformation"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "company_name": "Microsoft Corporation"
+    },
+    {
+      "id": "cs-chipotle-ecoli",
+      "type": "lesson",
+      "content": "By 2015, Chipotle was a Wall Street darling trading at 45x earnings. 'Food with Integrity' drove premium pricing. Then E.coli outbreaks hit 11 states, sickening 55 people. Same-store sales fell 30%. The stock dropped from $750 to $250. Customers who once evangelized the brand now feared it.",
+      "expanded": "Founder Steve Ells struggled to recover trust. In 2018, the board brought in Taco Bell CEO Brian Niccol. He focused on food safety systems, digital ordering (which grew to 50% of revenue), and marketing that emphasized quality without dwelling on the crisis.\n\nBy 2024, Chipotle traded at all-time highs above $3,000/share (pre-split). Brand trust rebuilt gradually through consistent execution. Digital infrastructure built during the crisis became a moat when COVID hit - Chipotle was already prepared for takeout/delivery.\n\nLesson: Crisis recovery requires new leadership and forward focus. Ells was too associated with the crisis. Niccol could rebuild without baggage. Crisis investment can become competitive advantage.",
+      "tickers": ["CMG"],
+      "source": "case_study",
+      "source_title": "Chipotle's E.Coli Recovery",
+      "categories": ["Crisis Management", "Brand"],
+      "created_at": "2025-01-15T00:00:00Z",
+      "company_name": "Chipotle Mexican Grill"
+    }
+  ],
+  "generated_at": "2025-01-15T00:00:00Z"
+}

@@ -2,12 +2,12 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const COLORS = {
-  background: '#EDEAE5',
-  cardBg: '#F9F8F6',
-  textPrimary: '#1C1C1C',
-  textMuted: '#7A7A7A',
-  accent: '#A84820',
-  divider: '#DDD9D3',
+  background: '#f9fafb',
+  cardBg: '#ffffff',
+  textPrimary: '#111827',
+  textMuted: '#9ca3af',
+  accent: '#3b82f6',
+  divider: '#e5e7eb',
 };
 
 interface Props {

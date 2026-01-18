@@ -1,6 +1,8 @@
 import * as Sentry from '@sentry/react-native';
 import { api } from './api';
 
+let analyticsContext: Record<string, any> = {};
+
 // Initialize Sentry for crash reporting
 export function initAnalytics() {
   if (!__DEV__) {
@@ -26,11 +28,26 @@ export async function trackEvent(
 
   try {
     // Send to backend for aggregation
-    await api.trackEvent(eventName, properties);
+    const payload = {
+      ...analyticsContext,
+      ...(properties || {}),
+    };
+    Object.keys(payload).forEach((key) => {
+      if (payload[key] === undefined) {
+        delete payload[key];
+      }
+    });
+
+    await api.trackEvent(eventName, payload);
   } catch (error) {
     // Silent fail - analytics shouldn't break the app
     console.warn('Analytics error:', error);
   }
+}
+
+// Set shared analytics context (device, experiments, etc.)
+export function setAnalyticsContext(context: Record<string, any>) {
+  analyticsContext = { ...analyticsContext, ...context };
 }
 
 // Track screen views

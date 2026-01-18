@@ -1,21 +1,36 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as SecureStore from 'expo-secure-store';
 import { Card, Category, FeedResponse, UserStats } from '../types';
+import { CommentItem } from './offline';
+
+const AUTH_TOKEN_KEY = 'auth_token';
 
 // Backend API URL - use EXPO_PUBLIC_API_BASE for device access in dev
 const API_BASE = __DEV__
   ? (process.env.EXPO_PUBLIC_API_BASE || 'http://localhost:3001/api')
   : 'https://api.swipestreet.app/api';
 
+const REQUEST_TIMEOUT = 15000; // 15 seconds
+
+function fetchWithTimeout(url: string, options: RequestInit = {}, timeout = REQUEST_TIMEOUT): Promise<Response> {
+  return Promise.race([
+    fetch(url, options),
+    new Promise<Response>((_, reject) =>
+      setTimeout(() => reject(new Error('Request timed out')), timeout)
+    ),
+  ]);
+}
+
 class ApiService {
   private token: string | null = null;
 
   async init() {
-    this.token = await AsyncStorage.getItem('auth_token');
+    this.token = await SecureStore.getItemAsync(AUTH_TOKEN_KEY);
   }
 
   private async request<T>(
     endpoint: string,
-    options: RequestInit = {}
+    options: RequestInit = {},
+    timeout = REQUEST_TIMEOUT
   ): Promise<T> {
     const headers: Record<string, string> = {
       'Content-Type': 'application/json',
@@ -26,10 +41,11 @@ class ApiService {
       headers['Authorization'] = `Bearer ${this.token}`;
     }
 
-    const response = await fetch(`${API_BASE}${endpoint}`, {
-      ...options,
-      headers,
-    });
+    const response = await fetchWithTimeout(
+      `${API_BASE}${endpoint}`,
+      { ...options, headers },
+      timeout
+    );
 
     if (!response.ok) {
       const error = await response.json().catch(() => ({ error: 'Request failed' }));
@@ -50,7 +66,7 @@ class ApiService {
       }
     );
     this.token = result.token;
-    await AsyncStorage.setItem('auth_token', result.token);
+    await SecureStore.setItemAsync(AUTH_TOKEN_KEY, result.token);
     return result;
   }
 
@@ -65,9 +81,23 @@ class ApiService {
     });
   }
 
+  async requestInvestorVerification(data: { work_email: string; linkedin_url: string }): Promise<{ status: string; expires_at: string; debug_code?: string }> {
+    return this.request('/auth/investor/request', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async verifyInvestorCode(code: string): Promise<{ status: string; verified_at: string }> {
+    return this.request('/auth/investor/verify', {
+      method: 'POST',
+      body: JSON.stringify({ code }),
+    });
+  }
+
   async deleteAccount(): Promise<void> {
     await this.request('/auth/me', { method: 'DELETE' });
-    await AsyncStorage.removeItem('auth_token');
+    await SecureStore.deleteItemAsync(AUTH_TOKEN_KEY);
     this.token = null;
   }
 
@@ -126,23 +156,42 @@ class ApiService {
     await this.recordAction(cardId, 'unsaved');
   }
 
+  // ============ COMMENTS ============
+
+  async getComments(cardId: string): Promise<{ comments: CommentItem[] }> {
+    const params = new URLSearchParams({ card_id: cardId });
+    return this.request<{ comments: CommentItem[] }>(`/cards/comments?${params}`);
+  }
+
+  async addComment(cardId: string, text: string): Promise<{ comment: CommentItem }> {
+    return this.request<{ comment: CommentItem }>('/cards/comments', {
+      method: 'POST',
+      body: JSON.stringify({ card_id: cardId, text }),
+    });
+  }
+
   // ============ CHAT ============
 
   async chat(card: Card, messages: Array<{ role: 'user' | 'assistant'; content: string }>): Promise<{ message: string }> {
-    return this.request('/chat/message', {
-      method: 'POST',
-      body: JSON.stringify({
-        card_id: card.id,
-        card: {
-          type: card.type,
-          content: card.content,
-          expanded: card.expanded,
-          categories: card.categories,
-          tickers: card.tickers,
-        },
-        messages,
-      }),
-    });
+    // AI responses can take longer, use 60 second timeout
+    return this.request(
+      '/chat/message',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          card_id: card.id,
+          card: {
+            type: card.type,
+            content: card.content,
+            expanded: card.expanded,
+            categories: card.categories,
+            tickers: card.tickers,
+          },
+          messages,
+        }),
+      },
+      60000
+    );
   }
 
   // ============ SUBSCRIPTION ============

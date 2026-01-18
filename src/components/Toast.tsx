@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { Animated, Text, StyleSheet } from 'react-native';
 
 const COLORS = {
-  success: '#2D5A27',
+  success: '#22c55e',
   error: '#DC2626',
-  info: '#4D4D4D',
+  info: '#4b5563',
 };
 
 interface Props {

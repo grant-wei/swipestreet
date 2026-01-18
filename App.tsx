@@ -2,17 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, StyleSheet, ActivityIndicator } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
-import { FeedScreen } from './src/screens/FeedScreen';
+import { HomeScreen } from './src/screens/HomeScreen';
+import { ProfileScreen } from './src/screens/ProfileScreen';
+import { SavedCardsScreen } from './src/screens/SavedCardsScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
 import { OnboardingScreen } from './src/screens/OnboardingScreen';
 import { api } from './src/services/api';
+import { offlineStorage } from './src/services/offline';
+import { initAnalytics, setAnalyticsContext } from './src/services/analytics';
 import { useStore } from './src/stores/useStore';
 
 const Tab = createBottomTabNavigator();
+const ProfileStack = createNativeStackNavigator();
 
 if (__DEV__) {
   const errorUtils = (global as any)?.ErrorUtils;
@@ -27,15 +34,15 @@ if (__DEV__) {
 
 // Refined color palette
 const COLORS = {
-  background: '#EDEAE5',
-  card: '#F9F8F6',
-  textPrimary: '#1C1C1C',
-  textSecondary: '#4D4D4D',
-  textMuted: '#7A7A7A',
-  textLight: '#A8A8A8',
-  textFaint: '#D0D0D0',
-  accent: '#A84820',
-  divider: '#DDD9D3',
+  background: '#f9fafb',
+  card: '#ffffff',
+  textPrimary: '#111827',
+  textSecondary: '#374151',
+  textMuted: '#6b7280',
+  textLight: '#9ca3af',
+  textFaint: '#9ca3af',
+  accent: '#3b82f6',
+  divider: '#e5e7eb',
 };
 
 // Light theme for the app
@@ -52,18 +59,56 @@ const LightTheme = {
   },
 };
 
+// Profile stack navigator
+function ProfileStackScreen() {
+  return (
+    <ProfileStack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <ProfileStack.Screen name="ProfileMain" component={ProfileScreen} />
+      <ProfileStack.Screen
+        name="SavedCards"
+        component={SavedCardsScreen}
+        options={{
+          headerShown: true,
+          headerTitle: 'Saved',
+          headerBackTitle: 'Profile',
+          headerStyle: { backgroundColor: COLORS.background },
+          headerShadowVisible: false,
+        }}
+      />
+      <ProfileStack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{
+          headerShown: true,
+          headerTitle: 'Settings',
+          headerBackTitle: 'Profile',
+          headerStyle: { backgroundColor: COLORS.background },
+          headerShadowVisible: false,
+        }}
+      />
+    </ProfileStack.Navigator>
+  );
+}
+
 // Simple tab icons using text
 function TabIcon({ name, focused }: { name: string; focused: boolean }) {
-  const icons: Record<string, string> = {
-    Feed: '|||',
-    Settings: '@',
+  const iconMap: Record<string, keyof typeof Feather.glyphMap> = {
+    Home: 'home',
+    Profile: 'user',
   };
+  const iconName = iconMap[name] || 'circle';
 
   return (
     <View style={styles.tabIcon}>
-      <Text style={[styles.tabIconText, focused && styles.tabIconFocused]}>
-        {icons[name] || '?'}
-      </Text>
+      <Feather
+        name={iconName}
+        size={20}
+        color={focused ? COLORS.accent : COLORS.textLight}
+      />
     </View>
   );
 }
@@ -75,14 +120,17 @@ export default function App() {
   useEffect(() => {
     // Initialize API and check onboarding
     const initApp = async () => {
+      initAnalytics();
       await api.init();
+      const experimentVariant = await offlineStorage.getOrCreateExperimentVariant();
+      const deviceId = await offlineStorage.getOrCreateDeviceId();
+      setAnalyticsContext({ device_id: deviceId, experiment_variant: experimentVariant });
       await checkOnboarding();
       await init();
 
       setIsLoading(false);
 
       // Generate a simple device ID and sync after auth
-      const deviceId = `device_${Date.now()}_${Math.random().toString(36).slice(2)}`;
       try {
         await api.register(deviceId);
         await syncCards();
@@ -138,8 +186,8 @@ export default function App() {
               ),
             })}
           >
-            <Tab.Screen name="Feed" component={FeedScreen} />
-            <Tab.Screen name="Settings" component={SettingsScreen} />
+            <Tab.Screen name="Home" component={HomeScreen} />
+            <Tab.Screen name="Profile" component={ProfileStackScreen} />
           </Tab.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
@@ -161,17 +209,12 @@ const styles = StyleSheet.create({
     height: 68,
     paddingTop: 6,
     elevation: 0,
-    shadowOpacity: 0,
+    shadowOpacity: 0.05,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: -2 },
   },
   tabIcon: {
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  tabIconText: {
-    fontSize: 15,
-    color: COLORS.textFaint,
-  },
-  tabIconFocused: {
-    color: COLORS.accent,
   },
 });

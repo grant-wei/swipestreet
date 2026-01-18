@@ -11,16 +11,16 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useStore } from '../stores/useStore';
 import { Card } from '../types';
 
-// Warm color palette
+// Proxera light blue-grey palette
 const COLORS = {
-  background: '#FAF9F7',
-  card: '#FFFFFF',
-  textPrimary: '#1A1A1A',
-  textSecondary: '#6B6B6B',
-  textMuted: '#9B9B9B',
-  accent: '#E85D04',
-  accentGreen: '#2D5A27',
-  border: '#E8E6E3',
+  background: '#f9fafb',
+  card: '#ffffff',
+  textPrimary: '#111827',
+  textSecondary: '#6b7280',
+  textMuted: '#9ca3af',
+  accent: '#3b82f6',
+  accentGreen: '#22c55e',
+  border: '#e5e7eb',
 };
 
 function SavedCard({ card, onRemove }: { card: Card; onRemove: () => void }) {

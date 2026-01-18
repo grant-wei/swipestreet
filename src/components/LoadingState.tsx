@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 
 const COLORS = {
-  background: '#EDEAE5',
-  textMuted: '#7A7A7A',
-  accent: '#A84820',
+  background: '#f9fafb',
+  textMuted: '#9ca3af',
+  accent: '#3b82f6',
 };
 
 interface Props {

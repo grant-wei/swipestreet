@@ -41,17 +41,17 @@ const GEOGRAPHIES = [
 ];
 
 const COLORS = {
-  background: '#EDEAE5',
-  cardBg: '#F9F8F6',
-  textPrimary: '#1C1C1C',
-  textSecondary: '#4D4D4D',
-  textMuted: '#7A7A7A',
-  textLight: '#A8A8A8',
-  accent: '#A84820',
-  accentSubtle: 'rgba(168, 72, 32, 0.08)',
-  divider: '#DDD9D3',
-  selected: '#A84820',
-  selectedBg: 'rgba(168, 72, 32, 0.12)',
+  background: '#f9fafb',
+  cardBg: '#ffffff',
+  textPrimary: '#111827',
+  textSecondary: '#4b5563',
+  textMuted: '#9ca3af',
+  textLight: '#9ca3af',
+  accent: '#3b82f6',
+  accentSubtle: 'rgba(59, 130, 246, 0.08)',
+  divider: '#e5e7eb',
+  selected: '#3b82f6',
+  selectedBg: 'rgba(59, 130, 246, 0.12)',
 };
 
 export function OnboardingScreen({ onComplete }: Props) {
